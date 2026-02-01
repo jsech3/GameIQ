@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "answer": "Statue of Liberty",
+    "acceptableAnswers": ["statue of liberty", "lady liberty", "liberty statue"],
+    "hint": "Famous American landmark",
+    "imageFolder": "001"
+  },
+  {
+    "id": 2,
+    "answer": "Eiffel Tower",
+    "acceptableAnswers": ["eiffel tower", "the eiffel tower", "tour eiffel"],
+    "hint": "Iconic European structure",
+    "imageFolder": "002"
+  },
+  {
+    "id": 3,
+    "answer": "Mona Lisa",
+    "acceptableAnswers": ["mona lisa", "the mona lisa", "la gioconda"],
+    "hint": "World's most famous painting",
+    "imageFolder": "003"
+  },
+  {
+    "id": 4,
+    "answer": "Golden Gate Bridge",
+    "acceptableAnswers": ["golden gate bridge", "golden gate", "gg bridge"],
+    "hint": "San Francisco icon",
+    "imageFolder": "004"
+  },
+  {
+    "id": 5,
+    "answer": "Great Wall of China",
+    "acceptableAnswers": ["great wall of china", "great wall", "chinese wall"],
+    "hint": "Visible from space (so they say)",
+    "imageFolder": "005"
+  }
+]

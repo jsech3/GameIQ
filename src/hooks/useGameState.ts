@@ -22,7 +22,7 @@ function loadState(): PlayerState {
   } catch { /* ignore */ }
   return {
     games: {
-      tempo: defaultStats(),
+      blindspot: defaultStats(),
       'odd-angle': defaultStats(),
     },
     memberSince: new Date().toISOString(),

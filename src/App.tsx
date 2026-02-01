@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
-import { Tempo } from './games/tempo/Tempo';
+import { Blindspot } from './games/blindspot/Blindspot';
 import { OddAngle } from './games/odd-angle/OddAngle';
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tempo" element={<Tempo />} />
+        <Route path="/blindspot" element={<Blindspot />} />
         <Route path="/odd-angle" element={<OddAngle />} />
       </Routes>
     </Layout>

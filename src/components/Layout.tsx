@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { GameMeta } from '../types';
 
 const GAMES: GameMeta[] = [
-  { id: 'tempo', name: 'Tempo', description: 'Order events in time', icon: '\u23F1', path: '/tempo' },
+  { id: 'blindspot', name: 'Blindspot', description: 'Find the wrong word', icon: '\uD83D\uDCA1', path: '/blindspot' },
   { id: 'odd-angle', name: 'Odd Angle', description: 'Guess from the zoom', icon: '\uD83D\uDD0D', path: '/odd-angle' },
 ];
 

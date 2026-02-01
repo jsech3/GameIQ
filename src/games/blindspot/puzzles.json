@@ -1,0 +1,527 @@
+[
+  {
+    "id": 1,
+    "rounds": [
+      {
+        "text": "The speed of light is approximately 186,000 miles per hour.",
+        "wrongWord": "hour",
+        "correctWord": "second",
+        "category": "Science"
+      },
+      {
+        "text": "The Great Wall of China is visible from the International Space Station with the naked eye.",
+        "wrongWord": "is",
+        "correctWord": "is not",
+        "category": "Geography"
+      },
+      {
+        "text": "Water boils at 100 degrees Fahrenheit at sea level.",
+        "wrongWord": "Fahrenheit",
+        "correctWord": "Celsius",
+        "category": "Science"
+      },
+      {
+        "text": "\"To be, or not to be, that is the answer.\"",
+        "wrongWord": "answer",
+        "correctWord": "question",
+        "category": "Literature"
+      },
+      {
+        "text": "There are 206 muscles in the adult human body.",
+        "wrongWord": "muscles",
+        "correctWord": "bones",
+        "category": "Biology"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rounds": [
+      {
+        "text": "Neil Armstrong was the second person to walk on the Moon.",
+        "wrongWord": "second",
+        "correctWord": "first",
+        "category": "History"
+      },
+      {
+        "text": "The chemical symbol for gold is Ag.",
+        "wrongWord": "Ag",
+        "correctWord": "Au",
+        "category": "Chemistry"
+      },
+      {
+        "text": "\"I think, therefore I exist.\" — Aristotle",
+        "wrongWord": "Aristotle",
+        "correctWord": "Descartes",
+        "category": "Philosophy"
+      },
+      {
+        "text": "Mount Everest is located on the border of Nepal and India.",
+        "wrongWord": "India",
+        "correctWord": "China (Tibet)",
+        "category": "Geography"
+      },
+      {
+        "text": "The human heart has five chambers.",
+        "wrongWord": "five",
+        "correctWord": "four",
+        "category": "Biology"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rounds": [
+      {
+        "text": "\"That's one small step for man, one giant leap for humanity.\" — Neil Armstrong",
+        "wrongWord": "humanity",
+        "correctWord": "mankind",
+        "category": "History"
+      },
+      {
+        "text": "The Amazon River is the longest river in the world.",
+        "wrongWord": "Amazon",
+        "correctWord": "Nile",
+        "category": "Geography"
+      },
+      {
+        "text": "Diamonds are made primarily of iron atoms.",
+        "wrongWord": "iron",
+        "correctWord": "carbon",
+        "category": "Science"
+      },
+      {
+        "text": "The Mona Lisa was painted by Michelangelo.",
+        "wrongWord": "Michelangelo",
+        "correctWord": "Leonardo da Vinci",
+        "category": "Art"
+      },
+      {
+        "text": "Jupiter is the smallest planet in our solar system.",
+        "wrongWord": "smallest",
+        "correctWord": "largest",
+        "category": "Astronomy"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rounds": [
+      {
+        "text": "The currency of Japan is the yuan.",
+        "wrongWord": "yuan",
+        "correctWord": "yen",
+        "category": "Geography"
+      },
+      {
+        "text": "\"Float like a butterfly, sting like a wasp.\" — Muhammad Ali",
+        "wrongWord": "wasp",
+        "correctWord": "bee",
+        "category": "Sports"
+      },
+      {
+        "text": "Photosynthesis converts sunlight into carbon dioxide.",
+        "wrongWord": "carbon dioxide",
+        "correctWord": "glucose (sugar)",
+        "category": "Biology"
+      },
+      {
+        "text": "The Titanic sank on its last voyage in 1912.",
+        "wrongWord": "last",
+        "correctWord": "maiden",
+        "category": "History"
+      },
+      {
+        "text": "Sound travels faster than light.",
+        "wrongWord": "faster",
+        "correctWord": "slower",
+        "category": "Physics"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rounds": [
+      {
+        "text": "Abraham Lincoln was the 14th President of the United States.",
+        "wrongWord": "14th",
+        "correctWord": "16th",
+        "category": "History"
+      },
+      {
+        "text": "\"The only thing we have to fear is death itself.\" — Franklin D. Roosevelt",
+        "wrongWord": "death",
+        "correctWord": "fear",
+        "category": "History"
+      },
+      {
+        "text": "An octagon has six sides.",
+        "wrongWord": "six",
+        "correctWord": "eight",
+        "category": "Math"
+      },
+      {
+        "text": "The largest ocean on Earth is the Atlantic.",
+        "wrongWord": "Atlantic",
+        "correctWord": "Pacific",
+        "category": "Geography"
+      },
+      {
+        "text": "Einstein is famous for the equation E = mc³.",
+        "wrongWord": "mc³",
+        "correctWord": "mc²",
+        "category": "Physics"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rounds": [
+      {
+        "text": "Shakespeare wrote Romeo and Juliet in the 18th century.",
+        "wrongWord": "18th",
+        "correctWord": "16th",
+        "category": "Literature"
+      },
+      {
+        "text": "The human body is approximately 60% nitrogen.",
+        "wrongWord": "nitrogen",
+        "correctWord": "water",
+        "category": "Biology"
+      },
+      {
+        "text": "\"Houston, we've had an opportunity.\" — Apollo 13",
+        "wrongWord": "opportunity",
+        "correctWord": "problem",
+        "category": "History"
+      },
+      {
+        "text": "Venus is the closest planet to the Sun.",
+        "wrongWord": "Venus",
+        "correctWord": "Mercury",
+        "category": "Astronomy"
+      },
+      {
+        "text": "The Berlin Wall fell in 1979.",
+        "wrongWord": "1979",
+        "correctWord": "1989",
+        "category": "History"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rounds": [
+      {
+        "text": "DNA stands for deoxyribonucleic compound.",
+        "wrongWord": "compound",
+        "correctWord": "acid",
+        "category": "Biology"
+      },
+      {
+        "text": "The Statue of Liberty was a gift from England.",
+        "wrongWord": "England",
+        "correctWord": "France",
+        "category": "History"
+      },
+      {
+        "text": "\"Elementary, my dear Holmes.\" — Sherlock Holmes",
+        "wrongWord": "Holmes",
+        "correctWord": "Watson",
+        "category": "Literature"
+      },
+      {
+        "text": "A marathon is exactly 26.2 kilometers.",
+        "wrongWord": "kilometers",
+        "correctWord": "miles",
+        "category": "Sports"
+      },
+      {
+        "text": "Electrons have a positive electrical charge.",
+        "wrongWord": "positive",
+        "correctWord": "negative",
+        "category": "Physics"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rounds": [
+      {
+        "text": "The Sahara is the largest desert by area in the world.",
+        "wrongWord": "Sahara",
+        "correctWord": "Antarctic",
+        "category": "Geography"
+      },
+      {
+        "text": "Vincent van Gogh cut off his own nose.",
+        "wrongWord": "nose",
+        "correctWord": "ear",
+        "category": "Art"
+      },
+      {
+        "text": "\"May the force be beside you.\" — Star Wars",
+        "wrongWord": "beside",
+        "correctWord": "with",
+        "category": "Movies"
+      },
+      {
+        "text": "Oxygen makes up roughly 78% of Earth's atmosphere.",
+        "wrongWord": "Oxygen",
+        "correctWord": "Nitrogen",
+        "category": "Science"
+      },
+      {
+        "text": "The first Olympics were held in Rome.",
+        "wrongWord": "Rome",
+        "correctWord": "Olympia (Greece)",
+        "category": "History"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rounds": [
+      {
+        "text": "Pi is approximately equal to 3.16.",
+        "wrongWord": "3.16",
+        "correctWord": "3.14",
+        "category": "Math"
+      },
+      {
+        "text": "\"I have a vision.\" — Martin Luther King Jr.",
+        "wrongWord": "vision",
+        "correctWord": "dream",
+        "category": "History"
+      },
+      {
+        "text": "The Eiffel Tower is located in London.",
+        "wrongWord": "London",
+        "correctWord": "Paris",
+        "category": "Geography"
+      },
+      {
+        "text": "A group of wolves is called a flock.",
+        "wrongWord": "flock",
+        "correctWord": "pack",
+        "category": "Nature"
+      },
+      {
+        "text": "The internet was invented in the 1950s.",
+        "wrongWord": "1950s",
+        "correctWord": "1960s (ARPANET, 1969)",
+        "category": "Technology"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rounds": [
+      {
+        "text": "George Washington was the second President of the United States.",
+        "wrongWord": "second",
+        "correctWord": "first",
+        "category": "History"
+      },
+      {
+        "text": "Bananas grow on trees.",
+        "wrongWord": "trees",
+        "correctWord": "herbs (herbaceous plants)",
+        "category": "Nature"
+      },
+      {
+        "text": "\"Here's looking at you, son.\" — Casablanca",
+        "wrongWord": "son",
+        "correctWord": "kid",
+        "category": "Movies"
+      },
+      {
+        "text": "Light from the Sun takes about 8 hours to reach Earth.",
+        "wrongWord": "hours",
+        "correctWord": "minutes",
+        "category": "Astronomy"
+      },
+      {
+        "text": "A blue whale's heart is roughly the size of a basketball.",
+        "wrongWord": "basketball",
+        "correctWord": "small car (Volkswagen Beetle)",
+        "category": "Biology"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rounds": [
+      {
+        "text": "\"Luke, I am your mother.\" — The Empire Strikes Back",
+        "wrongWord": "mother",
+        "correctWord": "father",
+        "category": "Movies"
+      },
+      {
+        "text": "The Great Barrier Reef is located off the coast of Brazil.",
+        "wrongWord": "Brazil",
+        "correctWord": "Australia",
+        "category": "Geography"
+      },
+      {
+        "text": "Thomas Edison invented the telephone.",
+        "wrongWord": "Edison",
+        "correctWord": "Alexander Graham Bell",
+        "category": "History"
+      },
+      {
+        "text": "A hexagon has five sides.",
+        "wrongWord": "five",
+        "correctWord": "six",
+        "category": "Math"
+      },
+      {
+        "text": "The speed of sound is approximately 343 meters per minute.",
+        "wrongWord": "minute",
+        "correctWord": "second",
+        "category": "Physics"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rounds": [
+      {
+        "text": "\"Et tu, Pompey?\" — Julius Caesar (Shakespeare)",
+        "wrongWord": "Pompey",
+        "correctWord": "Brute",
+        "category": "Literature"
+      },
+      {
+        "text": "Marie Curie won Nobel Prizes in Physics and Biology.",
+        "wrongWord": "Biology",
+        "correctWord": "Chemistry",
+        "category": "Science"
+      },
+      {
+        "text": "The capital of Australia is Sydney.",
+        "wrongWord": "Sydney",
+        "correctWord": "Canberra",
+        "category": "Geography"
+      },
+      {
+        "text": "A leap year occurs every five years.",
+        "wrongWord": "five",
+        "correctWord": "four",
+        "category": "General Knowledge"
+      },
+      {
+        "text": "The mitochondria is the wall of the cell.",
+        "wrongWord": "wall",
+        "correctWord": "powerhouse",
+        "category": "Biology"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rounds": [
+      {
+        "text": "\"In the beginning God created the heavens and the ocean.\" — Genesis 1:1",
+        "wrongWord": "ocean",
+        "correctWord": "earth",
+        "category": "Religion"
+      },
+      {
+        "text": "The coldest temperature possible is called relative zero.",
+        "wrongWord": "relative",
+        "correctWord": "absolute",
+        "category": "Physics"
+      },
+      {
+        "text": "The Great Pyramid of Giza is the tallest ancient wonder still standing — it was originally 481 inches tall.",
+        "wrongWord": "inches",
+        "correctWord": "feet",
+        "category": "History"
+      },
+      {
+        "text": "The Wright Brothers made their first flight in Kitty Hawk, Virginia.",
+        "wrongWord": "Virginia",
+        "correctWord": "North Carolina",
+        "category": "History"
+      },
+      {
+        "text": "\"All animals are equal, but some animals are more equal than the rest.\" — George Orwell",
+        "wrongWord": "the rest",
+        "correctWord": "others",
+        "category": "Literature"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rounds": [
+      {
+        "text": "The human nose can detect over 1 million different scents.",
+        "wrongWord": "million",
+        "correctWord": "trillion",
+        "category": "Biology"
+      },
+      {
+        "text": "\"Elementary, my dear Watson\" actually appears in the original Holmes novels.",
+        "wrongWord": "appears",
+        "correctWord": "never appears",
+        "category": "Literature"
+      },
+      {
+        "text": "Russia spans 9 time zones.",
+        "wrongWord": "9",
+        "correctWord": "11",
+        "category": "Geography"
+      },
+      {
+        "text": "The first animal in space was a cat named Laika.",
+        "wrongWord": "cat",
+        "correctWord": "dog",
+        "category": "History"
+      },
+      {
+        "text": "\"With great power comes great accountability.\" — Spider-Man",
+        "wrongWord": "accountability",
+        "correctWord": "responsibility",
+        "category": "Movies"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rounds": [
+      {
+        "text": "Honey never expires because of its low moisture and high alkalinity.",
+        "wrongWord": "alkalinity",
+        "correctWord": "acidity",
+        "category": "Science"
+      },
+      {
+        "text": "\"Ask not what your country can do for you — ask what you can do for your government.\" — JFK",
+        "wrongWord": "government",
+        "correctWord": "country",
+        "category": "History"
+      },
+      {
+        "text": "The painting on the ceiling of the Sistine Chapel was done by Raphael.",
+        "wrongWord": "Raphael",
+        "correctWord": "Michelangelo",
+        "category": "Art"
+      },
+      {
+        "text": "An adult human has 32 permanent bones.",
+        "wrongWord": "bones",
+        "correctWord": "teeth",
+        "category": "Biology"
+      },
+      {
+        "text": "The speed of Earth's rotation means a point on the equator moves at about 1,000 kilometers per hour.",
+        "wrongWord": "kilometers",
+        "correctWord": "miles",
+        "category": "Astronomy"
+      }
+    ]
+  }
+]

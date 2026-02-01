@@ -1,4 +1,4 @@
-export type GameId = 'tempo' | 'odd-angle';
+export type GameId = 'blindspot' | 'odd-angle';
 
 export interface GameResult {
   dayNumber: number;
@@ -20,17 +20,6 @@ export interface GameStats {
 export interface PlayerState {
   games: Record<GameId, GameStats>;
   memberSince: string;
-}
-
-export interface TempoEvent {
-  text: string;
-  year: number;
-}
-
-export interface TempoPuzzle {
-  id: number;
-  theme: string;
-  events: TempoEvent[];
 }
 
 export interface OddAnglePuzzle {

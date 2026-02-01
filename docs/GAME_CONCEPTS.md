@@ -1,21 +1,23 @@
 # GameIQ by DAITIQ — Game Concepts
 
-All original game concepts for the GameIQ daily brain games platform. Tempo and Odd Angle are the launch games. Switchboard and First & Last are documented for potential future addition.
+All original game concepts for the GameIQ daily brain games platform. Blindspot and Odd Angle are the launch games. Switchboard, First & Last, and Tempo are documented for potential future addition.
 
 ---
 
 ## Launch Games
 
-### Tempo
-**One sentence:** 5 events — put them in chronological order.
+### Blindspot
+**One sentence:** Find the one wrong word in each factual statement.
 
-**How it works:** Five cards appear showing historical events, inventions, pop culture moments, or scientific milestones. Drag them into the order you think they happened. Lock in your answer. Scoring: number of cards in the correct position. One daily puzzle. Topics rotate across categories.
+**How it works:** A statement appears that looks true but contains one incorrect word. Tap the word you think is wrong. If correct, the right word is revealed. 5 rounds per puzzle. Score: how many you spotted correctly. Topics span science, history, geography, literature, sports, and more.
 
-**Why it's sticky:** Trivia meets spatial ordering. You often *almost* know — "Was the moon landing before or after Woodstock?" That uncertainty drives daily return. Extremely simple rules — anyone gets it instantly. The friend-challenge variant ("beat my order") writes itself.
+**Why it's sticky:** Tests real knowledge, not trivia recall. The "that can't be right..." moment is addictive. Very fast to play (under 2 minutes). No direct mainstream competitor exists. Works across every knowledge domain. Easy to share and compare with friends.
 
-**Shareable result:** `Tempo #42 — 4/5 ⬆️⬆️⬆️⬆️⬇️`
+**Shareable result:** `Blindspot #42 — 4/5 🟩🟩🟩🟩🟥`
 
-**Content scaling:** AI can generate themed event sets. Low manual effort per puzzle.
+**Content scaling:** AI can generate statements with swapped words. Medium manual review effort (must verify facts are actually wrong in exactly one word).
+
+**Competitive landscape:** No direct competitor found. Closest are general trivia apps, but the "find the wrong word" mechanic is unique.
 
 ---
 
@@ -33,6 +35,21 @@ All original game concepts for the GameIQ daily brain games platform. Tempo and 
 ---
 
 ## Future Games (Backlog)
+
+### Tempo
+**One sentence:** 5 events — put them in chronological order.
+
+**How it works:** Five cards appear showing historical events, inventions, pop culture moments, or scientific milestones. Drag them into the order you think they happened. Lock in your answer. Scoring: number of cards in the correct position. One daily puzzle. Topics rotate across categories.
+
+**Why it's sticky:** Trivia meets spatial ordering. You often *almost* know — "Was the moon landing before or after Woodstock?" That uncertainty drives daily return. Extremely simple rules — anyone gets it instantly.
+
+**Shareable result:** `Tempo #42 — 4/5 ⬆️⬆️⬆️⬆️⬇️`
+
+**Content scaling:** AI can generate themed event sets. Low manual effort per puzzle.
+
+**Note:** Removed from launch lineup — Elevate already has a nearly identical chronological ordering game. Could revisit with a unique twist.
+
+---
 
 ### Switchboard
 **One sentence:** A 4x4 grid of tiles. Each tile has a word. Swap two tiles per move to sort them into 4 rows of 4, where each row shares a secret category — but you don't know the categories.

@@ -3,14 +3,14 @@ import { useGameState } from '../hooks/useGameState';
 import { GameMeta } from '../types';
 
 const GAMES: GameMeta[] = [
-  { id: 'tempo', name: 'Tempo', description: 'Put 5 events in chronological order', icon: '\u23F1', path: '/tempo' },
+  { id: 'blindspot', name: 'Blindspot', description: 'Find the wrong word in each statement', icon: '\uD83D\uDCA1', path: '/blindspot' },
   { id: 'odd-angle', name: 'Odd Angle', description: 'Guess what you see as it zooms out', icon: '\uD83D\uDD0D', path: '/odd-angle' },
 ];
 
 export function Home() {
-  const tempoState = useGameState('tempo');
+  const blindspotState = useGameState('blindspot');
   const oddAngleState = useGameState('odd-angle');
-  const statsMap = { tempo: tempoState.stats, 'odd-angle': oddAngleState.stats };
+  const statsMap = { blindspot: blindspotState.stats, 'odd-angle': oddAngleState.stats };
 
   return (
     <div className="space-y-8">

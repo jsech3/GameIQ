@@ -10,10 +10,21 @@ Daily brain games to keep you sharp. A PWA built with React, TypeScript, and Tai
 
 | Game | Description | Rounds |
 |------|-------------|--------|
-| **Blindspot** | Find the wrong word in each statement | 5/day |
+| **Pricecheck** | Guess if the real value is higher or lower | 5/day |
 | **Trend** | Predict where data goes next (up/down/flat) | 5/day |
 | **Rank** | Order 5 items by a hidden metric | 1/day |
 | **Crossfire** | One word connects two different clues | 5/day |
+
+### Pricecheck
+Shown a real-world item with a suggested value. Guess **Higher** or **Lower**. Points are based on how close the shown value is to the actual value (1-5 pts per round). Max score: 25. Win threshold: 15+.
+
+| Margin | Points |
+|--------|--------|
+| <= 10% | 5 |
+| <= 25% | 4 |
+| <= 40% | 3 |
+| <= 60% | 2 |
+| > 60%  | 1 |
 
 ---
 
@@ -50,41 +61,95 @@ npm run preview
 
 ```
 GameIQ/
+├── .github/
+│   └── workflows/
+│       └── generate-puzzles.yml   # Weekly puzzle auto-generation
+├── scripts/
+│   ├── generate-puzzles.mjs       # Claude API puzzle generator
+│   ├── validate-puzzles.mjs       # Puzzle bank validator
+│   └── bulk-generate.mjs          # Offline bulk generator (no API needed)
 ├── public/
-│   ├── icons/           # PWA icons
-│   └── images/          # OG image
+│   ├── icons/                     # PWA icons
+│   └── images/                    # OG image
 ├── src/
-│   ├── components/      # Shared UI components
+│   ├── components/                # Shared UI components
 │   ├── games/
-│   │   ├── blindspot/   # Blindspot game
-│   │   ├── trend/       # Trend game
-│   │   ├── rank/        # Rank game
-│   │   └── crossfire/   # Crossfire game
-│   ├── hooks/           # Custom React hooks
-│   ├── pages/           # Page components
-│   ├── types/           # TypeScript types
-│   └── utils/           # Utility functions
-├── CHANGELOG.md         # Version history
-├── DEPLOYMENT.md        # Deploy instructions
-└── ROADMAP.md           # Future plans
+│   │   ├── pricecheck/            # Pricecheck game
+│   │   ├── trend/                 # Trend game
+│   │   ├── rank/                  # Rank game
+│   │   └── crossfire/             # Crossfire game
+│   ├── hooks/                     # Custom React hooks
+│   ├── pages/                     # Page components
+│   ├── types/                     # TypeScript types
+│   └── utils/                     # Utility functions
+├── CHANGELOG.md
+├── DEPLOYMENT.md
+└── ROADMAP.md
 ```
 
 ---
 
-## Adding Puzzles
+## Daily Puzzle System
+
+- Each game has **365 puzzles** baked in — a full year of unique daily content
+- Puzzles rotate based on UTC day number
+- Day 0 = February 1, 2026
+- Same puzzle for all users on the same day
+- Progress stored in browser localStorage
+
+---
+
+## Puzzle Generation
+
+### Current content (no setup required)
+All 4 games ship with 365 pre-generated puzzles. The site works out of the box with no API keys or external services.
+
+### Automated weekly refresh (optional)
+A GitHub Actions workflow runs every Sunday at 2 AM UTC to generate 30 fresh puzzles per game using the Claude API. To enable it:
+
+1. Go to your GitHub repo **Settings > Secrets and variables > Actions**
+2. Add a new secret: `ANTHROPIC_API_KEY` with your Anthropic API key
+3. The workflow will run automatically each Sunday, or trigger it manually from the Actions tab
+
+The pipeline:
+- Generates 30 new puzzles per game via Claude (Sonnet)
+- Validates all puzzle banks for structural correctness
+- Runs a production build to catch errors
+- Auto-commits if puzzles changed
+- Keeps each bank at 365 puzzles (rolling window — oldest trimmed)
+
+### Manual generation
+
+```bash
+# Offline bulk generation (no API key needed, uses curated data pools)
+node scripts/bulk-generate.mjs              # all games
+node scripts/bulk-generate.mjs pricecheck   # one game
+
+# API-powered generation (requires ANTHROPIC_API_KEY env var)
+ANTHROPIC_API_KEY=sk-... node scripts/generate-puzzles.mjs
+ANTHROPIC_API_KEY=sk-... node scripts/generate-puzzles.mjs trend
+
+# Validate all puzzle banks
+node scripts/validate-puzzles.mjs
+```
+
+---
+
+## Adding Puzzles Manually
 
 Each game has a `puzzles.json` file. Add new puzzles following the existing schema:
 
-### Blindspot
+### Pricecheck
 ```json
 {
-  "id": 4,
+  "id": 1,
   "rounds": [
     {
-      "text": "Statement with wrong word",
-      "wrongWord": "wrong",
-      "correctWord": "correct",
-      "category": "Science"
+      "category": "Rent",
+      "item": "Average monthly rent in Manhattan, NY",
+      "shownValue": 3200,
+      "actualValue": 4500,
+      "unit": "$"
     }
   ]
 }
@@ -93,7 +158,7 @@ Each game has a `puzzles.json` file. Add new puzzles following the existing sche
 ### Trend
 ```json
 {
-  "id": 6,
+  "id": 1,
   "rounds": [
     {
       "category": "Economics",
@@ -110,7 +175,7 @@ Each game has a `puzzles.json` file. Add new puzzles following the existing sche
 ### Rank
 ```json
 {
-  "id": 11,
+  "id": 1,
   "category": "Sports",
   "question": "Order these teams by championships (most first)",
   "items": [
@@ -123,7 +188,7 @@ Each game has a `puzzles.json` file. Add new puzzles following the existing sche
 ### Crossfire
 ```json
 {
-  "id": 6,
+  "id": 1,
   "rounds": [
     {
       "clue1": { "domain": "Music", "hint": "Musical key" },
@@ -134,15 +199,6 @@ Each game has a `puzzles.json` file. Add new puzzles following the existing sche
   ]
 }
 ```
-
----
-
-## Daily Puzzle System
-
-- Puzzles rotate based on UTC day number
-- Day 0 = February 1, 2026
-- Same puzzle for all users on the same day
-- Progress stored in browser localStorage
 
 ---
 

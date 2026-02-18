@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef, useMemo } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { useDailyPuzzle } from '../../hooks/useDailyPuzzle';
 import { useGameState } from '../../hooks/useGameState';
 import { ResultModal } from '../../components/ResultModal';
@@ -14,12 +14,15 @@ function shuffleArray<T>(array: T[]): T[] {
   return shuffled;
 }
 
-function DraggableItem({
+function RankItemRow({
   item,
   index,
+  totalItems,
   correctPosition,
   revealed,
   isCorrect,
+  onMoveUp,
+  onMoveDown,
   onDragStart,
   onDragOver,
   onDrop,
@@ -28,47 +31,20 @@ function DraggableItem({
 }: {
   item: RankItem;
   index: number;
+  totalItems: number;
   correctPosition: number;
   revealed: boolean;
   isCorrect: boolean;
+  onMoveUp: () => void;
+  onMoveDown: () => void;
   onDragStart: (index: number) => void;
   onDragOver: (index: number) => void;
   onDrop: () => void;
   isDragging: boolean;
   isDragOver: boolean;
 }) {
-  const touchStartY = useRef(0);
-  const [isTouching, setIsTouching] = useState(false);
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartY.current = e.touches[0].clientY;
-    setIsTouching(true);
-    onDragStart(index);
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (!isTouching) return;
-    const currentY = e.touches[0].clientY;
-    const element = document.elementFromPoint(
-      e.touches[0].clientX,
-      currentY
-    ) as HTMLElement;
-    const itemElement = element?.closest('[data-item-index]');
-    if (itemElement) {
-      const targetIndex = parseInt(
-        itemElement.getAttribute('data-item-index') || '0'
-      );
-      onDragOver(targetIndex);
-    }
-  };
-
-  const handleTouchEnd = () => {
-    setIsTouching(false);
-    onDrop();
-  };
-
   let className =
-    'relative flex items-center gap-3 p-4 rounded-xl border-2 transition-all duration-200 select-none ';
+    'relative flex items-center gap-2 p-4 rounded-xl border-2 transition-all duration-200 select-none ';
 
   if (revealed) {
     if (isCorrect) {
@@ -81,8 +57,7 @@ function DraggableItem({
   } else if (isDragOver) {
     className += 'bg-surface-700 border-brand-600 ';
   } else {
-    className +=
-      'bg-surface-800 border-surface-700 hover:border-surface-600 cursor-grab active:cursor-grabbing ';
+    className += 'bg-surface-800 border-surface-700 ';
   }
 
   return (
@@ -95,13 +70,10 @@ function DraggableItem({
         onDragOver(index);
       }}
       onDrop={onDrop}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
       className={className}
     >
       <div
-        className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm ${
+        className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm flex-shrink-0 ${
           revealed
             ? isCorrect
               ? 'bg-green-500/20 text-green-400'
@@ -111,7 +83,7 @@ function DraggableItem({
       >
         {index + 1}
       </div>
-      <div className="flex-1">
+      <div className="flex-1 min-w-0">
         <span className="font-medium">{item.name}</span>
         {revealed && (
           <span className="ml-2 text-xs text-surface-200 animate-fade-in">
@@ -120,24 +92,39 @@ function DraggableItem({
         )}
       </div>
       {!revealed && (
-        <div className="text-surface-700">
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
+        <div className="flex flex-col gap-1 flex-shrink-0">
+          <button
+            onClick={(e) => { e.stopPropagation(); onMoveUp(); }}
+            disabled={index === 0}
+            className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all btn-tap ${
+              index === 0
+                ? 'bg-surface-800 text-surface-700 cursor-not-allowed'
+                : 'bg-surface-700 text-surface-200 hover:bg-brand-600 hover:text-white active:scale-90'
+            }`}
+            aria-label="Move up"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 8h16M4 16h16"
-            />
-          </svg>
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 15l7-7 7 7" />
+            </svg>
+          </button>
+          <button
+            onClick={(e) => { e.stopPropagation(); onMoveDown(); }}
+            disabled={index === totalItems - 1}
+            className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all btn-tap ${
+              index === totalItems - 1
+                ? 'bg-surface-800 text-surface-700 cursor-not-allowed'
+                : 'bg-surface-700 text-surface-200 hover:bg-brand-600 hover:text-white active:scale-90'
+            }`}
+            aria-label="Move down"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
         </div>
       )}
       {revealed && !isCorrect && (
-        <div className="text-xs text-surface-200 animate-fade-in">
+        <div className="text-xs text-surface-200 animate-fade-in flex-shrink-0">
           #{correctPosition + 1}
         </div>
       )}
@@ -191,6 +178,14 @@ export function Rank() {
     setDragIndex(null);
     setDragOverIndex(null);
   }, [dragIndex, dragOverIndex, items]);
+
+  const moveItem = useCallback((fromIndex: number, toIndex: number) => {
+    if (toIndex < 0 || toIndex >= items.length) return;
+    const newItems = [...items];
+    const [movedItem] = newItems.splice(fromIndex, 1);
+    newItems.splice(toIndex, 0, movedItem);
+    setItems(newItems);
+  }, [items]);
 
   const handleSubmit = useCallback(() => {
     if (revealed) return;
@@ -267,12 +262,15 @@ export function Rank() {
               className="animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <DraggableItem
+              <RankItemRow
                 item={item}
                 index={index}
+                totalItems={items.length}
                 correctPosition={getCorrectPosition(item)}
                 revealed={true}
                 isCorrect={isItemCorrect(index)}
+                onMoveUp={() => {}}
+                onMoveDown={() => {}}
                 onDragStart={() => {}}
                 onDragOver={() => {}}
                 onDrop={() => {}}
@@ -345,13 +343,16 @@ export function Rank() {
       {/* Draggable items */}
       <div className="space-y-2">
         {items.map((item, index) => (
-          <DraggableItem
+          <RankItemRow
             key={item.name}
             item={item}
             index={index}
+            totalItems={items.length}
             correctPosition={0}
             revealed={false}
             isCorrect={false}
+            onMoveUp={() => moveItem(index, index - 1)}
+            onMoveDown={() => moveItem(index, index + 1)}
             onDragStart={handleDragStart}
             onDragOver={handleDragOver}
             onDrop={handleDrop}
@@ -370,7 +371,7 @@ export function Rank() {
       </button>
 
       <p className="text-center text-xs text-surface-700">
-        Drag items up or down to reorder
+        Use the arrows to reorder items
       </p>
     </div>
   );

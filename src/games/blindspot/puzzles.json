@@ -9,28 +9,28 @@
         "category": "Geography"
       },
       {
-        "text": "Honey never spoils due to its low moisture content and high alkalinity.",
-        "wrongWord": "alkalinity",
-        "correctWord": "acidity",
+        "text": "Water boils at 100 degrees Fahrenheit at sea level.",
+        "wrongWord": "Fahrenheit",
+        "correctWord": "Celsius",
         "category": "Science"
       },
       {
-        "text": "Cleopatra lived closer in time to the building of the Great Pyramid than to the invention of the iPhone.",
-        "wrongWord": "building of the Great Pyramid",
-        "correctWord": "invention of the iPhone",
-        "category": "History"
+        "text": "The Mona Lisa was painted by Michelangelo during the Italian Renaissance.",
+        "wrongWord": "Michelangelo",
+        "correctWord": "Leonardo da Vinci",
+        "category": "Art"
       },
       {
-        "text": "Bananas are technically classified as a type of tree.",
-        "wrongWord": "tree",
-        "correctWord": "herb",
-        "category": "Botany"
+        "text": "The human body has 204 bones in the adult skeleton.",
+        "wrongWord": "204",
+        "correctWord": "206",
+        "category": "Biology"
       },
       {
-        "text": "Russia spans 9 time zones, more than any other country.",
-        "wrongWord": "9",
-        "correctWord": "11",
-        "category": "Geography"
+        "text": "Jupiter is the largest planet in our solar system and has a famous Great Blue Spot.",
+        "wrongWord": "Blue",
+        "correctWord": "Red",
+        "category": "Astronomy"
       }
     ]
   },
@@ -38,34 +38,34 @@
     "id": 2,
     "rounds": [
       {
-        "text": "The human nose can detect over 1 million distinct scents.",
-        "wrongWord": "million",
-        "correctWord": "trillion",
-        "category": "Biology"
+        "text": "Shakespeare was born in London, England in 1564.",
+        "wrongWord": "London",
+        "correctWord": "Stratford-upon-Avon",
+        "category": "Literature"
       },
       {
-        "text": "Thomas Edison is credited with inventing the telephone in the 1870s.",
-        "wrongWord": "Edison",
-        "correctWord": "Alexander Graham Bell",
+        "text": "Diamonds are made primarily of compressed nitrogen atoms.",
+        "wrongWord": "nitrogen",
+        "correctWord": "carbon",
+        "category": "Science"
+      },
+      {
+        "text": "The speed of light is approximately 186,000 kilometers per second.",
+        "wrongWord": "kilometers",
+        "correctWord": "miles",
+        "category": "Physics"
+      },
+      {
+        "text": "The Titanic sank in 1914 after hitting an iceberg in the North Atlantic.",
+        "wrongWord": "1914",
+        "correctWord": "1912",
         "category": "History"
       },
       {
-        "text": "The capital of Australia is Sydney, the country's most populous city.",
-        "wrongWord": "Sydney",
-        "correctWord": "Canberra",
-        "category": "Geography"
-      },
-      {
-        "text": "Mars is the hottest planet in our solar system due to its thick atmosphere.",
-        "wrongWord": "Mars",
-        "correctWord": "Venus",
-        "category": "Astronomy"
-      },
-      {
-        "text": "Octopuses have three hearts and red blood.",
-        "wrongWord": "red",
-        "correctWord": "blue",
-        "category": "Biology"
+        "text": "A baseball team fields eleven players at one time during a game.",
+        "wrongWord": "eleven",
+        "correctWord": "nine",
+        "category": "Sports"
       }
     ]
   },
@@ -73,34 +73,34 @@
     "id": 3,
     "rounds": [
       {
-        "text": "Napoleon Bonaparte was known for being unusually short, standing around 5'2\".",
-        "wrongWord": "short",
-        "correctWord": "average height (5'7\")",
-        "category": "History"
-      },
-      {
-        "text": "Glass is technically a slow-moving liquid, which is why old windows are thicker at the bottom.",
-        "wrongWord": "liquid",
-        "correctWord": "amorphous solid",
-        "category": "Science"
-      },
-      {
-        "text": "The Great Wall of China is the only man-made structure visible from space with the naked eye.",
-        "wrongWord": "is",
-        "correctWord": "is not",
-        "category": "Geography"
-      },
-      {
-        "text": "Goldfish have a memory span of about three seconds.",
-        "wrongWord": "three seconds",
-        "correctWord": "several months",
+        "text": "The heart has three chambers in the human cardiovascular system.",
+        "wrongWord": "three",
+        "correctWord": "four",
         "category": "Biology"
       },
       {
-        "text": "Vikings wore horned helmets into battle.",
-        "wrongWord": "horned",
-        "correctWord": "plain (no horns)",
-        "category": "History"
+        "text": "The Eiffel Tower is located in Berlin and was completed in 1889.",
+        "wrongWord": "Berlin",
+        "correctWord": "Paris",
+        "category": "Geography"
+      },
+      {
+        "text": "Beethoven composed his famous Fifth Symphony while living in London.",
+        "wrongWord": "London",
+        "correctWord": "Vienna",
+        "category": "Music"
+      },
+      {
+        "text": "The first programmable computer was designed by Charles Dickens in the 1830s.",
+        "wrongWord": "Dickens",
+        "correctWord": "Babbage",
+        "category": "Technology"
+      },
+      {
+        "text": "Sushi originated as a traditional dish in China centuries ago.",
+        "wrongWord": "China",
+        "correctWord": "Japan",
+        "category": "Food"
       }
     ]
   },
@@ -108,34 +108,34 @@
     "id": 4,
     "rounds": [
       {
-        "text": "Shakespeare is credited with coining roughly 170 English words still in use today.",
-        "wrongWord": "170",
-        "correctWord": "1,700",
-        "category": "Literature"
-      },
-      {
-        "text": "Mount Everest grows about 4 centimeters taller each year due to tectonic activity.",
-        "wrongWord": "centimeters",
-        "correctWord": "millimeters",
-        "category": "Geology"
-      },
-      {
-        "text": "A group of flamingos is called a flock.",
-        "wrongWord": "flock",
-        "correctWord": "flamboyance",
-        "category": "Nature"
-      },
-      {
-        "text": "The famous phrase \"Elementary, my dear Watson\" appears frequently in Arthur Conan Doyle's original Sherlock Holmes novels.",
-        "wrongWord": "frequently",
-        "correctWord": "never",
-        "category": "Literature"
-      },
-      {
-        "text": "Switzerland has been a member of the European Union since 1995.",
-        "wrongWord": "member",
-        "correctWord": "not a member",
+        "text": "Mount Kilimanjaro, the tallest mountain in Africa, is located in Kenya.",
+        "wrongWord": "Kenya",
+        "correctWord": "Tanzania",
         "category": "Geography"
+      },
+      {
+        "text": "Photosynthesis converts sunlight into chemical energy using chlorophyll found in the mitochondria.",
+        "wrongWord": "mitochondria",
+        "correctWord": "chloroplasts",
+        "category": "Biology"
+      },
+      {
+        "text": "The Declaration of Independence was signed in 1778 in Philadelphia.",
+        "wrongWord": "1778",
+        "correctWord": "1776",
+        "category": "History"
+      },
+      {
+        "text": "Gold has the chemical symbol Go on the periodic table.",
+        "wrongWord": "Go",
+        "correctWord": "Au",
+        "category": "Science"
+      },
+      {
+        "text": "An octagon has six sides and six angles.",
+        "wrongWord": "six",
+        "correctWord": "eight",
+        "category": "Math"
       }
     ]
   },
@@ -143,34 +143,34 @@
     "id": 5,
     "rounds": [
       {
-        "text": "Babies are born with around 270 bones, which fuse down to 180 by adulthood.",
-        "wrongWord": "180",
-        "correctWord": "206",
+        "text": "Venus is the closest planet to the Sun in our solar system.",
+        "wrongWord": "Venus",
+        "correctWord": "Mercury",
+        "category": "Astronomy"
+      },
+      {
+        "text": "The Wright Brothers made their first powered flight at Kitty Hawk in 1901.",
+        "wrongWord": "1901",
+        "correctWord": "1903",
+        "category": "History"
+      },
+      {
+        "text": "DNA stands for deoxyribonucleic compound in molecular biology.",
+        "wrongWord": "compound",
+        "correctWord": "acid",
         "category": "Biology"
       },
       {
-        "text": "Sushi refers specifically to the raw fish used in Japanese cuisine.",
-        "wrongWord": "raw fish",
-        "correctWord": "vinegared rice",
-        "category": "Food"
+        "text": "The largest organ in the human body is the liver.",
+        "wrongWord": "liver",
+        "correctWord": "skin",
+        "category": "Medicine"
       },
       {
-        "text": "The Canary Islands were named after the canary birds native to the region.",
-        "wrongWord": "canary birds",
-        "correctWord": "dogs (Latin: canis)",
+        "text": "The currency of Japan is the Won, used throughout the country.",
+        "wrongWord": "Won",
+        "correctWord": "Yen",
         "category": "Geography"
-      },
-      {
-        "text": "Lightning never strikes the same place twice.",
-        "wrongWord": "never",
-        "correctWord": "frequently",
-        "category": "Science"
-      },
-      {
-        "text": "The painting on the ceiling of the Sistine Chapel took Michelangelo roughly 20 years to complete.",
-        "wrongWord": "20",
-        "correctWord": "4",
-        "category": "Art"
       }
     ]
   },
@@ -178,34 +178,34 @@
     "id": 6,
     "rounds": [
       {
-        "text": "A jiffy is just slang with no actual scientific definition.",
-        "wrongWord": "no actual scientific definition",
-        "correctWord": "an actual unit of time in physics and computing",
-        "category": "Science"
-      },
-      {
-        "text": "Chameleons change color primarily for camouflage.",
-        "wrongWord": "camouflage",
-        "correctWord": "communication and temperature regulation",
-        "category": "Biology"
-      },
-      {
-        "text": "The blood in your veins is blue until it is exposed to oxygen.",
-        "wrongWord": "blue",
-        "correctWord": "always red (dark red when deoxygenated)",
-        "category": "Biology"
-      },
-      {
-        "text": "Albert Einstein failed math as a student.",
-        "wrongWord": "failed",
-        "correctWord": "excelled at",
+        "text": "The Statue of Liberty was a gift from Britain to the United States in the 1880s.",
+        "wrongWord": "Britain",
+        "correctWord": "France",
         "category": "History"
       },
       {
-        "text": "Brazil is named after the country's founder, Pedro Brazil.",
-        "wrongWord": "founder, Pedro Brazil",
-        "correctWord": "brazilwood tree",
+        "text": "The Nile River flows through Cairo and empties into the Red Sea.",
+        "wrongWord": "Red",
+        "correctWord": "Mediterranean",
         "category": "Geography"
+      },
+      {
+        "text": "Oxygen makes up approximately 50 percent of Earth's atmosphere.",
+        "wrongWord": "50",
+        "correctWord": "21",
+        "category": "Science"
+      },
+      {
+        "text": "The novel '1984' was written by Aldous Huxley as a dystopian warning.",
+        "wrongWord": "Huxley",
+        "correctWord": "Orwell",
+        "category": "Literature"
+      },
+      {
+        "text": "A marathon race covers a distance of 24.2 miles.",
+        "wrongWord": "24.2",
+        "correctWord": "26.2",
+        "category": "Sports"
       }
     ]
   },
@@ -213,34 +213,34 @@
     "id": 7,
     "rounds": [
       {
-        "text": "Humans use only 10% of their brains at any given time.",
-        "wrongWord": "10%",
-        "correctWord": "virtually all",
-        "category": "Biology"
+        "text": "Saturn is famous for its prominent rings made primarily of gas particles.",
+        "wrongWord": "gas",
+        "correctWord": "ice",
+        "category": "Astronomy"
       },
       {
-        "text": "The brace position on airplanes is designed to preserve dental records for identification.",
-        "wrongWord": "preserve dental records",
-        "correctWord": "reduce injury during impact",
-        "category": "General Knowledge"
+        "text": "The periodic table was first organized by Albert Einstein in the 1860s.",
+        "wrongWord": "Einstein",
+        "correctWord": "Mendeleev",
+        "category": "Science"
       },
       {
-        "text": "Fortune cookies originated in China before spreading to America.",
-        "wrongWord": "China",
-        "correctWord": "Japan (or San Francisco)",
-        "category": "Food"
+        "text": "The Berlin Wall fell in 1991, reuniting East and West Germany.",
+        "wrongWord": "1991",
+        "correctWord": "1989",
+        "category": "History"
       },
       {
-        "text": "Bats are completely blind and navigate solely by echolocation.",
-        "wrongWord": "blind",
-        "correctWord": "not blind (most species can see)",
-        "category": "Biology"
+        "text": "Insulin is produced by the kidneys to regulate blood sugar levels.",
+        "wrongWord": "kidneys",
+        "correctWord": "pancreas",
+        "category": "Medicine"
       },
       {
-        "text": "The word \"robot\" was coined by Isaac Asimov in his science fiction stories.",
-        "wrongWord": "Isaac Asimov",
-        "correctWord": "Karel Čapek",
-        "category": "Literature"
+        "text": "The word 'alphabet' derives from alpha and gamma, the first Greek letters.",
+        "wrongWord": "gamma",
+        "correctWord": "beta",
+        "category": "Language"
       }
     ]
   },
@@ -248,34 +248,34 @@
     "id": 8,
     "rounds": [
       {
-        "text": "The Hundred Years' War between England and France lasted exactly 100 years.",
-        "wrongWord": "100",
-        "correctWord": "116",
-        "category": "History"
+        "text": "The Pacific Ocean is the smallest ocean on Earth by surface area.",
+        "wrongWord": "smallest",
+        "correctWord": "largest",
+        "category": "Geography"
       },
       {
-        "text": "Peanuts are classified as tree nuts.",
-        "wrongWord": "tree nuts",
-        "correctWord": "legumes",
-        "category": "Food"
+        "text": "Electrons carry a positive electrical charge in an atom.",
+        "wrongWord": "positive",
+        "correctWord": "negative",
+        "category": "Science"
       },
       {
-        "text": "The inventor of the Pringles can is buried in one, per his final request.",
-        "wrongWord": "buried",
-        "correctWord": "has his ashes stored",
-        "category": "General Knowledge"
+        "text": "Vincent van Gogh painted 'Starry Night' while living in Spain.",
+        "wrongWord": "Spain",
+        "correctWord": "France",
+        "category": "Art"
       },
       {
-        "text": "Ostriches bury their heads in the sand when frightened.",
-        "wrongWord": "bury their heads in the sand",
-        "correctWord": "lie flat against the ground",
-        "category": "Biology"
+        "text": "The FIFA World Cup is held every five years for national soccer teams.",
+        "wrongWord": "five",
+        "correctWord": "four",
+        "category": "Sports"
       },
       {
-        "text": "The hashtag symbol (#) is technically called an ampersand.",
-        "wrongWord": "ampersand",
-        "correctWord": "octothorpe",
-        "category": "Language"
+        "text": "Thomas Edison is credited with inventing the telephone in 1876.",
+        "wrongWord": "Edison",
+        "correctWord": "Bell",
+        "category": "Technology"
       }
     ]
   },
@@ -283,34 +283,34 @@
     "id": 9,
     "rounds": [
       {
-        "text": "Wombat droppings are round, which prevents them from rolling away on sloped terrain.",
-        "wrongWord": "round",
-        "correctWord": "cube-shaped",
-        "category": "Nature"
-      },
-      {
-        "text": "The national animal of Scotland is the stag.",
-        "wrongWord": "stag",
-        "correctWord": "unicorn",
+        "text": "The tallest building in the world is the Burj Khalifa in Abu Dhabi.",
+        "wrongWord": "Abu Dhabi",
+        "correctWord": "Dubai",
         "category": "Geography"
       },
       {
-        "text": "An average cumulus cloud weighs roughly 1,000 pounds.",
-        "wrongWord": "1,000 pounds",
-        "correctWord": "1.1 million pounds",
+        "text": "Bats are the only birds capable of sustained true flight.",
+        "wrongWord": "birds",
+        "correctWord": "mammals",
+        "category": "Biology"
+      },
+      {
+        "text": "The speed of sound at sea level is approximately 543 meters per second.",
+        "wrongWord": "543",
+        "correctWord": "343",
+        "category": "Physics"
+      },
+      {
+        "text": "Marie Curie won two Nobel Prizes in Physics and Biology.",
+        "wrongWord": "Biology",
+        "correctWord": "Chemistry",
         "category": "Science"
       },
       {
-        "text": "Strawberries are a true berry, botanically speaking.",
-        "wrongWord": "are",
-        "correctWord": "are not",
-        "category": "Botany"
-      },
-      {
-        "text": "The ancient Olympics awarded solid gold medals to winners.",
-        "wrongWord": "gold",
-        "correctWord": "olive wreath (no medals at all)",
-        "category": "Sports"
+        "text": "The piano has 76 keys in a standard full-size instrument.",
+        "wrongWord": "76",
+        "correctWord": "88",
+        "category": "Music"
       }
     ]
   },
@@ -318,34 +318,34 @@
     "id": 10,
     "rounds": [
       {
-        "text": "Sharks must keep swimming to stay alive because they cannot breathe while stationary.",
-        "wrongWord": "cannot",
-        "correctWord": "many species can",
-        "category": "Biology"
-      },
-      {
-        "text": "The original Star Wars film was the first movie to use CGI.",
-        "wrongWord": "Star Wars",
-        "correctWord": "Westworld (1973)",
-        "category": "Movies"
-      },
-      {
-        "text": "Redheads require less anesthesia during surgery than people with other hair colors.",
-        "wrongWord": "less",
-        "correctWord": "more",
-        "category": "Medicine"
-      },
-      {
-        "text": "Mount Kilimanjaro is a dormant volcano located in Kenya.",
-        "wrongWord": "Kenya",
-        "correctWord": "Tanzania",
+        "text": "Mount Everest sits on the border between Nepal and India in the Himalayas.",
+        "wrongWord": "India",
+        "correctWord": "China",
         "category": "Geography"
       },
       {
-        "text": "The total surface area of human lungs is roughly the size of a parking space.",
-        "wrongWord": "parking space",
-        "correctWord": "tennis court",
-        "category": "Biology"
+        "text": "Abraham Lincoln delivered the Gettysburg Address in 1865 during the Civil War.",
+        "wrongWord": "1865",
+        "correctWord": "1863",
+        "category": "History"
+      },
+      {
+        "text": "HTML stands for HyperText Markup Logic in web development.",
+        "wrongWord": "Logic",
+        "correctWord": "Language",
+        "category": "Technology"
+      },
+      {
+        "text": "The chemical formula for table salt is NaO.",
+        "wrongWord": "NaO",
+        "correctWord": "NaCl",
+        "category": "Science"
+      },
+      {
+        "text": "A sonnet traditionally consists of twelve lines of poetry.",
+        "wrongWord": "twelve",
+        "correctWord": "fourteen",
+        "category": "Literature"
       }
     ]
   },
@@ -353,34 +353,34 @@
     "id": 11,
     "rounds": [
       {
-        "text": "Oxford University was founded after the Aztec Empire began.",
-        "wrongWord": "after",
-        "correctWord": "before (Oxford ~1096, Aztecs ~1428)",
-        "category": "History"
-      },
-      {
-        "text": "Carrots were originally white before being selectively bred to be orange.",
-        "wrongWord": "white",
-        "correctWord": "purple and yellow",
-        "category": "Food"
-      },
-      {
-        "text": "The yo-yo was originally developed as a weapon in ancient Greece.",
-        "wrongWord": "Greece",
-        "correctWord": "the Philippines",
-        "category": "History"
-      },
-      {
-        "text": "A photon of light takes about 8 minutes to travel from the Sun's surface to Earth, and about 100 years from the Sun's core to its surface.",
-        "wrongWord": "100",
-        "correctWord": "100,000+",
+        "text": "The Hubble Space Telescope was launched in 1985 by NASA.",
+        "wrongWord": "1985",
+        "correctWord": "1990",
         "category": "Astronomy"
       },
       {
-        "text": "Humans share approximately 90% of their DNA with bananas.",
-        "wrongWord": "90%",
-        "correctWord": "60%",
-        "category": "Biology"
+        "text": "Hemoglobin carries oxygen through the blood using copper atoms.",
+        "wrongWord": "copper",
+        "correctWord": "iron",
+        "category": "Medicine"
+      },
+      {
+        "text": "Basketball was invented by James Naismith in Toronto, Canada.",
+        "wrongWord": "Toronto",
+        "correctWord": "Springfield",
+        "category": "Sports"
+      },
+      {
+        "text": "The Great Barrier Reef is located off the western coast of Australia.",
+        "wrongWord": "western",
+        "correctWord": "northeastern",
+        "category": "Geography"
+      },
+      {
+        "text": "The binary number system uses the digits 0 through 2.",
+        "wrongWord": "2",
+        "correctWord": "1",
+        "category": "Math"
       }
     ]
   },
@@ -388,34 +388,34 @@
     "id": 12,
     "rounds": [
       {
-        "text": "The Dead Sea is a sea located between Israel and Jordan.",
-        "wrongWord": "sea",
-        "correctWord": "lake",
-        "category": "Geography"
+        "text": "Newton's second law states that force equals mass times velocity.",
+        "wrongWord": "velocity",
+        "correctWord": "acceleration",
+        "category": "Physics"
       },
       {
-        "text": "Coca-Cola was originally green before artificial coloring was added.",
-        "wrongWord": "green",
-        "correctWord": "caramel-colored (it was never green)",
-        "category": "General Knowledge"
-      },
-      {
-        "text": "A day on Venus is shorter than a year on Venus.",
-        "wrongWord": "shorter",
-        "correctWord": "longer",
-        "category": "Astronomy"
-      },
-      {
-        "text": "Cleopatra was Egyptian by ethnicity.",
-        "wrongWord": "Egyptian",
-        "correctWord": "Greek (Macedonian)",
+        "text": "The Renaissance began in Germany during the 14th century.",
+        "wrongWord": "Germany",
+        "correctWord": "Italy",
         "category": "History"
       },
       {
-        "text": "A mantis shrimp can punch with the force of a bullet, making its claws the hardest biological substance known.",
-        "wrongWord": "hardest biological substance",
-        "correctWord": "fastest strike (tooth enamel and limpet teeth are harder)",
-        "category": "Biology"
+        "text": "The longest river in Europe is the Danube, flowing through many countries.",
+        "wrongWord": "Danube",
+        "correctWord": "Volga",
+        "category": "Geography"
+      },
+      {
+        "text": "Pluto was reclassified as a dwarf planet in 2004 by the IAU.",
+        "wrongWord": "2004",
+        "correctWord": "2006",
+        "category": "Astronomy"
+      },
+      {
+        "text": "Penicillin was discovered by Alexander Graham Bell in 1928.",
+        "wrongWord": "Bell",
+        "correctWord": "Fleming",
+        "category": "Medicine"
       }
     ]
   },
@@ -423,34 +423,34 @@
     "id": 13,
     "rounds": [
       {
-        "text": "Maine is the closest US state to the continent of Asia.",
-        "wrongWord": "Asia",
-        "correctWord": "Africa",
+        "text": "Iceland's capital Reykjavik is the southernmost capital city in Europe.",
+        "wrongWord": "southernmost",
+        "correctWord": "northernmost",
         "category": "Geography"
       },
       {
-        "text": "Tomatoes were once considered poisonous by Europeans because they are related to deadly nightshade.",
-        "wrongWord": "related to deadly nightshade",
-        "correctWord": "their acid reacted with lead pewter plates, causing lead poisoning",
-        "category": "History"
+        "text": "Charles Darwin published 'On the Origin of Species' in 1869.",
+        "wrongWord": "1869",
+        "correctWord": "1859",
+        "category": "Science"
       },
       {
-        "text": "The dot over a lowercase 'i' and 'j' is called a serif.",
-        "wrongWord": "serif",
-        "correctWord": "tittle",
-        "category": "Language"
+        "text": "The Sistine Chapel ceiling was painted by Raphael over four years.",
+        "wrongWord": "Raphael",
+        "correctWord": "Michelangelo",
+        "category": "Art"
       },
       {
-        "text": "An average person walks the equivalent of three times around the Earth in their lifetime.",
-        "wrongWord": "three",
-        "correctWord": "five",
-        "category": "General Knowledge"
+        "text": "An Olympic swimming pool is 25 meters long by regulation standards.",
+        "wrongWord": "25",
+        "correctWord": "50",
+        "category": "Sports"
       },
       {
-        "text": "The shortest war in history lasted 45 minutes, between Britain and Zanzibar.",
-        "wrongWord": "45",
-        "correctWord": "38",
-        "category": "History"
+        "text": "Espresso coffee originated in France in the early 20th century.",
+        "wrongWord": "France",
+        "correctWord": "Italy",
+        "category": "Food"
       }
     ]
   },
@@ -458,34 +458,34 @@
     "id": 14,
     "rounds": [
       {
-        "text": "Honey bees can recognize individual human voices.",
-        "wrongWord": "voices",
-        "correctWord": "faces",
-        "category": "Biology"
-      },
-      {
-        "text": "Greenland is the largest continent in the world.",
-        "wrongWord": "continent",
-        "correctWord": "island",
+        "text": "The Panama Canal connects the Atlantic Ocean and the Indian Ocean.",
+        "wrongWord": "Indian",
+        "correctWord": "Pacific",
         "category": "Geography"
       },
       {
-        "text": "The patent for the fire hydrant was lost in a flood.",
-        "wrongWord": "flood",
-        "correctWord": "fire",
+        "text": "Sound cannot travel through a liquid because it needs a medium.",
+        "wrongWord": "liquid",
+        "correctWord": "vacuum",
+        "category": "Physics"
+      },
+      {
+        "text": "The Roman Empire fell in 376 AD, marking the end of an era.",
+        "wrongWord": "376",
+        "correctWord": "476",
         "category": "History"
       },
       {
-        "text": "An alligator cannot stick out its tongue.",
-        "wrongWord": "alligator",
-        "correctWord": "crocodile",
+        "text": "Spiders are classified as insects with eight legs.",
+        "wrongWord": "insects",
+        "correctWord": "arachnids",
         "category": "Biology"
       },
       {
-        "text": "Saudi Arabia imports sand from Australia for construction purposes.",
-        "wrongWord": "sand",
-        "correctWord": "camels",
-        "category": "Geography"
+        "text": "The Pythagorean theorem applies to equilateral triangles in geometry.",
+        "wrongWord": "equilateral",
+        "correctWord": "right",
+        "category": "Math"
       }
     ]
   },
@@ -493,34 +493,34 @@
     "id": 15,
     "rounds": [
       {
-        "text": "Venus is the only planet in our solar system that rotates clockwise.",
-        "wrongWord": "only",
-        "correctWord": "one of two (Venus and Uranus)",
+        "text": "The Kremlin is located in St. Petersburg and serves as Russia's seat of power.",
+        "wrongWord": "St. Petersburg",
+        "correctWord": "Moscow",
+        "category": "Geography"
+      },
+      {
+        "text": "Galileo Galilei first observed the moons of Saturn through his telescope.",
+        "wrongWord": "Saturn",
+        "correctWord": "Jupiter",
         "category": "Astronomy"
       },
       {
-        "text": "The longest English word without a repeating letter is 'uncopyrightable' at 15 letters.",
-        "wrongWord": "uncopyrightable",
-        "correctWord": "subdermatoglyphic (17 letters)",
-        "category": "Language"
+        "text": "The Magna Carta was signed in 1315, limiting the power of the English king.",
+        "wrongWord": "1315",
+        "correctWord": "1215",
+        "category": "History"
       },
       {
-        "text": "Elephants are the only mammals that can't jump.",
-        "wrongWord": "only",
-        "correctWord": "not the only (hippos, rhinos, sloths also can't)",
-        "category": "Biology"
+        "text": "Vitamin C is also known as ascorbic enzyme in nutritional science.",
+        "wrongWord": "enzyme",
+        "correctWord": "acid",
+        "category": "Medicine"
       },
       {
-        "text": "The Hawaiian pizza was invented in Hawaii.",
-        "wrongWord": "Hawaii",
-        "correctWord": "Canada",
-        "category": "Food"
-      },
-      {
-        "text": "There are fewer trees on Earth than stars in the Milky Way galaxy.",
-        "wrongWord": "fewer",
-        "correctWord": "more (roughly 3 trillion trees vs. 100-400 billion stars)",
-        "category": "Science"
+        "text": "The number pi is approximately equal to 3.16 and is irrational.",
+        "wrongWord": "3.16",
+        "correctWord": "3.14",
+        "category": "Math"
       }
     ]
   },
@@ -528,34 +528,34 @@
     "id": 16,
     "rounds": [
       {
-        "text": "The Amazon rainforest produces 20% of the world's oxygen, earning it the title 'lungs of the Earth.'",
-        "wrongWord": "20%",
-        "correctWord": "roughly 0% net (it consumes nearly as much as it produces)",
+        "text": "Nitrogen is the most abundant gas in Earth's atmosphere at about 58 percent.",
+        "wrongWord": "58",
+        "correctWord": "78",
         "category": "Science"
       },
       {
-        "text": "Nero played the fiddle while Rome burned.",
-        "wrongWord": "fiddle",
-        "correctWord": "nothing (the fiddle hadn't been invented; he likely wasn't even in Rome)",
-        "category": "History"
+        "text": "Pablo Picasso co-founded the art movement known as Impressionism.",
+        "wrongWord": "Impressionism",
+        "correctWord": "Cubism",
+        "category": "Art"
       },
       {
-        "text": "The tongue map shows that sweetness is detected only at the tip of the tongue.",
-        "wrongWord": "only at the tip",
-        "correctWord": "across all areas (the tongue map is a myth)",
-        "category": "Biology"
+        "text": "Herman Melville wrote the classic novel 'Moby-Dick' about a great white shark.",
+        "wrongWord": "shark",
+        "correctWord": "whale",
+        "category": "Literature"
       },
       {
-        "text": "George Washington had wooden teeth.",
-        "wrongWord": "wooden",
-        "correctWord": "ivory, gold, and animal bone (never wood)",
-        "category": "History"
+        "text": "The Linux operating system kernel was created by Steve Wozniak in 1991.",
+        "wrongWord": "Wozniak",
+        "correctWord": "Torvalds",
+        "category": "Technology"
       },
       {
-        "text": "Toilets flush in opposite directions in the Northern and Southern Hemispheres due to the Coriolis effect.",
-        "wrongWord": "opposite directions",
-        "correctWord": "whichever direction the basin shape determines (the Coriolis effect is too weak)",
-        "category": "Science"
+        "text": "A standard guitar has five strings in its most common configuration.",
+        "wrongWord": "five",
+        "correctWord": "six",
+        "category": "Music"
       }
     ]
   },
@@ -563,34 +563,34 @@
     "id": 17,
     "rounds": [
       {
-        "text": "MSG commonly causes headaches, known as 'Chinese Restaurant Syndrome.'",
-        "wrongWord": "causes headaches",
-        "correctWord": "has never been scientifically linked to headaches",
-        "category": "Food"
+        "text": "The Andes mountain range runs along the eastern coast of South America.",
+        "wrongWord": "eastern",
+        "correctWord": "western",
+        "category": "Geography"
       },
       {
-        "text": "Shaving makes hair grow back thicker and darker.",
-        "wrongWord": "thicker and darker",
-        "correctWord": "the same thickness (blunt cut creates the illusion)",
+        "text": "Photons are particles of sound that travel at the speed of light.",
+        "wrongWord": "sound",
+        "correctWord": "light",
+        "category": "Physics"
+      },
+      {
+        "text": "The French Revolution began in 1799 with the storming of the Bastille.",
+        "wrongWord": "1799",
+        "correctWord": "1789",
+        "category": "History"
+      },
+      {
+        "text": "Whales breathe through lungs because they are classified as fish.",
+        "wrongWord": "fish",
+        "correctWord": "mammals",
         "category": "Biology"
       },
       {
-        "text": "Bulls become enraged by the color red.",
-        "wrongWord": "color red",
-        "correctWord": "movement of the cape (bulls are colorblind to red)",
-        "category": "Nature"
-      },
-      {
-        "text": "Humans have exactly five senses: sight, hearing, taste, smell, and touch.",
-        "wrongWord": "five",
-        "correctWord": "far more than five (balance, temperature, pain, etc.)",
-        "category": "Biology"
-      },
-      {
-        "text": "Sugar causes hyperactivity in children.",
-        "wrongWord": "causes hyperactivity",
-        "correctWord": "has no proven link to hyperactivity",
-        "category": "Medicine"
+        "text": "The Dead Sea, bordering Jordan and Israel, is the deepest lake on Earth.",
+        "wrongWord": "deepest",
+        "correctWord": "lowest",
+        "category": "Geography"
       }
     ]
   },
@@ -598,34 +598,34 @@
     "id": 18,
     "rounds": [
       {
-        "text": "Coca-Cola invented the modern image of Santa Claus — before their ads, he wore green.",
-        "wrongWord": "invented",
-        "correctWord": "popularized (Santa was already depicted in red before Coca-Cola)",
+        "text": "The Colosseum in Rome was completed around 80 AD and could seat 20,000 spectators.",
+        "wrongWord": "20,000",
+        "correctWord": "50,000",
         "category": "History"
       },
       {
-        "text": "Dropping a penny from the Empire State Building could kill a pedestrian below.",
-        "wrongWord": "kill",
-        "correctWord": "sting slightly at most",
-        "category": "Physics"
+        "text": "Mercury is the hottest planet in the solar system due to its proximity to the Sun.",
+        "wrongWord": "Mercury",
+        "correctWord": "Venus",
+        "category": "Astronomy"
       },
       {
-        "text": "Dogs see the world entirely in black and white.",
-        "wrongWord": "black and white",
-        "correctWord": "muted blues and yellows (limited color, not grayscale)",
-        "category": "Biology"
+        "text": "TCP stands for Transmission Control Program in computer networking.",
+        "wrongWord": "Program",
+        "correctWord": "Protocol",
+        "category": "Technology"
       },
       {
-        "text": "Swallowed gum takes seven years to digest.",
-        "wrongWord": "seven years",
-        "correctWord": "a few days (it passes through undigested)",
-        "category": "General Knowledge"
+        "text": "Champagne sparkling wine originates from the Tuscany region of Europe.",
+        "wrongWord": "Tuscany",
+        "correctWord": "Champagne",
+        "category": "Food"
       },
       {
-        "text": "The iron maiden was a widely used medieval torture device.",
-        "wrongWord": "medieval",
-        "correctWord": "19th century hoax (no evidence of medieval use)",
-        "category": "History"
+        "text": "A triangle's interior angles always add up to 200 degrees.",
+        "wrongWord": "200",
+        "correctWord": "180",
+        "category": "Math"
       }
     ]
   },
@@ -633,34 +633,34 @@
     "id": 19,
     "rounds": [
       {
-        "text": "Taste buds for different flavors are organized in distinct zones across the tongue.",
-        "wrongWord": "distinct zones",
-        "correctWord": "all areas equally (the tongue map is a myth)",
-        "category": "Biology"
+        "text": "The Suez Canal connects the Mediterranean Sea and the Black Sea.",
+        "wrongWord": "Black",
+        "correctWord": "Red",
+        "category": "Geography"
       },
       {
-        "text": "The far side of the Moon is always dark because it never receives sunlight.",
-        "wrongWord": "always dark",
-        "correctWord": "lit by the Sun half the time (it just never faces Earth)",
-        "category": "Astronomy"
+        "text": "The double helix structure of DNA was discovered by Watson and Darwin.",
+        "wrongWord": "Darwin",
+        "correctWord": "Crick",
+        "category": "Science"
       },
       {
-        "text": "Touching a baby bird will cause its mother to reject it because of the human scent.",
-        "wrongWord": "reject",
-        "correctWord": "continue caring for (most birds have a poor sense of smell)",
-        "category": "Nature"
+        "text": "The printing press was invented by Johannes Gutenberg around 1550.",
+        "wrongWord": "1550",
+        "correctWord": "1440",
+        "category": "History"
       },
       {
-        "text": "Turkey makes you especially sleepy because of its high tryptophan content.",
-        "wrongWord": "especially",
-        "correctWord": "no more than chicken or cheese (they have similar levels)",
-        "category": "Food"
+        "text": "Red blood cells are produced in the liver of the human body.",
+        "wrongWord": "liver",
+        "correctWord": "bone marrow",
+        "category": "Medicine"
       },
       {
-        "text": "You must wait 24 hours before filing a missing person report with the police.",
-        "wrongWord": "must wait 24 hours",
-        "correctWord": "can file immediately (no waiting period exists)",
-        "category": "General Knowledge"
+        "text": "The works of Homer include the 'Iliad' and the 'Aeneid' from ancient Greece.",
+        "wrongWord": "Aeneid",
+        "correctWord": "Odyssey",
+        "category": "Literature"
       }
     ]
   },
@@ -668,34 +668,34 @@
     "id": 20,
     "rounds": [
       {
-        "text": "The Forbidden City in Beijing has exactly 9,999 rooms.",
-        "wrongWord": "9,999",
-        "correctWord": "8,886",
-        "category": "History"
+        "text": "The capital of Brazil is Rio de Janeiro, located in the interior of the country.",
+        "wrongWord": "Rio de Janeiro",
+        "correctWord": "Brasilia",
+        "category": "Geography"
       },
       {
-        "text": "Searing meat seals in the juices.",
-        "wrongWord": "seals in the juices",
-        "correctWord": "does not seal in juices (it creates flavor through the Maillard reaction)",
-        "category": "Food"
+        "text": "Light from the Sun takes approximately 3 minutes to reach Earth.",
+        "wrongWord": "3",
+        "correctWord": "8",
+        "category": "Astronomy"
       },
       {
-        "text": "The average person swallows eight spiders per year in their sleep.",
-        "wrongWord": "eight",
-        "correctWord": "essentially zero (this statistic was fabricated)",
-        "category": "General Knowledge"
+        "text": "Michael Phelps holds the record for the most Olympic gold medals with 19 total.",
+        "wrongWord": "19",
+        "correctWord": "23",
+        "category": "Sports"
       },
       {
-        "text": "Cracking your knuckles causes arthritis.",
-        "wrongWord": "causes arthritis",
-        "correctWord": "has no proven link to arthritis",
-        "category": "Medicine"
+        "text": "The word 'dinosaur' comes from Latin words meaning terrible lizard.",
+        "wrongWord": "Latin",
+        "correctWord": "Greek",
+        "category": "Language"
       },
       {
-        "text": "Christopher Columbus set out to prove the Earth was round.",
-        "wrongWord": "prove the Earth was round",
-        "correctWord": "find a westward route to Asia (educated people already knew Earth was round)",
-        "category": "History"
+        "text": "The human eye can distinguish approximately 1 thousand different colors.",
+        "wrongWord": "thousand",
+        "correctWord": "million",
+        "category": "Biology"
       }
     ]
   },
@@ -703,34 +703,34 @@
     "id": 21,
     "rounds": [
       {
-        "text": "The Coriolis effect causes water to drain in opposite directions in the Northern and Southern Hemispheres.",
-        "wrongWord": "causes",
-        "correctWord": "is too weak to affect (drain direction depends on basin shape)",
-        "category": "Physics"
+        "text": "Antarctica is the driest, windiest, and warmest continent on Earth.",
+        "wrongWord": "warmest",
+        "correctWord": "coldest",
+        "category": "Geography"
       },
       {
-        "text": "Microwave ovens cook food from the inside out.",
-        "wrongWord": "inside out",
-        "correctWord": "outside in (microwaves penetrate about 1-1.5 inches)",
-        "category": "Science"
+        "text": "The first Moon landing occurred on July 20, 1972, during the Apollo 11 mission.",
+        "wrongWord": "1972",
+        "correctWord": "1969",
+        "category": "History"
       },
       {
-        "text": "Lemmings commit mass suicide by running off cliffs.",
-        "wrongWord": "commit mass suicide",
-        "correctWord": "do not (this myth was staged for a 1958 Disney documentary)",
-        "category": "Nature"
+        "text": "Beethoven's Ninth Symphony features the famous 'Ode to Freedom' choral finale.",
+        "wrongWord": "Freedom",
+        "correctWord": "Joy",
+        "category": "Music"
       },
       {
-        "text": "Twinkies have a shelf life of approximately 50 years.",
-        "wrongWord": "50 years",
-        "correctWord": "about 45 days",
-        "category": "Food"
+        "text": "The HTTP protocol was invented by Tim Cook at CERN in 1989.",
+        "wrongWord": "Cook",
+        "correctWord": "Berners-Lee",
+        "category": "Technology"
       },
       {
-        "text": "Alcohol kills brain cells permanently.",
-        "wrongWord": "kills brain cells",
-        "correctWord": "damages connections between neurons (does not kill cells outright)",
-        "category": "Medicine"
+        "text": "Sharks are vertebrates that have skeletons made entirely of bone.",
+        "wrongWord": "bone",
+        "correctWord": "cartilage",
+        "category": "Biology"
       }
     ]
   },
@@ -738,34 +738,34 @@
     "id": 22,
     "rounds": [
       {
-        "text": "A duck's quack produces no echo.",
-        "wrongWord": "no echo",
-        "correctWord": "an echo like any other sound",
-        "category": "Nature"
+        "text": "The Mariana Trench is the deepest point in the Atlantic Ocean.",
+        "wrongWord": "Atlantic",
+        "correctWord": "Pacific",
+        "category": "Geography"
       },
       {
-        "text": "Undercover police officers must identify themselves if asked directly.",
-        "wrongWord": "must identify themselves",
-        "correctWord": "are not required to identify themselves",
-        "category": "Law"
+        "text": "Gravity on the Moon is about one-third of Earth's gravitational pull.",
+        "wrongWord": "one-third",
+        "correctWord": "one-sixth",
+        "category": "Physics"
       },
       {
-        "text": "The Great Fire of London in 1666 killed thousands of people.",
-        "wrongWord": "thousands",
-        "correctWord": "only 6 verified",
+        "text": "The ancient city of Machu Picchu was built by the Aztec civilization.",
+        "wrongWord": "Aztec",
+        "correctWord": "Inca",
         "category": "History"
       },
       {
-        "text": "Daddy longlegs are the most venomous spiders, but their fangs can't pierce human skin.",
-        "wrongWord": "most venomous spiders",
-        "correctWord": "not spiders at all, and not particularly venomous",
-        "category": "Nature"
+        "text": "In chess, each player begins the game with fourteen pieces on the board.",
+        "wrongWord": "fourteen",
+        "correctWord": "sixteen",
+        "category": "Sports"
       },
       {
-        "text": "You lose most of your body heat through your head.",
-        "wrongWord": "most",
-        "correctWord": "about 10% (proportional to its surface area)",
-        "category": "Biology"
+        "text": "The normal human body temperature is approximately 96.6 degrees Fahrenheit.",
+        "wrongWord": "96.6",
+        "correctWord": "98.6",
+        "category": "Medicine"
       }
     ]
   },
@@ -773,34 +773,34 @@
     "id": 23,
     "rounds": [
       {
-        "text": "Marie Antoinette said 'Let them eat cake' in response to bread shortages.",
-        "wrongWord": "Marie Antoinette",
-        "correctWord": "no verified speaker (the phrase predates her by decades)",
-        "category": "History"
+        "text": "The Ganges River is considered sacred in Buddhism and flows through India.",
+        "wrongWord": "Buddhism",
+        "correctWord": "Hinduism",
+        "category": "Geography"
       },
       {
-        "text": "Eating carrots significantly improves your night vision.",
-        "wrongWord": "significantly improves",
-        "correctWord": "does not improve (British WWII propaganda to hide radar technology)",
-        "category": "History"
-      },
-      {
-        "text": "Spinach is exceptionally high in iron compared to other vegetables.",
-        "wrongWord": "exceptionally",
-        "correctWord": "moderately (a decimal error in 1870 inflated the number by 10x)",
-        "category": "Food"
-      },
-      {
-        "text": "Pure water conducts electricity well.",
-        "wrongWord": "Pure water",
-        "correctWord": "Impurities in water (pure water is a poor conductor)",
-        "category": "Physics"
-      },
-      {
-        "text": "Seasons are caused by the Earth's distance from the Sun varying throughout the year.",
-        "wrongWord": "distance from the Sun",
-        "correctWord": "axial tilt",
+        "text": "The Andromeda Galaxy is the nearest spiral galaxy to the Milky Way at about 2.5 billion light-years away.",
+        "wrongWord": "billion",
+        "correctWord": "million",
         "category": "Astronomy"
+      },
+      {
+        "text": "George Orwell's 'Animal Farm' is an allegory about the French Revolution.",
+        "wrongWord": "French",
+        "correctWord": "Russian",
+        "category": "Literature"
+      },
+      {
+        "text": "The first iPhone was released by Apple in 2005.",
+        "wrongWord": "2005",
+        "correctWord": "2007",
+        "category": "Technology"
+      },
+      {
+        "text": "Helium is the most abundant element in the universe by mass.",
+        "wrongWord": "Helium",
+        "correctWord": "Hydrogen",
+        "category": "Science"
       }
     ]
   },
@@ -808,34 +808,34 @@
     "id": 24,
     "rounds": [
       {
-        "text": "The three states of matter are solid, liquid, and gas.",
-        "wrongWord": "three",
-        "correctWord": "four (solid, liquid, gas, and plasma)",
-        "category": "Science"
-      },
-      {
-        "text": "The Salem Witch Trials resulted in accused witches being burned at the stake.",
-        "wrongWord": "burned at the stake",
-        "correctWord": "hanged (burning was common in Europe but not Salem)",
+        "text": "The Rosetta Stone was discovered in Egypt in 1899 by French soldiers.",
+        "wrongWord": "1899",
+        "correctWord": "1799",
         "category": "History"
       },
       {
-        "text": "Camels store water in their humps for long desert treks.",
-        "wrongWord": "water",
-        "correctWord": "fat",
+        "text": "A regulation NBA basketball hoop is mounted at a height of 12 feet.",
+        "wrongWord": "12",
+        "correctWord": "10",
+        "category": "Sports"
+      },
+      {
+        "text": "The longest wall in the world, the Great Wall of China, stretches over 13,000 kilometers.",
+        "wrongWord": "13,000",
+        "correctWord": "21,000",
+        "category": "Geography"
+      },
+      {
+        "text": "The human brain contains approximately 86 million neurons.",
+        "wrongWord": "million",
+        "correctWord": "billion",
         "category": "Biology"
       },
       {
-        "text": "The term 'computer bug' originated when a moth was found in an IBM mainframe.",
-        "wrongWord": "IBM",
-        "correctWord": "Harvard Mark II",
-        "category": "Technology"
-      },
-      {
-        "text": "Van Gogh never sold a single painting during his lifetime.",
-        "wrongWord": "never sold a single",
-        "correctWord": "sold at least two",
-        "category": "Art"
+        "text": "Neptune has the fastest winds in the solar system, reaching up to 1,200 miles per minute.",
+        "wrongWord": "minute",
+        "correctWord": "hour",
+        "category": "Astronomy"
       }
     ]
   },
@@ -843,34 +843,34 @@
     "id": 25,
     "rounds": [
       {
-        "text": "The standard marathon distance of 26.2 miles was set at the first modern Olympics in 1896.",
-        "wrongWord": "1896",
-        "correctWord": "1908 London Olympics (to accommodate the Royal Family's viewing spot)",
-        "category": "Sports"
+        "text": "Jane Austen wrote the novel 'Wuthering Heights' in the early 19th century.",
+        "wrongWord": "Austen",
+        "correctWord": "Bronte",
+        "category": "Literature"
       },
       {
-        "text": "Mount Everest is the tallest mountain on Earth by any measurement.",
-        "wrongWord": "any measurement",
-        "correctWord": "elevation above sea level only (Mauna Kea is taller base-to-peak)",
-        "category": "Geography"
-      },
-      {
-        "text": "Panama hats originate from Panama.",
-        "wrongWord": "Panama",
-        "correctWord": "Ecuador",
-        "category": "General Knowledge"
-      },
-      {
-        "text": "Your fingernails continue to grow after you die.",
-        "wrongWord": "continue to grow",
-        "correctWord": "do not grow (skin dehydrates and retracts, creating the illusion)",
-        "category": "Biology"
-      },
-      {
-        "text": "Adding salt to water makes it boil significantly faster.",
-        "wrongWord": "significantly faster",
-        "correctWord": "negligibly faster (the effect is too small to matter)",
+        "text": "The pH scale ranges from 0 to 10, with 7 being neutral.",
+        "wrongWord": "10",
+        "correctWord": "14",
         "category": "Science"
+      },
+      {
+        "text": "The impressionist painting 'Water Lilies' was created by Edgar Degas.",
+        "wrongWord": "Degas",
+        "correctWord": "Monet",
+        "category": "Art"
+      },
+      {
+        "text": "The Latin phrase 'carpe diem' translates to 'seize the night' in English.",
+        "wrongWord": "night",
+        "correctWord": "day",
+        "category": "Language"
+      },
+      {
+        "text": "Caffeine works by blocking serotonin receptors in the brain.",
+        "wrongWord": "serotonin",
+        "correctWord": "adenosine",
+        "category": "Medicine"
       }
     ]
   },
@@ -878,33 +878,33 @@
     "id": 26,
     "rounds": [
       {
-        "text": "The Bermuda Triangle has a statistically higher rate of disappearances than other ocean regions.",
-        "wrongWord": "higher",
-        "correctWord": "comparable (no statistical anomaly when accounting for traffic volume)",
-        "category": "Geography"
-      },
-      {
-        "text": "Handling a toad can give you warts.",
-        "wrongWord": "give you warts",
-        "correctWord": "not give you warts (warts are caused by human papillomavirus)",
-        "category": "Biology"
-      },
-      {
-        "text": "The five-second rule means food dropped on the floor is safe if picked up quickly.",
-        "wrongWord": "safe",
-        "correctWord": "contaminated instantly (bacteria transfer on contact)",
-        "category": "Science"
-      },
-      {
-        "text": "Thomas Crapper invented the flush toilet.",
-        "wrongWord": "invented",
-        "correctWord": "popularized (Sir John Harington invented it ~200 years earlier)",
+        "text": "The Taj Mahal was built as a fortress by Emperor Shah Jahan in India.",
+        "wrongWord": "fortress",
+        "correctWord": "mausoleum",
         "category": "History"
       },
       {
-        "text": "The Earth's core is hotter than the surface of the Moon.",
-        "wrongWord": "Moon",
-        "correctWord": "Sun",
+        "text": "The Sun is classified as a red dwarf star in stellar classification.",
+        "wrongWord": "red dwarf",
+        "correctWord": "yellow dwarf",
+        "category": "Astronomy"
+      },
+      {
+        "text": "A prime number is divisible only by itself and two.",
+        "wrongWord": "two",
+        "correctWord": "one",
+        "category": "Math"
+      },
+      {
+        "text": "The Olympic rings represent seven continents united through sport.",
+        "wrongWord": "seven",
+        "correctWord": "five",
+        "category": "Sports"
+      },
+      {
+        "text": "Absolute zero is the temperature at which all molecular motion stops, at minus 273 degrees Fahrenheit.",
+        "wrongWord": "Fahrenheit",
+        "correctWord": "Celsius",
         "category": "Science"
       }
     ]
@@ -913,33 +913,33 @@
     "id": 27,
     "rounds": [
       {
-        "text": "Antarctica is classified as a country with no permanent population.",
-        "wrongWord": "country",
-        "correctWord": "continent",
+        "text": "The island of Madagascar is located off the western coast of Australia.",
+        "wrongWord": "Australia",
+        "correctWord": "Africa",
         "category": "Geography"
       },
       {
-        "text": "Frankenstein is the name of the monster in Mary Shelley's novel.",
-        "wrongWord": "monster",
-        "correctWord": "doctor (the monster is unnamed)",
-        "category": "Literature"
+        "text": "Alexander Graham Bell patented the light bulb in 1876.",
+        "wrongWord": "light bulb",
+        "correctWord": "telephone",
+        "category": "Technology"
       },
       {
-        "text": "Humans evolved from chimpanzees.",
-        "wrongWord": "from chimpanzees",
-        "correctWord": "from a common ancestor shared with chimpanzees",
+        "text": "The Celsius and Fahrenheit temperature scales intersect at minus 20 degrees.",
+        "wrongWord": "20",
+        "correctWord": "40",
+        "category": "Science"
+      },
+      {
+        "text": "The longest bone in the human body is the tibia in the leg.",
+        "wrongWord": "tibia",
+        "correctWord": "femur",
         "category": "Biology"
       },
       {
-        "text": "The Declaration of Independence was signed on July 4th, 1776.",
-        "wrongWord": "signed on July 4th",
-        "correctWord": "adopted on July 4th (most delegates signed on August 2nd)",
-        "category": "History"
-      },
-      {
-        "text": "Mount Rushmore depicts four presidents who all served consecutive terms.",
-        "wrongWord": "consecutive",
-        "correctWord": "non-consecutive (they span 1789-1909)",
+        "text": "The Mongol Empire was the largest contiguous land empire in history.",
+        "wrongWord": "Mongol",
+        "correctWord": "British",
         "category": "History"
       }
     ]
@@ -948,34 +948,34 @@
     "id": 28,
     "rounds": [
       {
-        "text": "A camel's long eyelashes evolved primarily to attract mates.",
-        "wrongWord": "attract mates",
-        "correctWord": "keep sand out of their eyes",
-        "category": "Nature"
+        "text": "Albert Einstein was born in Austria and later became an American citizen.",
+        "wrongWord": "Austria",
+        "correctWord": "Germany",
+        "category": "History"
       },
       {
-        "text": "Macbeth was Shakespeare's longest play.",
-        "wrongWord": "longest",
-        "correctWord": "shortest tragedy (Hamlet is the longest)",
-        "category": "Literature"
+        "text": "The three primary colors of light are red, yellow, and blue.",
+        "wrongWord": "yellow",
+        "correctWord": "green",
+        "category": "Physics"
       },
       {
-        "text": "Saturn is the only planet in our solar system with rings.",
-        "wrongWord": "only",
-        "correctWord": "one of four (Jupiter, Uranus, and Neptune also have rings)",
-        "category": "Astronomy"
-      },
-      {
-        "text": "Every single one of a human's 10,000 taste buds is located on the tongue.",
-        "wrongWord": "Every single one",
-        "correctWord": "Not all (also found on the roof of the mouth, throat, and esophagus)",
+        "text": "Owls can rotate their heads a full 360 degrees to look around.",
+        "wrongWord": "360",
+        "correctWord": "270",
         "category": "Biology"
       },
       {
-        "text": "Arabic numerals (0-9) were invented by Arab mathematicians.",
-        "wrongWord": "Arab",
-        "correctWord": "Indian",
-        "category": "History"
+        "text": "Rust forms when iron reacts with nitrogen in the air.",
+        "wrongWord": "nitrogen",
+        "correctWord": "oxygen",
+        "category": "Science"
+      },
+      {
+        "text": "The five Olympic rings represent five continents including Antarctica.",
+        "wrongWord": "Antarctica",
+        "correctWord": "Oceania",
+        "category": "Sports"
       }
     ]
   },
@@ -983,1037 +983,10 @@
     "id": 29,
     "rounds": [
       {
-        "text": "Coffee is made from roasted coffee beans.",
-        "wrongWord": "beans",
-        "correctWord": "seeds (they are the pits of coffee cherries)",
-        "category": "Food"
-      },
-      {
-        "text": "The Hundred Years' War lasted a total of 75 years.",
-        "wrongWord": "75",
-        "correctWord": "116",
-        "category": "History"
-      },
-      {
-        "text": "Dolphins sleep with both eyes closed, relying on their pod for protection.",
-        "wrongWord": "both eyes closed",
-        "correctWord": "one eye open (half their brain stays awake)",
-        "category": "Biology"
-      },
-      {
-        "text": "The word 'gymnasium' comes from a Latin word meaning 'exercise hall.'",
-        "wrongWord": "Latin",
-        "correctWord": "Greek (gymnos, meaning 'naked')",
-        "category": "Language"
-      },
-      {
-        "text": "Black holes are visible as dark spots against the background of space.",
-        "wrongWord": "visible",
-        "correctWord": "invisible (detected by their effect on surrounding matter)",
-        "category": "Astronomy"
-      }
-    ]
-  },
-  {
-    "id": 30,
-    "rounds": [
-      {
-        "text": "Alexander the Great was Greek and came from Athens.",
-        "wrongWord": "Athens",
-        "correctWord": "Macedonia (Pella)",
-        "category": "History"
-      },
-      {
-        "text": "Bananas are slightly radioactive because they contain uranium.",
-        "wrongWord": "uranium",
-        "correctWord": "potassium-40",
-        "category": "Science"
-      },
-      {
-        "text": "The Richter scale measures earthquake intensity on a linear scale from 1 to 10.",
-        "wrongWord": "linear",
-        "correctWord": "logarithmic",
-        "category": "Science"
-      },
-      {
-        "text": "Sloths can hold their breath underwater for up to 5 minutes.",
-        "wrongWord": "5",
-        "correctWord": "40",
-        "category": "Nature"
-      },
-      {
-        "text": "French fries originated in France.",
-        "wrongWord": "France",
-        "correctWord": "Belgium",
-        "category": "Food"
-      }
-    ]
-  },
-  {
-    "id": 31,
-    "rounds": [
-      {
-        "text": "A group of crows is called a herd.",
-        "wrongWord": "herd",
-        "correctWord": "murder",
-        "category": "Nature"
-      },
-      {
-        "text": "The Mona Lisa was stolen from the Louvre in 1911 by a Spanish waiter.",
-        "wrongWord": "Spanish",
-        "correctWord": "Italian",
-        "category": "Art"
-      },
-      {
-        "text": "Diamonds are the hardest natural substance, and they are indestructible.",
-        "wrongWord": "indestructible",
-        "correctWord": "can be shattered, burned, or crushed",
-        "category": "Science"
-      },
-      {
-        "text": "The Nile River flows south to north, making it the only major river to do so.",
-        "wrongWord": "only",
-        "correctWord": "one of many (rivers flow based on elevation, not compass direction)",
-        "category": "Geography"
-      },
-      {
-        "text": "Benjamin Franklin formally proposed the turkey as America's national bird.",
-        "wrongWord": "formally proposed",
-        "correctWord": "only jokingly mentioned in a private letter to his daughter",
-        "category": "History"
-      }
-    ]
-  },
-  {
-    "id": 32,
-    "rounds": [
-      {
-        "text": "Teflon was invented by NASA for the space program.",
-        "wrongWord": "NASA",
-        "correctWord": "DuPont accidentally in 1938 (before NASA existed)",
-        "category": "Science"
-      },
-      {
-        "text": "The average lifespan of a housefly is 24 hours.",
-        "wrongWord": "24 hours",
-        "correctWord": "about 28 days",
-        "category": "Biology"
-      },
-      {
-        "text": "Hair grows faster when cut regularly.",
-        "wrongWord": "faster",
-        "correctWord": "at the same rate regardless of cutting",
-        "category": "Biology"
-      },
-      {
-        "text": "The original Monopoly game was invented by Charles Darrow in 1935.",
-        "wrongWord": "Charles Darrow",
-        "correctWord": "Elizabeth Magie (as 'The Landlord's Game' in 1903)",
-        "category": "General Knowledge"
-      },
-      {
-        "text": "Eating before swimming increases the risk of drowning.",
-        "wrongWord": "increases the risk of drowning",
-        "correctWord": "has no proven connection to drowning risk",
-        "category": "General Knowledge"
-      }
-    ]
-  },
-  {
-    "id": 33,
-    "rounds": [
-      {
-        "text": "The Great Pyramid of Giza was built by slaves.",
-        "wrongWord": "slaves",
-        "correctWord": "paid laborers",
-        "category": "History"
-      },
-      {
-        "text": "Pluto was reclassified from a planet to a dwarf planet in 2006 because it was too small.",
-        "wrongWord": "too small",
-        "correctWord": "hadn't cleared its orbital neighborhood",
-        "category": "Astronomy"
-      },
-      {
-        "text": "Poinsettias are highly poisonous to humans and pets.",
-        "wrongWord": "highly poisonous",
-        "correctWord": "mildly irritating at worst",
-        "category": "Nature"
-      },
-      {
-        "text": "Hair and nails are made of the same protein as rhino horns — collagen.",
-        "wrongWord": "collagen",
-        "correctWord": "keratin",
-        "category": "Biology"
-      },
-      {
-        "text": "The term 'third world' originally referred to impoverished nations.",
-        "wrongWord": "impoverished nations",
-        "correctWord": "countries not aligned with NATO or the Soviet Bloc",
-        "category": "History"
-      }
-    ]
-  },
-  {
-    "id": 34,
-    "rounds": [
-      {
-        "text": "Velcro was invented after a scientist noticed cockleburs sticking to his cat's fur.",
-        "wrongWord": "cat's",
-        "correctWord": "dog's",
-        "category": "Science"
-      },
-      {
-        "text": "The tallest mountain in Greece is Mount Olympus, standing at over 15,000 feet.",
-        "wrongWord": "15,000",
-        "correctWord": "9,573",
-        "category": "Geography"
-      },
-      {
-        "text": "Elephants are genuinely afraid of mice.",
-        "wrongWord": "afraid of mice",
-        "correctWord": "not particularly afraid of mice (this is a myth)",
-        "category": "Nature"
-      },
-      {
-        "text": "The @ symbol was invented specifically for email by Ray Tomlinson in 1971.",
-        "wrongWord": "invented",
-        "correctWord": "repurposed (the symbol dates back centuries)",
-        "category": "Technology"
-      },
-      {
-        "text": "Polar bears have white fur to blend in with snow.",
-        "wrongWord": "white",
-        "correctWord": "transparent (it appears white because of light reflection)",
-        "category": "Biology"
-      }
-    ]
-  },
-  {
-    "id": 35,
-    "rounds": [
-      {
-        "text": "A penny dropped from the Empire State Building can reach terminal velocity fast enough to crack the sidewalk.",
-        "wrongWord": "crack the sidewalk",
-        "correctWord": "sting slightly at most",
-        "category": "Physics"
-      },
-      {
-        "text": "Eskimos have over 50 words for snow.",
-        "wrongWord": "50",
-        "correctWord": "roughly the same number as English (the claim is a persistent myth)",
-        "category": "Language"
-      },
-      {
-        "text": "The Leaning Tower of Pisa was designed to lean as an architectural feature.",
-        "wrongWord": "designed to lean",
-        "correctWord": "began leaning during construction due to soft soil",
-        "category": "History"
-      },
-      {
-        "text": "Adding oil to pasta water prevents noodles from sticking together.",
-        "wrongWord": "prevents noodles from sticking",
-        "correctWord": "mostly prevents sauce from clinging to the noodles",
-        "category": "Food"
-      },
-      {
-        "text": "The color orange was named long before the fruit was discovered.",
-        "wrongWord": "before",
-        "correctWord": "after (the fruit was known in English first)",
-        "category": "Language"
-      }
-    ]
-  },
-  {
-    "id": 36,
-    "rounds": [
-      {
-        "text": "The tallest waterfall in the world is Niagara Falls.",
+        "text": "The tallest waterfall in the world is Niagara Falls on the US-Canada border.",
         "wrongWord": "Niagara Falls",
-        "correctWord": "Angel Falls (Venezuela)",
+        "correctWord": "Angel Falls",
         "category": "Geography"
-      },
-      {
-        "text": "A tomato is a vegetable, both culinarily and botanically.",
-        "wrongWord": "both culinarily and botanically",
-        "correctWord": "culinarily but not botanically (it's a botanical fruit)",
-        "category": "Botany"
-      },
-      {
-        "text": "The Aztec Empire was destroyed by Spanish conquistadors led by Hernán Cortés in the 1600s.",
-        "wrongWord": "1600s",
-        "correctWord": "1521",
-        "category": "History"
-      },
-      {
-        "text": "Hummingbirds are one of many bird species that can fly backwards.",
-        "wrongWord": "one of many",
-        "correctWord": "the only",
-        "category": "Nature"
-      },
-      {
-        "text": "The Pacific Ocean got its name from Ferdinand Magellan, who found it calmer than the Atlantic Ocean.",
-        "wrongWord": "Atlantic Ocean",
-        "correctWord": "Strait of Magellan (he compared it to the stormy strait he had just crossed)",
-        "category": "Geography"
-      }
-    ]
-  },
-  {
-    "id": 37,
-    "rounds": [
-      {
-        "text": "Istanbul was formerly known as Alexandria and later Constantinople.",
-        "wrongWord": "Alexandria",
-        "correctWord": "Byzantium",
-        "category": "History"
-      },
-      {
-        "text": "Humans have exactly five senses: sight, smell, taste, touch, and hearing.",
-        "wrongWord": "five",
-        "correctWord": "at least nine (including balance, proprioception, temperature, pain)",
-        "category": "Biology"
-      },
-      {
-        "text": "Helicopters will fall like a rock if the engine fails.",
-        "wrongWord": "fall like a rock",
-        "correctWord": "autorotate to a controlled landing",
-        "category": "Technology"
-      },
-      {
-        "text": "Watching TV in the dark permanently damages your eyesight.",
-        "wrongWord": "permanently damages",
-        "correctWord": "may cause temporary eye strain but not permanent damage",
-        "category": "Medicine"
-      },
-      {
-        "text": "The Titanic was described as 'unsinkable' by its manufacturers before the voyage.",
-        "wrongWord": "manufacturers",
-        "correctWord": "the press (the White Star Line never officially used the word)",
-        "category": "History"
-      }
-    ]
-  },
-  {
-    "id": 38,
-    "rounds": [
-      {
-        "text": "Kilimanjaro is the tallest mountain in Africa and is part of a larger mountain range.",
-        "wrongWord": "part of a larger mountain range",
-        "correctWord": "a freestanding volcanic mountain (not part of a range)",
-        "category": "Geography"
-      },
-      {
-        "text": "Thomas Jefferson wrote the Constitution of the United States.",
-        "wrongWord": "Constitution",
-        "correctWord": "Declaration of Independence",
-        "category": "History"
-      },
-      {
-        "text": "Koalas are a species of bear native to Australia.",
-        "wrongWord": "bear",
-        "correctWord": "marsupial",
-        "category": "Nature"
-      },
-      {
-        "text": "Humans have more brain cells than there are stars in the Milky Way.",
-        "wrongWord": "more",
-        "correctWord": "fewer (86 billion neurons vs. 100-400 billion stars)",
-        "category": "Science"
-      },
-      {
-        "text": "Chewing gum takes seven years to pass through your digestive system.",
-        "wrongWord": "seven years",
-        "correctWord": "a few days (it passes through undigested)",
-        "category": "Medicine"
-      }
-    ]
-  },
-  {
-    "id": 39,
-    "rounds": [
-      {
-        "text": "Alfred Nobel created the Nobel Peace Prize out of pride in his invention of dynamite.",
-        "wrongWord": "pride",
-        "correctWord": "regret",
-        "category": "History"
-      },
-      {
-        "text": "Pythons kill prey by crushing their bones with brute force.",
-        "wrongWord": "crushing their bones",
-        "correctWord": "cutting off blood circulation",
-        "category": "Nature"
-      },
-      {
-        "text": "The Moon has no gravitational pull whatsoever.",
-        "wrongWord": "no",
-        "correctWord": "about 1/6th of Earth's",
-        "category": "Astronomy"
-      },
-      {
-        "text": "Reading in dim light permanently weakens your eyesight.",
-        "wrongWord": "permanently weakens",
-        "correctWord": "temporarily strains (no permanent damage)",
-        "category": "Medicine"
-      },
-      {
-        "text": "The original meaning of 'blood is thicker than water' was that family bonds are the strongest.",
-        "wrongWord": "family bonds are the strongest",
-        "correctWord": "debated — some scholars argue the full phrase meant bonds forged in battle outweigh family",
-        "category": "Language"
-      }
-    ]
-  },
-  {
-    "id": 40,
-    "rounds": [
-      {
-        "text": "Mussolini is famously credited with making Italy's trains run on time.",
-        "wrongWord": "credited",
-        "correctWord": "falsely credited (Italian trains were not notably punctual under his rule)",
-        "category": "History"
-      },
-      {
-        "text": "Chocolate is toxic to dogs because of its caffeine content.",
-        "wrongWord": "caffeine",
-        "correctWord": "theobromine",
-        "category": "Nature"
-      },
-      {
-        "text": "Sitting too close to the TV will permanently damage children's eyes.",
-        "wrongWord": "permanently damage",
-        "correctWord": "not damage (it may indicate existing nearsightedness)",
-        "category": "Medicine"
-      },
-      {
-        "text": "The country commonly called Holland is officially named Holland.",
-        "wrongWord": "Holland",
-        "correctWord": "the Netherlands (Holland is only two provinces)",
-        "category": "Geography"
-      },
-      {
-        "text": "Goldfish have a memory span of about three seconds.",
-        "wrongWord": "three seconds",
-        "correctWord": "several months",
-        "category": "Biology"
-      }
-    ]
-  },
-  {
-    "id": 41,
-    "rounds": [
-      {
-        "text": "Vitamin C prevents the common cold.",
-        "wrongWord": "prevents",
-        "correctWord": "may slightly reduce duration but does not prevent",
-        "category": "Medicine"
-      },
-      {
-        "text": "The Amazon River is the longest river in the world.",
-        "wrongWord": "Amazon",
-        "correctWord": "Nile",
-        "category": "Geography"
-      },
-      {
-        "text": "Starfish are a type of fish, as their name suggests.",
-        "wrongWord": "fish",
-        "correctWord": "echinoderm (they are now officially called 'sea stars')",
-        "category": "Biology"
-      },
-      {
-        "text": "The Wright Brothers' first flight at Kitty Hawk lasted about 2 minutes.",
-        "wrongWord": "2 minutes",
-        "correctWord": "12 seconds",
-        "category": "History"
-      },
-      {
-        "text": "Freezing batteries helps them last significantly longer.",
-        "wrongWord": "significantly longer",
-        "correctWord": "no meaningful difference (and can damage some types)",
-        "category": "Science"
-      }
-    ]
-  },
-  {
-    "id": 42,
-    "rounds": [
-      {
-        "text": "The French phrase 'qu'ils mangent de la brioche' was originally about croissants, not cake.",
-        "wrongWord": "croissants",
-        "correctWord": "brioche (a rich bread)",
-        "category": "History"
-      },
-      {
-        "text": "Penguins mate for life, returning to the same partner every breeding season.",
-        "wrongWord": "for life",
-        "correctWord": "for one season (most species choose new partners each year)",
-        "category": "Nature"
-      },
-      {
-        "text": "The first computer programmer was a man named Charles Babbage.",
-        "wrongWord": "man named Charles Babbage",
-        "correctWord": "woman named Ada Lovelace",
-        "category": "Technology"
-      },
-      {
-        "text": "Eating chocolate causes acne.",
-        "wrongWord": "causes acne",
-        "correctWord": "has no proven direct link to acne",
-        "category": "Medicine"
-      },
-      {
-        "text": "The Pacific Ring of Fire contains roughly 25% of the world's active volcanoes.",
-        "wrongWord": "25%",
-        "correctWord": "75%",
-        "category": "Geology"
-      }
-    ]
-  },
-  {
-    "id": 43,
-    "rounds": [
-      {
-        "text": "Bubble wrap was originally invented as a packaging material.",
-        "wrongWord": "packaging material",
-        "correctWord": "textured wallpaper",
-        "category": "General Knowledge"
-      },
-      {
-        "text": "Vikings named Iceland and Greenland to trick settlers — Iceland was green and Greenland was icy.",
-        "wrongWord": "trick settlers",
-        "correctWord": "reflect actual conditions when they arrived (Iceland had ice, Greenland had a green coast)",
-        "category": "History"
-      },
-      {
-        "text": "Humans and dinosaurs coexisted for a brief period in Earth's history.",
-        "wrongWord": "coexisted",
-        "correctWord": "never coexisted (separated by ~65 million years)",
-        "category": "Science"
-      },
-      {
-        "text": "An average cumulus cloud weighs roughly 2,000 pounds.",
-        "wrongWord": "2,000 pounds",
-        "correctWord": "1.1 million pounds",
-        "category": "Science"
-      },
-      {
-        "text": "A cockroach can survive for days without its head before dying.",
-        "wrongWord": "days",
-        "correctWord": "weeks",
-        "category": "Biology"
-      }
-    ]
-  },
-  {
-    "id": 44,
-    "rounds": [
-      {
-        "text": "Antibiotics are effective against both bacteria and viruses.",
-        "wrongWord": "and viruses",
-        "correctWord": "only (antibiotics do not work against viruses)",
-        "category": "Medicine"
-      },
-      {
-        "text": "High heels were originally designed for women's fashion in 17th century France.",
-        "wrongWord": "women's fashion",
-        "correctWord": "men's horse riding (Persian cavalry, 10th century)",
-        "category": "History"
-      },
-      {
-        "text": "Elephants are the only animals on Earth that can't jump.",
-        "wrongWord": "only animals",
-        "correctWord": "one of several (hippos, rhinos, and sloths also can't)",
-        "category": "Nature"
-      },
-      {
-        "text": "A solar day on Mercury lasts roughly 30 Earth days.",
-        "wrongWord": "30",
-        "correctWord": "176",
-        "category": "Astronomy"
-      },
-      {
-        "text": "Neanderthals were unintelligent brutes compared to Homo sapiens.",
-        "wrongWord": "unintelligent brutes",
-        "correctWord": "comparable in brain size and capable of art, tools, and burial rituals",
-        "category": "History"
-      }
-    ]
-  },
-  {
-    "id": 45,
-    "rounds": [
-      {
-        "text": "The first email was sent in 1991, the same year the World Wide Web launched.",
-        "wrongWord": "1991",
-        "correctWord": "1971",
-        "category": "Technology"
-      },
-      {
-        "text": "Giraffes have more neck vertebrae than humans.",
-        "wrongWord": "more",
-        "correctWord": "the same number (7, just much larger)",
-        "category": "Biology"
-      },
-      {
-        "text": "The word 'testify' comes from the Roman practice of men placing a hand on their heart in court.",
-        "wrongWord": "heart",
-        "correctWord": "the Latin 'testis' meaning witness",
-        "category": "Language"
-      },
-      {
-        "text": "A black belt in karate signifies the highest level of mastery.",
-        "wrongWord": "highest",
-        "correctWord": "intermediate (there are multiple degrees above the initial black belt)",
-        "category": "Sports"
-      },
-      {
-        "text": "Henry Ford invented the automobile.",
-        "wrongWord": "invented",
-        "correctWord": "popularized affordable (Karl Benz invented the first true automobile)",
-        "category": "History"
-      }
-    ]
-  },
-  {
-    "id": 46,
-    "rounds": [
-      {
-        "text": "A lightning bolt reaches temperatures of about 5,000 degrees Fahrenheit — roughly the same as the Sun's surface.",
-        "wrongWord": "5,000",
-        "correctWord": "50,000 (five times hotter than the Sun's surface)",
-        "category": "Physics"
-      },
-      {
-        "text": "The wasabi served in most restaurants outside Japan is real wasabi.",
-        "wrongWord": "real wasabi",
-        "correctWord": "dyed horseradish (real wasabi is rare and expensive)",
-        "category": "Food"
-      },
-      {
-        "text": "The Statue of Liberty is made of bronze.",
-        "wrongWord": "bronze",
-        "correctWord": "copper",
-        "category": "History"
-      },
-      {
-        "text": "Albert Einstein had a verified IQ of 160, tested during his time at Princeton.",
-        "wrongWord": "verified",
-        "correctWord": "estimated (he was never formally IQ tested)",
-        "category": "Science"
-      },
-      {
-        "text": "Caesar salad is named after Julius Caesar.",
-        "wrongWord": "Julius Caesar",
-        "correctWord": "Caesar Cardini (an Italian-American restaurateur)",
-        "category": "Food"
-      }
-    ]
-  },
-  {
-    "id": 47,
-    "rounds": [
-      {
-        "text": "Banging the side of an old TV to fix it was purely superstition with no basis in reality.",
-        "wrongWord": "no basis in reality",
-        "correctWord": "sometimes effective (loose solder joints could resettle from impact)",
-        "category": "Technology"
-      },
-      {
-        "text": "Tarzan's famous yell in the movies was performed by Johnny Weissmuller himself.",
-        "wrongWord": "Johnny Weissmuller himself",
-        "correctWord": "a combination of recordings (its exact origin is debated)",
-        "category": "Movies"
-      },
-      {
-        "text": "Organic food is grown completely without pesticides.",
-        "wrongWord": "without pesticides",
-        "correctWord": "without synthetic pesticides (organic farming uses approved natural pesticides)",
-        "category": "Food"
-      },
-      {
-        "text": "The second law of thermodynamics states that entropy always increases in a closed system.",
-        "wrongWord": "always",
-        "correctWord": "tends to (entropy is statistical, not absolute)",
-        "category": "Physics"
-      },
-      {
-        "text": "Cleopatra ruled Egypt around 300 BC, during the height of the pharaohs.",
-        "wrongWord": "300 BC",
-        "correctWord": "51-30 BC",
-        "category": "History"
-      }
-    ]
-  },
-  {
-    "id": 48,
-    "rounds": [
-      {
-        "text": "Celery has negative calories — digesting it burns more energy than the celery contains.",
-        "wrongWord": "negative calories",
-        "correctWord": "very few but still positive calories (digestion doesn't create a deficit)",
-        "category": "Food"
-      },
-      {
-        "text": "The blood of horseshoe crabs is red and has no special medical use.",
-        "wrongWord": "red",
-        "correctWord": "blue (and is used to test medical equipment for bacterial contamination)",
-        "category": "Biology"
-      },
-      {
-        "text": "Medieval Europeans widely believed the Earth was flat.",
-        "wrongWord": "believed the Earth was flat",
-        "correctWord": "knew the Earth was spherical (this was established since ancient Greece)",
-        "category": "History"
-      },
-      {
-        "text": "Dogs age at a rate of exactly seven human years for every dog year.",
-        "wrongWord": "seven",
-        "correctWord": "varies widely by breed and size (the 7:1 ratio is a myth)",
-        "category": "Biology"
-      },
-      {
-        "text": "Wi-Fi stands for 'Wireless Fidelity.'",
-        "wrongWord": "Wireless Fidelity",
-        "correctWord": "nothing (it's a brand name that doesn't stand for anything)",
-        "category": "Technology"
-      }
-    ]
-  },
-  {
-    "id": 49,
-    "rounds": [
-      {
-        "text": "The Eiffel Tower was intended to be a permanent fixture of the Paris skyline from the start.",
-        "wrongWord": "permanent",
-        "correctWord": "temporary (built for the 1889 World's Fair, planned to be dismantled after 20 years)",
-        "category": "History"
-      },
-      {
-        "text": "Porcupines can shoot their quills at predators from a distance.",
-        "wrongWord": "shoot",
-        "correctWord": "cannot shoot (quills detach on contact only)",
-        "category": "Nature"
-      },
-      {
-        "text": "Both male and female mosquitoes bite humans for blood.",
-        "wrongWord": "Both male and female",
-        "correctWord": "Only female",
-        "category": "Biology"
-      },
-      {
-        "text": "Thomas Edison single-handedly invented the light bulb.",
-        "wrongWord": "invented",
-        "correctWord": "improved and commercialized (earlier versions existed by Davy, Swan, and others)",
-        "category": "History"
-      },
-      {
-        "text": "The space between your eyebrows is called the 'bridge.'",
-        "wrongWord": "bridge",
-        "correctWord": "glabella",
-        "category": "Biology"
-      }
-    ]
-  },
-  {
-    "id": 50,
-    "rounds": [
-      {
-        "text": "Touching a butterfly's wings will kill it by removing essential scales.",
-        "wrongWord": "kill it",
-        "correctWord": "not kill it (they can fly with many scales missing)",
-        "category": "Nature"
-      },
-      {
-        "text": "The Great Wall of China is a single continuous wall stretching across northern China.",
-        "wrongWord": "single continuous wall",
-        "correctWord": "a network of walls and fortifications with many gaps",
-        "category": "History"
-      },
-      {
-        "text": "Drinking milk increases mucus production when you have a cold.",
-        "wrongWord": "increases mucus production",
-        "correctWord": "does not increase mucus (multiple studies have debunked this)",
-        "category": "Medicine"
-      },
-      {
-        "text": "The term 'cop' comes from officers' copper badges in early New York.",
-        "wrongWord": "copper badges",
-        "correctWord": "the verb 'to cop' meaning to capture or seize",
-        "category": "Language"
-      },
-      {
-        "text": "Cats always land on their feet, even when dropped from just a few inches.",
-        "wrongWord": "a few inches",
-        "correctWord": "at least about a foot (they need time to rotate)",
-        "category": "Nature"
-      }
-    ]
-  },
-  {
-    "id": 51,
-    "rounds": [
-      {
-        "text": "George Washington Carver invented peanut butter.",
-        "wrongWord": "invented peanut butter",
-        "correctWord": "developed hundreds of peanut products but did not invent peanut butter",
-        "category": "History"
-      },
-      {
-        "text": "The human heart is located on the left side of the chest.",
-        "wrongWord": "left side",
-        "correctWord": "center (it is tilted slightly left but sits mostly in the middle)",
-        "category": "Biology"
-      },
-      {
-        "text": "Sound cannot travel through a vacuum, and neither can light.",
-        "wrongWord": "neither can light",
-        "correctWord": "but light can (electromagnetic waves don't need a medium)",
-        "category": "Physics"
-      },
-      {
-        "text": "The human body contains four kidneys.",
-        "wrongWord": "four",
-        "correctWord": "two",
-        "category": "Biology"
-      },
-      {
-        "text": "Quicksand can fully swallow a person who falls into it.",
-        "wrongWord": "fully swallow",
-        "correctWord": "only submerge about waist deep (human density is less than quicksand)",
-        "category": "Science"
-      }
-    ]
-  },
-  {
-    "id": 52,
-    "rounds": [
-      {
-        "text": "The 'D' in D-Day stands for 'Doom.'",
-        "wrongWord": "Doom",
-        "correctWord": "Day (D-Day is standard military terminology for the start date of any operation)",
-        "category": "History"
-      },
-      {
-        "text": "Sharks kill more people per year than any other animal on Earth.",
-        "wrongWord": "Sharks",
-        "correctWord": "Mosquitoes",
-        "category": "Nature"
-      },
-      {
-        "text": "Sunflowers track the Sun across the sky throughout their entire lives.",
-        "wrongWord": "entire lives",
-        "correctWord": "only while young (mature sunflowers face east permanently)",
-        "category": "Botany"
-      },
-      {
-        "text": "A frog placed in slowly heated water will stay in the pot and boil to death.",
-        "wrongWord": "stay in the pot",
-        "correctWord": "jump out (the boiling frog metaphor is a myth)",
-        "category": "Biology"
-      },
-      {
-        "text": "The word 'avocado' comes from an Aztec word meaning 'green fruit.'",
-        "wrongWord": "green fruit",
-        "correctWord": "testicle (from the Nahuatl word 'ahuacatl')",
-        "category": "Language"
-      }
-    ]
-  },
-  {
-    "id": 53,
-    "rounds": [
-      {
-        "text": "The Celsius and Fahrenheit scales intersect at -20 degrees.",
-        "wrongWord": "-20",
-        "correctWord": "-40",
-        "category": "Science"
-      },
-      {
-        "text": "A caterpillar has more muscles than a human — about 248.",
-        "wrongWord": "248",
-        "correctWord": "4,000+",
-        "category": "Biology"
-      },
-      {
-        "text": "The plastic tips on shoelaces are called 'nibs.'",
-        "wrongWord": "nibs",
-        "correctWord": "aglets",
-        "category": "General Knowledge"
-      },
-      {
-        "text": "The Mongol Empire was the largest empire in history by land area.",
-        "wrongWord": "Mongol",
-        "correctWord": "British",
-        "category": "History"
-      },
-      {
-        "text": "Albert Einstein was born in Austria and later became an American citizen.",
-        "wrongWord": "Austria",
-        "correctWord": "Germany (Ulm, Kingdom of Württemberg)",
-        "category": "History"
-      }
-    ]
-  },
-  {
-    "id": 54,
-    "rounds": [
-      {
-        "text": "The tallest building in the world as of 2025 is the Shanghai Tower.",
-        "wrongWord": "Shanghai Tower",
-        "correctWord": "Burj Khalifa",
-        "category": "Architecture"
-      },
-      {
-        "text": "Cutting an earthworm in half produces two living worms.",
-        "wrongWord": "two living worms",
-        "correctWord": "usually one surviving half (the tail typically dies)",
-        "category": "Biology"
-      },
-      {
-        "text": "White chocolate's primary ingredient is chocolate liquor.",
-        "wrongWord": "chocolate liquor",
-        "correctWord": "cocoa butter (white chocolate contains no cocoa solids)",
-        "category": "Food"
-      },
-      {
-        "text": "Saturn is so dense that it would sink immediately if placed in water.",
-        "wrongWord": "sink",
-        "correctWord": "float (its average density is less than water)",
-        "category": "Astronomy"
-      },
-      {
-        "text": "The ampersand (&) was invented in the 20th century for typewriters.",
-        "wrongWord": "20th century",
-        "correctWord": "1st century (derived from the Latin word 'et')",
-        "category": "Language"
-      }
-    ]
-  },
-  {
-    "id": 55,
-    "rounds": [
-      {
-        "text": "The Mona Lisa has clearly visible eyebrows that frame her famous expression.",
-        "wrongWord": "clearly visible eyebrows",
-        "correctWord": "no visible eyebrows at all",
-        "category": "Art"
-      },
-      {
-        "text": "Coffee was discovered by a shepherd who noticed his sheep becoming energetic after eating coffee berries.",
-        "wrongWord": "sheep",
-        "correctWord": "goats",
-        "category": "Food"
-      },
-      {
-        "text": "Russia sold Alaska to the United States for $72 million in 1867.",
-        "wrongWord": "$72 million",
-        "correctWord": "$7.2 million",
-        "category": "History"
-      },
-      {
-        "text": "The platypus is one of only two mammals that lay eggs.",
-        "wrongWord": "two",
-        "correctWord": "five (platypus and four species of echidna)",
-        "category": "Biology"
-      },
-      {
-        "text": "The shortest complete sentence in the English language is 'I am.'",
-        "wrongWord": "I am",
-        "correctWord": "Go. (or I.)",
-        "category": "Language"
-      }
-    ]
-  },
-  {
-    "id": 56,
-    "rounds": [
-      {
-        "text": "Humans can distinguish between about 100 different colors.",
-        "wrongWord": "100",
-        "correctWord": "about 1 million",
-        "category": "Biology"
-      },
-      {
-        "text": "The Bermuda Triangle is officially recognized by the US Navy as a dangerous zone.",
-        "wrongWord": "recognized",
-        "correctWord": "not recognized (neither the US Navy nor Coast Guard considers it unusually hazardous)",
-        "category": "Geography"
-      },
-      {
-        "text": "Microwaving food destroys most of its nutrients.",
-        "wrongWord": "destroys",
-        "correctWord": "preserves more nutrients than many other cooking methods",
-        "category": "Food"
-      },
-      {
-        "text": "A goldfish will grow to match the size of its bowl through adaptive growth.",
-        "wrongWord": "adaptive growth",
-        "correctWord": "stunted growth (small bowls cause health problems, not healthy adaptation)",
-        "category": "Nature"
-      },
-      {
-        "text": "The three primary colors of light are red, yellow, and blue.",
-        "wrongWord": "yellow",
-        "correctWord": "green",
-        "category": "Physics"
-      }
-    ]
-  },
-  {
-    "id": 57,
-    "rounds": [
-      {
-        "text": "The White House was always officially called the 'White House' since its construction.",
-        "wrongWord": "always",
-        "correctWord": "not until 1901 (Theodore Roosevelt made it the official name)",
-        "category": "History"
-      },
-      {
-        "text": "Owls can rotate their heads a full 360 degrees.",
-        "wrongWord": "360",
-        "correctWord": "270",
-        "category": "Nature"
-      },
-      {
-        "text": "Rust forms when iron reacts with nitrogen in the air.",
-        "wrongWord": "nitrogen",
-        "correctWord": "oxygen (and moisture)",
-        "category": "Chemistry"
-      },
-      {
-        "text": "The longest bone in the human body is the tibia.",
-        "wrongWord": "tibia",
-        "correctWord": "femur",
-        "category": "Biology"
-      },
-      {
-        "text": "Marie Curie's research notebooks have been fully decontaminated and are safe to handle.",
-        "wrongWord": "fully decontaminated",
-        "correctWord": "still radioactive (stored in lead-lined boxes, require protective gear to handle)",
-        "category": "Science"
-      }
-    ]
-  },
-  {
-    "id": 58,
-    "rounds": [
-      {
-        "text": "The five Olympic rings represent five continents: Africa, the Americas, Europe, Asia, and Antarctica.",
-        "wrongWord": "Antarctica",
-        "correctWord": "Oceania",
-        "category": "Sports"
-      },
-      {
-        "text": "The human body contains enough carbon to fill 900 pencils.",
-        "wrongWord": "900",
-        "correctWord": "9,000",
-        "category": "Biology"
-      },
-      {
-        "text": "A jiffy is just an informal expression meaning 'a short time' with no precise measurement.",
-        "wrongWord": "no precise measurement",
-        "correctWord": "a precise unit (1/100th second in computing, light travel of 1 cm in physics)",
-        "category": "Science"
       },
       {
         "text": "Napoleon lost the Battle of Waterloo to a British army led by Winston Churchill.",
@@ -2022,80 +995,57 @@
         "category": "History"
       },
       {
-        "text": "Flamingos are naturally pink from birth.",
-        "wrongWord": "naturally pink from birth",
-        "correctWord": "born white/grey (they turn pink from carotenoids in their diet)",
-        "category": "Nature"
+        "text": "Flamingos are naturally pink from birth due to their genetics.",
+        "wrongWord": "genetics",
+        "correctWord": "diet",
+        "category": "Biology"
+      },
+      {
+        "text": "Saturn is so dense that it would sink immediately if placed in water.",
+        "wrongWord": "sink",
+        "correctWord": "float",
+        "category": "Astronomy"
+      },
+      {
+        "text": "Caesar salad is named after the Roman leader Julius Caesar.",
+        "wrongWord": "Julius Caesar",
+        "correctWord": "Caesar Cardini",
+        "category": "Food"
       }
     ]
   },
   {
-    "id": 59,
+    "id": 30,
     "rounds": [
       {
         "text": "The first country to give women the right to vote was the United States in 1920.",
         "wrongWord": "United States",
-        "correctWord": "New Zealand (1893)",
+        "correctWord": "New Zealand",
         "category": "History"
       },
       {
-        "text": "The correct plural of 'octopus' is 'octopi.'",
-        "wrongWord": "octopi",
-        "correctWord": "octopuses (or octopodes — 'octopi' wrongly applies Latin rules to a Greek word)",
+        "text": "The Statue of Liberty is made of bronze, which has turned green over time.",
+        "wrongWord": "bronze",
+        "correctWord": "copper",
+        "category": "Art"
+      },
+      {
+        "text": "Mandarin Chinese is the most widely spoken language by total number of second-language speakers.",
+        "wrongWord": "second-language",
+        "correctWord": "native",
         "category": "Language"
       },
       {
-        "text": "Trees get most of their mass from nutrients in the soil absorbed through their roots.",
-        "wrongWord": "soil",
-        "correctWord": "carbon dioxide in the air (through photosynthesis)",
-        "category": "Botany"
-      },
-      {
-        "text": "Whales evolved from land-dwelling mammals that resembled large wolves.",
-        "wrongWord": "wolves",
-        "correctWord": "small hoofed creatures (Pakicetus)",
+        "text": "The human genome contains approximately 20,000 chromosomes.",
+        "wrongWord": "chromosomes",
+        "correctWord": "genes",
         "category": "Biology"
       },
       {
-        "text": "Honey is technically bee vomit from their main digestive stomach.",
-        "wrongWord": "main digestive stomach",
-        "correctWord": "a separate honey stomach (crop), not the digestive stomach",
-        "category": "Nature"
-      }
-    ]
-  },
-  {
-    "id": 60,
-    "rounds": [
-      {
-        "text": "The longest river entirely within one country is the Mississippi in the United States.",
-        "wrongWord": "Mississippi",
-        "correctWord": "Yangtze (China)",
-        "category": "Geography"
-      },
-      {
-        "text": "Astronauts on the International Space Station experience zero gravity.",
-        "wrongWord": "zero gravity",
-        "correctWord": "microgravity (they are in freefall, not beyond gravity's reach)",
-        "category": "Astronomy"
-      },
-      {
-        "text": "The speed of sound is constant regardless of temperature or altitude.",
-        "wrongWord": "constant",
-        "correctWord": "variable (it increases with temperature)",
-        "category": "Physics"
-      },
-      {
-        "text": "Vikings were primarily raiders with no interest in trade or farming.",
-        "wrongWord": "no interest in trade or farming",
-        "correctWord": "also farmers, traders, and explorers",
-        "category": "History"
-      },
-      {
-        "text": "A chameleon's tongue is roughly half the length of its body.",
-        "wrongWord": "half",
-        "correctWord": "twice",
-        "category": "Nature"
+        "text": "French fries originated in France as a popular street food.",
+        "wrongWord": "France",
+        "correctWord": "Belgium",
+        "category": "Food"
       }
     ]
   }

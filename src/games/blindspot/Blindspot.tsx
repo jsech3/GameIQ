@@ -28,6 +28,8 @@ export function Blindspot() {
   const [roundResults, setRoundResults] = useState<boolean[]>(
     alreadyPlayed ? (stats.todayResult?.details?.roundResults as boolean[] ?? []) : []
   );
+  const [animatingResult, setAnimatingResult] = useState<'correct' | 'wrong' | null>(null);
+  const [roundKey, setRoundKey] = useState(0);
 
   const round = puzzle.rounds[currentRound];
   const totalRounds = puzzle.rounds.length;
@@ -57,6 +59,7 @@ export function Blindspot() {
 
     const newResults = [...roundResults, isCorrect];
     setRoundResults(newResults);
+    setAnimatingResult(isCorrect ? 'correct' : 'wrong');
 
     if (isCorrect) {
       setScore(prev => prev + 1);
@@ -64,6 +67,7 @@ export function Blindspot() {
 
     // Auto-advance after delay
     setTimeout(() => {
+      setAnimatingResult(null);
       if (currentRound + 1 >= totalRounds) {
         const finalScore = isCorrect ? score + 1 : score;
         setFinished(true);
@@ -78,6 +82,7 @@ export function Blindspot() {
         setCurrentRound(prev => prev + 1);
         setSelectedWord(null);
         setRevealed(false);
+        setRoundKey(prev => prev + 1);
       }
     }, 2000);
   }, [revealed, finished, round, roundResults, currentRound, totalRounds, score, recordResult]);
@@ -85,7 +90,7 @@ export function Blindspot() {
   if (finished) {
     return (
       <div className="space-y-6">
-        <div className="text-center">
+        <div className="text-center animate-fade-in">
           <h2 className="text-2xl font-bold">Blindspot</h2>
           <p className="text-surface-200 text-sm mt-1">Find the wrong word</p>
         </div>
@@ -95,11 +100,12 @@ export function Blindspot() {
           {puzzle.rounds.map((r, i) => (
             <div
               key={i}
-              className={`p-3 rounded-xl border text-sm ${
+              className={`p-3 rounded-xl border text-sm animate-fade-in-up ${
                 roundResults[i]
                   ? 'bg-green-500/10 border-green-500/30'
                   : 'bg-red-500/10 border-red-500/30'
               }`}
+              style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="flex items-center gap-2 mb-1">
                 <span className={`text-xs font-bold ${roundResults[i] ? 'text-green-400' : 'text-red-400'}`}>
@@ -128,6 +134,16 @@ export function Blindspot() {
                 ? 'Sharp! You caught most of them.'
                 : 'Tricky one. Try again tomorrow!'
           }
+          onRestart={() => {
+            setCurrentRound(0);
+            setScore(0);
+            setSelectedWord(null);
+            setRevealed(false);
+            setFinished(false);
+            setRoundResults([]);
+            setAnimatingResult(null);
+            setRoundKey(prev => prev + 1);
+          }}
         />
       </div>
     );
@@ -135,7 +151,7 @@ export function Blindspot() {
 
   return (
     <div className="space-y-6">
-      <div className="text-center">
+      <div className="text-center animate-fade-in">
         <h2 className="text-2xl font-bold">Blindspot</h2>
         <p className="text-surface-200 text-sm mt-1">
           Tap the word that doesn't belong
@@ -150,13 +166,13 @@ export function Blindspot() {
         {puzzle.rounds.map((_, i) => (
           <div
             key={i}
-            className={`w-8 h-1.5 rounded-full transition-colors ${
+            className={`w-8 h-1.5 rounded-full transition-all duration-300 ${
               i < currentRound
                 ? roundResults[i]
                   ? 'bg-green-500'
                   : 'bg-red-500'
                 : i === currentRound
-                  ? 'bg-brand-500'
+                  ? 'bg-brand-500 animate-pulse-glow'
                   : 'bg-surface-700'
             }`}
           />
@@ -164,30 +180,38 @@ export function Blindspot() {
       </div>
 
       {/* Round info */}
-      <div className="flex items-center justify-between text-xs text-surface-200">
+      <div
+        key={`round-info-${roundKey}`}
+        className="flex items-center justify-between text-xs text-surface-200 round-enter"
+      >
         <span>{round.category}</span>
         <span>{currentRound + 1} of {totalRounds}</span>
       </div>
 
       {/* The statement with tappable words */}
-      <div className="bg-surface-900 border border-surface-700 rounded-2xl p-6">
+      <div
+        key={`round-${roundKey}`}
+        className={`bg-surface-900 border border-surface-700 rounded-2xl p-6 transition-all duration-300 round-enter ${
+          animatingResult === 'correct' ? 'correct-glow border-green-500/50' : ''
+        } ${animatingResult === 'wrong' ? 'wrong-shake border-red-500/50' : ''}`}
+      >
         <p className="text-lg leading-relaxed text-center">
           {words.map((w, i) => {
             const isWrong = w.word.toLowerCase() === round.wrongWord.toLowerCase();
             const isSelected = w.raw === selectedWord;
 
-            let className = 'px-0.5 py-0.5 rounded cursor-pointer transition-colors inline ';
+            let className = 'px-0.5 py-0.5 rounded cursor-pointer transition-all duration-200 inline ';
 
             if (revealed) {
               if (isWrong) {
-                className += 'bg-red-500/30 text-red-300 line-through';
+                className += 'bg-red-500/30 text-red-300 line-through scale-105';
               } else if (isSelected && !isWrong) {
                 className += 'bg-yellow-500/30 text-yellow-300';
               } else {
                 className += 'text-surface-200';
               }
             } else {
-              className += 'hover:bg-surface-700 text-white';
+              className += 'hover:bg-surface-700 hover:scale-105 active:scale-95 text-white';
             }
 
             return (
@@ -206,14 +230,16 @@ export function Blindspot() {
 
         {/* Reveal correction */}
         {revealed && (
-          <div className="mt-4 pt-4 border-t border-surface-700 text-center">
+          <div className="mt-4 pt-4 border-t border-surface-700 text-center animate-fade-in-up">
             <p className="text-sm">
               <span className="line-through text-red-400">{round.wrongWord}</span>
               {' \u2192 '}
               <span className="text-green-400 font-medium">{round.correctWord}</span>
             </p>
             {selectedWord && words.find(w => w.raw === selectedWord)?.word.toLowerCase() === round.wrongWord.toLowerCase() ? (
-              <p className="text-green-400 text-xs mt-1 font-medium">Correct!</p>
+              <p className="text-green-400 text-xs mt-1 font-medium flex items-center justify-center gap-1">
+                <span className="animate-bounce-in">&#10003;</span> Correct!
+              </p>
             ) : (
               <p className="text-red-400 text-xs mt-1 font-medium">Not quite — the wrong word was "{round.wrongWord}"</p>
             )}
@@ -224,7 +250,11 @@ export function Blindspot() {
       {/* Score so far */}
       <div className="flex justify-center gap-1.5">
         {roundResults.map((correct, i) => (
-          <span key={i} className="text-lg">
+          <span
+            key={i}
+            className="text-lg animate-bounce-in"
+            style={{ animationDelay: `${i * 0.1}s` }}
+          >
             {correct ? '\uD83D\uDFE9' : '\uD83D\uDFE5'}
           </span>
         ))}

@@ -1,27 +1,43 @@
 import { GameCard } from '../components/GameCard';
 import { useGameState } from '../hooks/useGameState';
-import { GameMeta } from '../types';
+import { GameMeta, GameStats } from '../types';
 
 const GAMES: GameMeta[] = [
   { id: 'blindspot', name: 'Blindspot', description: 'Find the wrong word in each statement', icon: '\uD83D\uDCA1', path: '/blindspot' },
-  { id: 'odd-angle', name: 'Odd Angle', description: 'Guess what you see as it zooms out', icon: '\uD83D\uDD0D', path: '/odd-angle' },
+  { id: 'trend', name: 'Trend', description: 'Predict where the data goes next', icon: '\uD83D\uDCC8', path: '/trend' },
+  { id: 'rank', name: 'Rank', description: 'Order items by a hidden metric', icon: '\uD83C\uDFC6', path: '/rank' },
+  { id: 'crossfire', name: 'Crossfire', description: 'One word connects two clues', icon: '\uD83C\uDFAF', path: '/crossfire' },
 ];
 
 export function Home() {
   const blindspotState = useGameState('blindspot');
-  const oddAngleState = useGameState('odd-angle');
-  const statsMap = { blindspot: blindspotState.stats, 'odd-angle': oddAngleState.stats };
+  const trendState = useGameState('trend');
+  const rankState = useGameState('rank');
+  const crossfireState = useGameState('crossfire');
+
+  const statsMap: Record<string, GameStats> = {
+    blindspot: blindspotState.stats,
+    trend: trendState.stats,
+    rank: rankState.stats,
+    crossfire: crossfireState.stats,
+  };
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 animate-fade-in">
       <div className="text-center">
         <h1 className="text-3xl font-extrabold">GameIQ</h1>
         <p className="text-surface-200 text-sm mt-1">Daily brain games to keep you sharp</p>
       </div>
 
       <div className="space-y-3">
-        {GAMES.map(game => (
-          <GameCard key={game.id} game={game} stats={statsMap[game.id]} />
+        {GAMES.map((game, i) => (
+          <div
+            key={game.id}
+            className="animate-fade-in-up"
+            style={{ animationDelay: `${i * 0.1}s` }}
+          >
+            <GameCard game={game} stats={statsMap[game.id]} />
+          </div>
         ))}
       </div>
 

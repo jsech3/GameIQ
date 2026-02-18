@@ -18,12 +18,26 @@ function defaultStats(): GameStats {
 function loadState(): PlayerState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      // Ensure all games have stats (handles new games added after initial load)
+      return {
+        ...parsed,
+        games: {
+          blindspot: parsed.games?.blindspot ?? defaultStats(),
+          trend: parsed.games?.trend ?? defaultStats(),
+          rank: parsed.games?.rank ?? defaultStats(),
+          crossfire: parsed.games?.crossfire ?? defaultStats(),
+        },
+      };
+    }
   } catch { /* ignore */ }
   return {
     games: {
       blindspot: defaultStats(),
-      'odd-angle': defaultStats(),
+      trend: defaultStats(),
+      rank: defaultStats(),
+      crossfire: defaultStats(),
     },
     memberSince: new Date().toISOString(),
   };

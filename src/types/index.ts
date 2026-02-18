@@ -1,4 +1,4 @@
-export type GameId = 'blindspot' | 'odd-angle';
+export type GameId = 'blindspot' | 'trend' | 'rank' | 'crossfire';
 
 export interface GameResult {
   dayNumber: number;
@@ -20,14 +20,6 @@ export interface GameStats {
 export interface PlayerState {
   games: Record<GameId, GameStats>;
   memberSince: string;
-}
-
-export interface OddAnglePuzzle {
-  id: number;
-  answer: string;
-  acceptableAnswers: string[];
-  hint: string;
-  imageFolder: string;
 }
 
 export interface GameMeta {

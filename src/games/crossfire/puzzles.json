@@ -1,0 +1,1052 @@
+[
+  {
+    "id": 1,
+    "rounds": [
+      {
+        "clue1": { "domain": "Trees", "hint": "The outer layer of a trunk" },
+        "clue2": { "domain": "Dogs", "hint": "The sound a canine makes" },
+        "answer": "BARK",
+        "acceptedAnswers": ["BARK"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "How high or low a note sounds" },
+        "clue2": { "domain": "Baseball", "hint": "A throw from the mound" },
+        "answer": "PITCH",
+        "acceptedAnswers": ["PITCH"]
+      },
+      {
+        "clue1": { "domain": "Seasons", "hint": "The season after winter" },
+        "clue2": { "domain": "Water", "hint": "A natural source of groundwater" },
+        "answer": "SPRING",
+        "acceptedAnswers": ["SPRING"]
+      },
+      {
+        "clue1": { "domain": "Fire", "hint": "You strike one to make a flame" },
+        "clue2": { "domain": "Sports", "hint": "A contest between two opponents" },
+        "answer": "MATCH",
+        "acceptedAnswers": ["MATCH"]
+      },
+      {
+        "clue1": { "domain": "Animals", "hint": "A marine mammal that balances balls" },
+        "clue2": { "domain": "Security", "hint": "An official stamp of approval" },
+        "answer": "SEAL",
+        "acceptedAnswers": ["SEAL"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "rounds": [
+      {
+        "clue1": { "domain": "Music", "hint": "A genre with electric guitars" },
+        "clue2": { "domain": "Geology", "hint": "A solid mineral formation" },
+        "answer": "ROCK",
+        "acceptedAnswers": ["ROCK"]
+      },
+      {
+        "clue1": { "domain": "Physics", "hint": "Electromagnetic radiation we can see" },
+        "clue2": { "domain": "Weight", "hint": "Not heavy at all" },
+        "answer": "LIGHT",
+        "acceptedAnswers": ["LIGHT"]
+      },
+      {
+        "clue1": { "domain": "Rest", "hint": "A pause from work or activity" },
+        "clue2": { "domain": "Damage", "hint": "To fracture or shatter something" },
+        "answer": "BREAK",
+        "acceptedAnswers": ["BREAK"]
+      },
+      {
+        "clue1": { "domain": "Fishing", "hint": "To throw a line into the water" },
+        "clue2": { "domain": "Movies", "hint": "The group of actors in a film" },
+        "answer": "CAST",
+        "acceptedAnswers": ["CAST"]
+      },
+      {
+        "clue1": { "domain": "Jewelry", "hint": "A band worn on the finger" },
+        "clue2": { "domain": "Boxing", "hint": "The roped area where fighters compete" },
+        "answer": "RING",
+        "acceptedAnswers": ["RING"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "rounds": [
+      {
+        "clue1": { "domain": "Seasons", "hint": "The season after summer" },
+        "clue2": { "domain": "Gravity", "hint": "To drop downward freely" },
+        "answer": "FALL",
+        "acceptedAnswers": ["FALL"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "An informal improvised session" },
+        "clue2": { "domain": "Food", "hint": "A sweet fruit preserve for toast" },
+        "answer": "JAM",
+        "acceptedAnswers": ["JAM"]
+      },
+      {
+        "clue1": { "domain": "Tools", "hint": "A rotating bit for making holes" },
+        "clue2": { "domain": "Military", "hint": "A repetitive training exercise" },
+        "answer": "DRILL",
+        "acceptedAnswers": ["DRILL"]
+      },
+      {
+        "clue1": { "domain": "Chess", "hint": "A threat to the opponent's king" },
+        "clue2": { "domain": "Banking", "hint": "A written order to pay money" },
+        "answer": "CHECK",
+        "acceptedAnswers": ["CHECK", "CHEQUE"]
+      },
+      {
+        "clue1": { "domain": "Law", "hint": "Where a trial takes place" },
+        "clue2": { "domain": "Tennis", "hint": "A playing surface for the game" },
+        "answer": "COURT",
+        "acceptedAnswers": ["COURT"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "rounds": [
+      {
+        "clue1": { "domain": "Games", "hint": "A flat surface for playing chess on" },
+        "clue2": { "domain": "Surfing", "hint": "What a surfer rides on waves" },
+        "answer": "BOARD",
+        "acceptedAnswers": ["BOARD"]
+      },
+      {
+        "clue1": { "domain": "Cards", "hint": "A classic trick-taking card game" },
+        "clue2": { "domain": "Architecture", "hint": "A structure spanning a river" },
+        "answer": "BRIDGE",
+        "acceptedAnswers": ["BRIDGE"]
+      },
+      {
+        "clue1": { "domain": "Cards", "hint": "Hearts, diamonds, clubs, or spades" },
+        "clue2": { "domain": "Clothing", "hint": "A matching jacket and trousers" },
+        "answer": "SUIT",
+        "acceptedAnswers": ["SUIT"]
+      },
+      {
+        "clue1": { "domain": "Biology", "hint": "The smallest unit of life" },
+        "clue2": { "domain": "Prison", "hint": "A small room for an inmate" },
+        "answer": "CELL",
+        "acceptedAnswers": ["CELL"]
+      },
+      {
+        "clue1": { "domain": "Electricity", "hint": "The flow of electric charge" },
+        "clue2": { "domain": "Ocean", "hint": "A continuous flow of water in the sea" },
+        "answer": "CURRENT",
+        "acceptedAnswers": ["CURRENT"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "rounds": [
+      {
+        "clue1": { "domain": "Music", "hint": "A large keyboard instrument in a church" },
+        "clue2": { "domain": "Biology", "hint": "A body part like the heart or liver" },
+        "answer": "ORGAN",
+        "acceptedAnswers": ["ORGAN"]
+      },
+      {
+        "clue1": { "domain": "Temperature", "hint": "A unit on a thermometer" },
+        "clue2": { "domain": "Education", "hint": "An academic qualification from university" },
+        "answer": "DEGREE",
+        "acceptedAnswers": ["DEGREE"]
+      },
+      {
+        "clue1": { "domain": "Bowling", "hint": "Knocking down all ten pins at once" },
+        "clue2": { "domain": "Labor", "hint": "Workers refusing to work in protest" },
+        "answer": "STRIKE",
+        "acceptedAnswers": ["STRIKE"]
+      },
+      {
+        "clue1": { "domain": "Shape", "hint": "A perfectly circular form" },
+        "clue2": { "domain": "Boxing", "hint": "A timed period of fighting" },
+        "answer": "ROUND",
+        "acceptedAnswers": ["ROUND"]
+      },
+      {
+        "clue1": { "domain": "Furniture", "hint": "A flat surface with legs for dining" },
+        "clue2": { "domain": "Data", "hint": "Rows and columns of organized information" },
+        "answer": "TABLE",
+        "acceptedAnswers": ["TABLE"]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "rounds": [
+      {
+        "clue1": { "domain": "Sound", "hint": "The loudness knob on a stereo" },
+        "clue2": { "domain": "Books", "hint": "One book in a multi-book series" },
+        "answer": "VOLUME",
+        "acceptedAnswers": ["VOLUME"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "One song on an album" },
+        "clue2": { "domain": "Running", "hint": "An oval path for racing" },
+        "answer": "TRACK",
+        "acceptedAnswers": ["TRACK"]
+      },
+      {
+        "clue1": { "domain": "Herbs", "hint": "A refreshing herb used in gum" },
+        "clue2": { "domain": "Money", "hint": "Where coins are manufactured" },
+        "answer": "MINT",
+        "acceptedAnswers": ["MINT"]
+      },
+      {
+        "clue1": { "domain": "Eye", "hint": "The dark circle in the center of the iris" },
+        "clue2": { "domain": "School", "hint": "A student in a classroom" },
+        "answer": "PUPIL",
+        "acceptedAnswers": ["PUPIL"]
+      },
+      {
+        "clue1": { "domain": "Chemistry", "hint": "A unit of measurement for substances" },
+        "clue2": { "domain": "Animals", "hint": "A small burrowing mammal" },
+        "answer": "MOLE",
+        "acceptedAnswers": ["MOLE"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "rounds": [
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The joint in the middle of your arm" },
+        "clue2": { "domain": "Pasta", "hint": "A short tubular noodle shape" },
+        "answer": "ELBOW",
+        "acceptedAnswers": ["ELBOW"]
+      },
+      {
+        "clue1": { "domain": "Poker", "hint": "All five cards of the same suit" },
+        "clue2": { "domain": "Plumbing", "hint": "To send water rushing through pipes" },
+        "answer": "FLUSH",
+        "acceptedAnswers": ["FLUSH"]
+      },
+      {
+        "clue1": { "domain": "Archery", "hint": "The projectile shot from a bow" },
+        "clue2": { "domain": "Keyboard", "hint": "A directional key on a computer" },
+        "answer": "ARROW",
+        "acceptedAnswers": ["ARROW"]
+      },
+      {
+        "clue1": { "domain": "Royalty", "hint": "Headwear for a king or queen" },
+        "clue2": { "domain": "Dentistry", "hint": "A cap placed over a damaged tooth" },
+        "answer": "CROWN",
+        "acceptedAnswers": ["CROWN"]
+      },
+      {
+        "clue1": { "domain": "Cooking", "hint": "To stir or whip vigorously" },
+        "clue2": { "domain": "Music", "hint": "The rhythmic pulse of a song" },
+        "answer": "BEAT",
+        "acceptedAnswers": ["BEAT"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "rounds": [
+      {
+        "clue1": { "domain": "Aviation", "hint": "The person flying a plane" },
+        "clue2": { "domain": "Television", "hint": "The first episode of a new show" },
+        "answer": "PILOT",
+        "acceptedAnswers": ["PILOT"]
+      },
+      {
+        "clue1": { "domain": "Shoes", "hint": "The bottom of a shoe" },
+        "clue2": { "domain": "Fish", "hint": "A type of flat ocean fish" },
+        "answer": "SOLE",
+        "acceptedAnswers": ["SOLE"]
+      },
+      {
+        "clue1": { "domain": "Plants", "hint": "The underground part of a tree" },
+        "clue2": { "domain": "Math", "hint": "The square ___ of a number" },
+        "answer": "ROOT",
+        "acceptedAnswers": ["ROOT"]
+      },
+      {
+        "clue1": { "domain": "Weather", "hint": "A flash of electricity in a storm" },
+        "clue2": { "domain": "Hardware", "hint": "A threaded fastener with a nut" },
+        "answer": "BOLT",
+        "acceptedAnswers": ["BOLT"]
+      },
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The organ that pumps blood" },
+        "clue2": { "domain": "Cards", "hint": "A red suit with a rounded symbol" },
+        "answer": "HEART",
+        "acceptedAnswers": ["HEART"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "rounds": [
+      {
+        "clue1": { "domain": "Space", "hint": "A bright point of light in the night sky" },
+        "clue2": { "domain": "Movies", "hint": "The lead actor in a film" },
+        "answer": "STAR",
+        "acceptedAnswers": ["STAR"]
+      },
+      {
+        "clue1": { "domain": "Nautical", "hint": "The left side of a ship" },
+        "clue2": { "domain": "Computing", "hint": "A connection point for a cable" },
+        "answer": "PORT",
+        "acceptedAnswers": ["PORT"]
+      },
+      {
+        "clue1": { "domain": "Birds", "hint": "A large bird that gobbles" },
+        "clue2": { "domain": "Geography", "hint": "A country straddling Europe and Asia" },
+        "answer": "TURKEY",
+        "acceptedAnswers": ["TURKEY"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "A symbol indicating pitch on a staff" },
+        "clue2": { "domain": "Writing", "hint": "A short written message" },
+        "answer": "NOTE",
+        "acceptedAnswers": ["NOTE"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "The lowest male singing voice" },
+        "clue2": { "domain": "Fishing", "hint": "A popular freshwater game fish" },
+        "answer": "BASS",
+        "acceptedAnswers": ["BASS"]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "rounds": [
+      {
+        "clue1": { "domain": "Cooking", "hint": "A mixture of flour and water for bread" },
+        "clue2": { "domain": "Slang", "hint": "Informal word for money" },
+        "answer": "DOUGH",
+        "acceptedAnswers": ["DOUGH"]
+      },
+      {
+        "clue1": { "domain": "Theater", "hint": "A section of a play" },
+        "clue2": { "domain": "Law", "hint": "A piece of legislation" },
+        "answer": "ACT",
+        "acceptedAnswers": ["ACT"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "A group of musicians playing together" },
+        "clue2": { "domain": "Radio", "hint": "A range of frequencies" },
+        "answer": "BAND",
+        "acceptedAnswers": ["BAND"]
+      },
+      {
+        "clue1": { "domain": "Plants", "hint": "The green part that grows from a seed" },
+        "clue2": { "domain": "Film", "hint": "To record a scene with a camera" },
+        "answer": "SHOOT",
+        "acceptedAnswers": ["SHOOT"]
+      },
+      {
+        "clue1": { "domain": "Footwear", "hint": "A tall heavy type of shoe" },
+        "clue2": { "domain": "Computing", "hint": "To start up a computer" },
+        "answer": "BOOT",
+        "acceptedAnswers": ["BOOT"]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "rounds": [
+      {
+        "clue1": { "domain": "Construction", "hint": "A heavy machine that lifts materials" },
+        "clue2": { "domain": "Birds", "hint": "A tall wading bird with long legs" },
+        "answer": "CRANE",
+        "acceptedAnswers": ["CRANE"]
+      },
+      {
+        "clue1": { "domain": "Finance", "hint": "A share of company ownership" },
+        "clue2": { "domain": "Cooking", "hint": "A flavored liquid base for soup" },
+        "answer": "STOCK",
+        "acceptedAnswers": ["STOCK"]
+      },
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The muscular organ used for tasting" },
+        "clue2": { "domain": "Shoes", "hint": "The flap under the laces" },
+        "answer": "TONGUE",
+        "acceptedAnswers": ["TONGUE"]
+      },
+      {
+        "clue1": { "domain": "Cards", "hint": "A playing card with a royal male figure" },
+        "clue2": { "domain": "Chess", "hint": "The most important piece to protect" },
+        "answer": "KING",
+        "acceptedAnswers": ["KING"]
+      },
+      {
+        "clue1": { "domain": "Vehicles", "hint": "A heavy goods transport vehicle" },
+        "clue2": { "domain": "Slang", "hint": "To have no dealings with something" },
+        "answer": "TRUCK",
+        "acceptedAnswers": ["TRUCK"]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "rounds": [
+      {
+        "clue1": { "domain": "Music", "hint": "A thin vibrating piece in a woodwind" },
+        "clue2": { "domain": "Nature", "hint": "A tall grass that grows near water" },
+        "answer": "REED",
+        "acceptedAnswers": ["REED"]
+      },
+      {
+        "clue1": { "domain": "Plumbing", "hint": "A device that controls water flow" },
+        "clue2": { "domain": "Dance", "hint": "A style of rhythmic shoe dancing" },
+        "answer": "TAP",
+        "acceptedAnswers": ["TAP"]
+      },
+      {
+        "clue1": { "domain": "Computers", "hint": "An unwanted software glitch" },
+        "clue2": { "domain": "Insects", "hint": "A small creepy-crawly creature" },
+        "answer": "BUG",
+        "acceptedAnswers": ["BUG"]
+      },
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The digit on your hand" },
+        "clue2": { "domain": "Blame", "hint": "To point at someone as the culprit" },
+        "answer": "FINGER",
+        "acceptedAnswers": ["FINGER"]
+      },
+      {
+        "clue1": { "domain": "Weapons", "hint": "A sharp-edged cutting tool" },
+        "clue2": { "domain": "Ice Skating", "hint": "The metal runner under a skate" },
+        "answer": "BLADE",
+        "acceptedAnswers": ["BLADE"]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "rounds": [
+      {
+        "clue1": { "domain": "Astronomy", "hint": "A natural satellite orbiting a planet" },
+        "clue2": { "domain": "Slang", "hint": "To show your backside to someone" },
+        "answer": "MOON",
+        "acceptedAnswers": ["MOON"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "A percussion instrument with a skin head" },
+        "clue2": { "domain": "Laundry", "hint": "The rotating barrel in a washing machine" },
+        "answer": "DRUM",
+        "acceptedAnswers": ["DRUM"]
+      },
+      {
+        "clue1": { "domain": "Cards", "hint": "The entire set of 52 cards" },
+        "clue2": { "domain": "Ships", "hint": "The flat floor surface of a boat" },
+        "answer": "DECK",
+        "acceptedAnswers": ["DECK"]
+      },
+      {
+        "clue1": { "domain": "Fruit", "hint": "A small red berry often on cakes" },
+        "clue2": { "domain": "Cars", "hint": "A deep red paint color" },
+        "answer": "CHERRY",
+        "acceptedAnswers": ["CHERRY"]
+      },
+      {
+        "clue1": { "domain": "Banking", "hint": "A secure room for storing valuables" },
+        "clue2": { "domain": "Gymnastics", "hint": "A jump where you leap over something" },
+        "answer": "VAULT",
+        "acceptedAnswers": ["VAULT"]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "rounds": [
+      {
+        "clue1": { "domain": "Clothing", "hint": "A knot worn around the neck" },
+        "clue2": { "domain": "Sports", "hint": "When both teams have the same score" },
+        "answer": "TIE",
+        "acceptedAnswers": ["TIE"]
+      },
+      {
+        "clue1": { "domain": "Geography", "hint": "The highest point of a mountain" },
+        "clue2": { "domain": "Hats", "hint": "The front brim of a baseball cap" },
+        "answer": "PEAK",
+        "acceptedAnswers": ["PEAK"]
+      },
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The bony structure of your chest" },
+        "clue2": { "domain": "Barbecue", "hint": "A cut of meat cooked on the grill" },
+        "answer": "RIB",
+        "acceptedAnswers": ["RIB"]
+      },
+      {
+        "clue1": { "domain": "Finance", "hint": "A printed piece of paper money" },
+        "clue2": { "domain": "Birds", "hint": "The flat beak of a duck" },
+        "answer": "BILL",
+        "acceptedAnswers": ["BILL"]
+      },
+      {
+        "clue1": { "domain": "Farming", "hint": "A boundary structure around a field" },
+        "clue2": { "domain": "Swords", "hint": "A sport involving sword combat" },
+        "answer": "FENCE",
+        "acceptedAnswers": ["FENCE"]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "rounds": [
+      {
+        "clue1": { "domain": "Printing", "hint": "A style of lettering like Arial" },
+        "clue2": { "domain": "Religion", "hint": "A basin for baptismal water in church" },
+        "answer": "FONT",
+        "acceptedAnswers": ["FONT"]
+      },
+      {
+        "clue1": { "domain": "Trees", "hint": "A tall coniferous evergreen tree" },
+        "clue2": { "domain": "Emotions", "hint": "To miss someone deeply" },
+        "answer": "PINE",
+        "acceptedAnswers": ["PINE"]
+      },
+      {
+        "clue1": { "domain": "Navigation", "hint": "A device that points north" },
+        "clue2": { "domain": "Geometry", "hint": "A tool for drawing circles" },
+        "answer": "COMPASS",
+        "acceptedAnswers": ["COMPASS"]
+      },
+      {
+        "clue1": { "domain": "Insects", "hint": "A flying insect that makes honey" },
+        "clue2": { "domain": "Spelling", "hint": "A competition for spelling words" },
+        "answer": "BEE",
+        "acceptedAnswers": ["BEE"]
+      },
+      {
+        "clue1": { "domain": "Carpentry", "hint": "A pointed metal fastener" },
+        "clue2": { "domain": "Anatomy", "hint": "The hard covering on fingertips" },
+        "answer": "NAIL",
+        "acceptedAnswers": ["NAIL"]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "rounds": [
+      {
+        "clue1": { "domain": "Sewing", "hint": "A thin strand used for stitching" },
+        "clue2": { "domain": "Internet", "hint": "A chain of related messages in a forum" },
+        "answer": "THREAD",
+        "acceptedAnswers": ["THREAD"]
+      },
+      {
+        "clue1": { "domain": "Billiards", "hint": "A long stick used to strike a ball" },
+        "clue2": { "domain": "Theater", "hint": "A signal for an actor to speak" },
+        "answer": "CUE",
+        "acceptedAnswers": ["CUE"]
+      },
+      {
+        "clue1": { "domain": "Plants", "hint": "The colorful part that attracts bees" },
+        "clue2": { "domain": "Baking", "hint": "Ground wheat used to make bread" },
+        "answer": "FLOWER",
+        "acceptedAnswers": ["FLOWER", "FLOUR"]
+      },
+      {
+        "clue1": { "domain": "Aviation", "hint": "The part of a plane that creates lift" },
+        "clue2": { "domain": "Chicken", "hint": "A part often served fried or buffalo-style" },
+        "answer": "WING",
+        "acceptedAnswers": ["WING"]
+      },
+      {
+        "clue1": { "domain": "Literature", "hint": "The main storyline of a novel" },
+        "clue2": { "domain": "Gardening", "hint": "A small area of land for growing things" },
+        "answer": "PLOT",
+        "acceptedAnswers": ["PLOT"]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "rounds": [
+      {
+        "clue1": { "domain": "Playground", "hint": "A back-and-forth hanging seat" },
+        "clue2": { "domain": "Jazz", "hint": "A style with a bouncy rhythm" },
+        "answer": "SWING",
+        "acceptedAnswers": ["SWING"]
+      },
+      {
+        "clue1": { "domain": "Painting", "hint": "A single brush movement on canvas" },
+        "clue2": { "domain": "Swimming", "hint": "An arm movement through the water" },
+        "answer": "STROKE",
+        "acceptedAnswers": ["STROKE"]
+      },
+      {
+        "clue1": { "domain": "Astronomy", "hint": "The path a planet takes around a star" },
+        "clue2": { "domain": "Anatomy", "hint": "The bony socket around the eye" },
+        "answer": "ORBIT",
+        "acceptedAnswers": ["ORBIT"]
+      },
+      {
+        "clue1": { "domain": "Horses", "hint": "A young male horse" },
+        "clue2": { "domain": "Firearms", "hint": "A famous brand of revolver" },
+        "answer": "COLT",
+        "acceptedAnswers": ["COLT"]
+      },
+      {
+        "clue1": { "domain": "Fabric", "hint": "A soft fuzzy material for blankets" },
+        "clue2": { "domain": "Sheep", "hint": "The woolly coat of a sheep" },
+        "answer": "FLEECE",
+        "acceptedAnswers": ["FLEECE"]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "rounds": [
+      {
+        "clue1": { "domain": "Mail", "hint": "An adhesive label for posting letters" },
+        "clue2": { "domain": "Printing", "hint": "To make an imprint on paper" },
+        "answer": "STAMP",
+        "acceptedAnswers": ["STAMP"]
+      },
+      {
+        "clue1": { "domain": "Cooking", "hint": "A mixture for coating fried food" },
+        "clue2": { "domain": "Baseball", "hint": "The player who swings at the ball" },
+        "answer": "BATTER",
+        "acceptedAnswers": ["BATTER"]
+      },
+      {
+        "clue1": { "domain": "Plumbing", "hint": "A basin with running water for washing" },
+        "clue2": { "domain": "Failure", "hint": "To go down or decline completely" },
+        "answer": "SINK",
+        "acceptedAnswers": ["SINK"]
+      },
+      {
+        "clue1": { "domain": "Electricity", "hint": "An on-off toggle on the wall" },
+        "clue2": { "domain": "Transport", "hint": "To change from one train to another" },
+        "answer": "SWITCH",
+        "acceptedAnswers": ["SWITCH"]
+      },
+      {
+        "clue1": { "domain": "Flowers", "hint": "A thorny plant with red blooms" },
+        "clue2": { "domain": "Wine", "hint": "A pink-colored type of wine" },
+        "answer": "ROSE",
+        "acceptedAnswers": ["ROSE"]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "rounds": [
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The fleshy underside of your hand" },
+        "clue2": { "domain": "Trees", "hint": "A tropical tree with coconuts or dates" },
+        "answer": "PALM",
+        "acceptedAnswers": ["PALM"]
+      },
+      {
+        "clue1": { "domain": "Ocean", "hint": "A large rolling movement of water" },
+        "clue2": { "domain": "Greetings", "hint": "A hand gesture to say hello" },
+        "answer": "WAVE",
+        "acceptedAnswers": ["WAVE"]
+      },
+      {
+        "clue1": { "domain": "Mechanics", "hint": "A toothed wheel in a machine" },
+        "clue2": { "domain": "Camping", "hint": "Equipment and supplies for an activity" },
+        "answer": "GEAR",
+        "acceptedAnswers": ["GEAR"]
+      },
+      {
+        "clue1": { "domain": "Chess", "hint": "A piece that moves in an L-shape" },
+        "clue2": { "domain": "Medieval", "hint": "An armored warrior on horseback" },
+        "answer": "KNIGHT",
+        "acceptedAnswers": ["KNIGHT"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "A thin wire on a guitar" },
+        "clue2": { "domain": "Programming", "hint": "A sequence of characters in code" },
+        "answer": "STRING",
+        "acceptedAnswers": ["STRING"]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "rounds": [
+      {
+        "clue1": { "domain": "Cards", "hint": "The highest-ranking card in the deck" },
+        "clue2": { "domain": "Tennis", "hint": "A serve the opponent cannot return" },
+        "answer": "ACE",
+        "acceptedAnswers": ["ACE"]
+      },
+      {
+        "clue1": { "domain": "Photography", "hint": "A picture taken with a camera" },
+        "clue2": { "domain": "Basketball", "hint": "An attempt to score a basket" },
+        "answer": "SHOT",
+        "acceptedAnswers": ["SHOT"]
+      },
+      {
+        "clue1": { "domain": "Metals", "hint": "A precious yellow metal" },
+        "clue2": { "domain": "Olympics", "hint": "The highest medal awarded" },
+        "answer": "GOLD",
+        "acceptedAnswers": ["GOLD"]
+      },
+      {
+        "clue1": { "domain": "Farming", "hint": "The harvest gathered from fields" },
+        "clue2": { "domain": "Photography", "hint": "To trim an image to a smaller size" },
+        "answer": "CROP",
+        "acceptedAnswers": ["CROP"]
+      },
+      {
+        "clue1": { "domain": "Doors", "hint": "A device for securing a door shut" },
+        "clue2": { "domain": "Hair", "hint": "A curl or strand of hair" },
+        "answer": "LOCK",
+        "acceptedAnswers": ["LOCK"]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "rounds": [
+      {
+        "clue1": { "domain": "River", "hint": "A structure built to hold back water" },
+        "clue2": { "domain": "Animals", "hint": "A rodent that builds lodges in streams" },
+        "answer": "DAM",
+        "acceptedAnswers": ["DAM"]
+      },
+      {
+        "clue1": { "domain": "Computing", "hint": "A saved webpage displayed in a browser" },
+        "clue2": { "domain": "Books", "hint": "One side of a leaf in a book" },
+        "answer": "PAGE",
+        "acceptedAnswers": ["PAGE"]
+      },
+      {
+        "clue1": { "domain": "Automotive", "hint": "The storage area in the back of a car" },
+        "clue2": { "domain": "Trees", "hint": "The main woody stem of a tree" },
+        "answer": "TRUNK",
+        "acceptedAnswers": ["TRUNK"]
+      },
+      {
+        "clue1": { "domain": "Fruit", "hint": "A citrus fruit that is sour and yellow" },
+        "clue2": { "domain": "Cars", "hint": "Slang for a defective vehicle" },
+        "answer": "LEMON",
+        "acceptedAnswers": ["LEMON"]
+      },
+      {
+        "clue1": { "domain": "Jewelry", "hint": "A clear precious gemstone" },
+        "clue2": { "domain": "Baseball", "hint": "The shape of the infield" },
+        "answer": "DIAMOND",
+        "acceptedAnswers": ["DIAMOND"]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "rounds": [
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The upper limb of the body" },
+        "clue2": { "domain": "Weapons", "hint": "To equip with weapons" },
+        "answer": "ARM",
+        "acceptedAnswers": ["ARM"]
+      },
+      {
+        "clue1": { "domain": "Electricity", "hint": "A safety device that melts to break a circuit" },
+        "clue2": { "domain": "Explosives", "hint": "A cord that ignites a bomb" },
+        "answer": "FUSE",
+        "acceptedAnswers": ["FUSE"]
+      },
+      {
+        "clue1": { "domain": "Theater", "hint": "A heavy fabric pulled across the stage" },
+        "clue2": { "domain": "Windows", "hint": "A hanging fabric covering a window" },
+        "answer": "CURTAIN",
+        "acceptedAnswers": ["CURTAIN"]
+      },
+      {
+        "clue1": { "domain": "Trains", "hint": "A person who operates a locomotive" },
+        "clue2": { "domain": "Software", "hint": "A program that controls hardware" },
+        "answer": "DRIVER",
+        "acceptedAnswers": ["DRIVER"]
+      },
+      {
+        "clue1": { "domain": "Fabric", "hint": "A smooth luxury material from silkworms" },
+        "clue2": { "domain": "Corn", "hint": "The fine threads on an ear of corn" },
+        "answer": "SILK",
+        "acceptedAnswers": ["SILK"]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "rounds": [
+      {
+        "clue1": { "domain": "Weather", "hint": "A loud rumbling sound after lightning" },
+        "clue2": { "domain": "Applause", "hint": "Thunderous clapping from an audience" },
+        "answer": "THUNDER",
+        "acceptedAnswers": ["THUNDER"]
+      },
+      {
+        "clue1": { "domain": "Music", "hint": "The repeating section everyone sings along to" },
+        "clue2": { "domain": "Dance", "hint": "A line of performers on stage" },
+        "answer": "CHORUS",
+        "acceptedAnswers": ["CHORUS"]
+      },
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The joint in the middle of your leg" },
+        "clue2": { "domain": "Reflex", "hint": "A doctor taps here to test reflexes" },
+        "answer": "KNEE",
+        "acceptedAnswers": ["KNEE"]
+      },
+      {
+        "clue1": { "domain": "Art", "hint": "A room where paintings are exhibited" },
+        "clue2": { "domain": "Architecture", "hint": "An upper-level balcony in a theater" },
+        "answer": "GALLERY",
+        "acceptedAnswers": ["GALLERY"]
+      },
+      {
+        "clue1": { "domain": "Golf", "hint": "A person who carries a player's clubs" },
+        "clue2": { "domain": "Tea", "hint": "A container for storing tea leaves" },
+        "answer": "CADDY",
+        "acceptedAnswers": ["CADDY"]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "rounds": [
+      {
+        "clue1": { "domain": "Cleaning", "hint": "A long-handled floor cleaning tool" },
+        "clue2": { "domain": "Hair", "hint": "A thick untidy mass of hair" },
+        "answer": "MOP",
+        "acceptedAnswers": ["MOP"]
+      },
+      {
+        "clue1": { "domain": "Camping", "hint": "A temporary shelter made of fabric" },
+        "clue2": { "domain": "Circus", "hint": "The large canopy covering the arena" },
+        "answer": "TENT",
+        "acceptedAnswers": ["TENT"]
+      },
+      {
+        "clue1": { "domain": "Hiking", "hint": "A path through the wilderness" },
+        "clue2": { "domain": "Astronomy", "hint": "The luminous tail behind a comet" },
+        "answer": "TRAIL",
+        "acceptedAnswers": ["TRAIL"]
+      },
+      {
+        "clue1": { "domain": "Knitting", "hint": "A loop of yarn on a needle" },
+        "clue2": { "domain": "Medicine", "hint": "Surgical thread closing a wound" },
+        "answer": "STITCH",
+        "acceptedAnswers": ["STITCH"]
+      },
+      {
+        "clue1": { "domain": "Archery", "hint": "The center of a target" },
+        "clue2": { "domain": "Finance", "hint": "A rising market trend, or a male bovine" },
+        "answer": "BULL",
+        "acceptedAnswers": ["BULL"]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "rounds": [
+      {
+        "clue1": { "domain": "Music", "hint": "A brass instrument with valves and a bell" },
+        "clue2": { "domain": "Politics", "hint": "To promote or praise loudly" },
+        "answer": "TRUMPET",
+        "acceptedAnswers": ["TRUMPET"]
+      },
+      {
+        "clue1": { "domain": "Geography", "hint": "A narrow strip of land in water" },
+        "clue2": { "domain": "Music", "hint": "A section of a musical staff" },
+        "answer": "BAR",
+        "acceptedAnswers": ["BAR"]
+      },
+      {
+        "clue1": { "domain": "Woodwork", "hint": "A clear protective coating for wood" },
+        "clue2": { "domain": "Cosmetics", "hint": "A glossy coating applied to nails" },
+        "answer": "VARNISH",
+        "acceptedAnswers": ["VARNISH"]
+      },
+      {
+        "clue1": { "domain": "Electricity", "hint": "A unit of electrical potential" },
+        "clue2": { "domain": "Physics", "hint": "Named after Alessandro, an Italian physicist" },
+        "answer": "VOLT",
+        "acceptedAnswers": ["VOLT"]
+      },
+      {
+        "clue1": { "domain": "Anatomy", "hint": "The framework of bones in the body" },
+        "clue2": { "domain": "Writing", "hint": "An outline or basic structure of a plan" },
+        "answer": "SKELETON",
+        "acceptedAnswers": ["SKELETON"]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "rounds": [
+      {
+        "clue1": { "domain": "Speed", "hint": "Moving quickly" },
+        "clue2": { "domain": "Cars", "hint": "A Suzuki model" },
+        "answer": "SWIFT",
+        "acceptedAnswers": ["SWIFT"]
+      },
+      {
+        "clue1": { "domain": "Geometry", "hint": "A 90-degree angle" },
+        "clue2": { "domain": "Politics", "hint": "The conservative side of the aisle" },
+        "answer": "RIGHT",
+        "acceptedAnswers": ["RIGHT"]
+      },
+      {
+        "clue1": { "domain": "Time", "hint": "Sixty seconds" },
+        "clue2": { "domain": "Size", "hint": "Extremely small or tiny" },
+        "answer": "MINUTE",
+        "acceptedAnswers": ["MINUTE"]
+      },
+      {
+        "clue1": { "domain": "Sports", "hint": "A type of golf club for smoothing shots" },
+        "clue2": { "domain": "Laundry", "hint": "An appliance for pressing wrinkles out" },
+        "answer": "IRON",
+        "acceptedAnswers": ["IRON"]
+      },
+      {
+        "clue1": { "domain": "Food", "hint": "A citrus fruit between red and yellow" },
+        "clue2": { "domain": "Colors", "hint": "A warm color mixed from red and yellow" },
+        "answer": "ORANGE",
+        "acceptedAnswers": ["ORANGE"]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "rounds": [
+      {
+        "clue1": { "domain": "Architecture", "hint": "A vertical support pillar" },
+        "clue2": { "domain": "Newspapers", "hint": "A regular written section by a journalist" },
+        "answer": "COLUMN",
+        "acceptedAnswers": ["COLUMN"]
+      },
+      {
+        "clue1": { "domain": "Aviation", "hint": "An airport building for departures" },
+        "clue2": { "domain": "Computing", "hint": "A text-based command-line interface" },
+        "answer": "TERMINAL",
+        "acceptedAnswers": ["TERMINAL"]
+      },
+      {
+        "clue1": { "domain": "Banking", "hint": "A financial institution for deposits" },
+        "clue2": { "domain": "Rivers", "hint": "The sloping land beside a river" },
+        "answer": "BANK",
+        "acceptedAnswers": ["BANK"]
+      },
+      {
+        "clue1": { "domain": "Tennis", "hint": "A score of zero" },
+        "clue2": { "domain": "Emotions", "hint": "A deep feeling of affection" },
+        "answer": "LOVE",
+        "acceptedAnswers": ["LOVE"]
+      },
+      {
+        "clue1": { "domain": "Tools", "hint": "Used to drive in nails" },
+        "clue2": { "domain": "Anatomy", "hint": "A tiny bone inside the middle ear" },
+        "answer": "HAMMER",
+        "acceptedAnswers": ["HAMMER"]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "rounds": [
+      {
+        "clue1": { "domain": "Music", "hint": "A part of a song with lyrics" },
+        "clue2": { "domain": "Poetry", "hint": "A stanza or line in a poem" },
+        "answer": "VERSE",
+        "acceptedAnswers": ["VERSE"]
+      },
+      {
+        "clue1": { "domain": "Birds", "hint": "A large elegant white waterbird" },
+        "clue2": { "domain": "Ballet", "hint": "Famous for the Lake performance" },
+        "answer": "SWAN",
+        "acceptedAnswers": ["SWAN"]
+      },
+      {
+        "clue1": { "domain": "Furniture", "hint": "A writing surface in an office" },
+        "clue2": { "domain": "Work", "hint": "A type of sedentary office job" },
+        "answer": "DESK",
+        "acceptedAnswers": ["DESK"]
+      },
+      {
+        "clue1": { "domain": "Photography", "hint": "A device that opens to expose the sensor" },
+        "clue2": { "domain": "Windows", "hint": "A hinged panel covering a window exterior" },
+        "answer": "SHUTTER",
+        "acceptedAnswers": ["SHUTTER"]
+      },
+      {
+        "clue1": { "domain": "Geology", "hint": "Layers of mineral deposited underground" },
+        "clue2": { "domain": "Banking", "hint": "Money placed into a savings account" },
+        "answer": "DEPOSIT",
+        "acceptedAnswers": ["DEPOSIT"]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "rounds": [
+      {
+        "clue1": { "domain": "Jewelry", "hint": "A chain worn around the neck" },
+        "clue2": { "domain": "Bottles", "hint": "The narrow part at the top of a bottle" },
+        "answer": "NECK",
+        "acceptedAnswers": ["NECK"]
+      },
+      {
+        "clue1": { "domain": "Sailing", "hint": "The large fabric sheet that catches wind" },
+        "clue2": { "domain": "Shopping", "hint": "A discounted price event at a store" },
+        "answer": "SALE",
+        "acceptedAnswers": ["SALE", "SAIL"]
+      },
+      {
+        "clue1": { "domain": "Pottery", "hint": "A container for arranging flowers" },
+        "clue2": { "domain": "Decor", "hint": "An ornamental vessel on a mantelpiece" },
+        "answer": "VASE",
+        "acceptedAnswers": ["VASE"]
+      },
+      {
+        "clue1": { "domain": "Weather", "hint": "Precipitation that falls as ice crystals" },
+        "clue2": { "domain": "Computing", "hint": "A cloud-based data warehousing platform" },
+        "answer": "SNOW",
+        "acceptedAnswers": ["SNOW"]
+      },
+      {
+        "clue1": { "domain": "Cooking", "hint": "To fold and press dough repeatedly" },
+        "clue2": { "domain": "Massage", "hint": "To press and work muscles with hands" },
+        "answer": "KNEAD",
+        "acceptedAnswers": ["KNEAD"]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "rounds": [
+      {
+        "clue1": { "domain": "Music", "hint": "The speed or tempo of a piece" },
+        "clue2": { "domain": "Running", "hint": "How fast a runner moves their legs" },
+        "answer": "PACE",
+        "acceptedAnswers": ["PACE"]
+      },
+      {
+        "clue1": { "domain": "Diving", "hint": "To go beneath the water surface" },
+        "clue2": { "domain": "Food", "hint": "A sandwich made with a long roll" },
+        "answer": "SUB",
+        "acceptedAnswers": ["SUB"]
+      },
+      {
+        "clue1": { "domain": "Weapons", "hint": "A protective surface carried in battle" },
+        "clue2": { "domain": "Heraldry", "hint": "A coat of arms design" },
+        "answer": "SHIELD",
+        "acceptedAnswers": ["SHIELD"]
+      },
+      {
+        "clue1": { "domain": "Writing", "hint": "A section or division in a book" },
+        "clue2": { "domain": "Nature", "hint": "A corridor through a grove of trees" },
+        "answer": "PASSAGE",
+        "acceptedAnswers": ["PASSAGE"]
+      },
+      {
+        "clue1": { "domain": "Computing", "hint": "A small tracking indicator on screen" },
+        "clue2": { "domain": "Typing", "hint": "The blinking line where text appears" },
+        "answer": "CURSOR",
+        "acceptedAnswers": ["CURSOR"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "category": "Geography",
+    "question": "Order these countries by population (highest first)",
+    "items": [
+      { "name": "Indonesia", "value": 277000000 },
+      { "name": "Nigeria", "value": 223000000 },
+      { "name": "Brazil", "value": 215000000 },
+      { "name": "Bangladesh", "value": 170000000 },
+      { "name": "Japan", "value": 125000000 }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Space",
+    "question": "Order these planets by diameter in km (largest first)",
+    "items": [
+      { "name": "Jupiter", "value": 139820 },
+      { "name": "Saturn", "value": 116460 },
+      { "name": "Uranus", "value": 50724 },
+      { "name": "Neptune", "value": 49244 },
+      { "name": "Earth", "value": 12742 }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Movies",
+    "question": "Order these films by worldwide box office gross (highest first)",
+    "items": [
+      { "name": "Avatar (2009)", "value": 2923706026 },
+      { "name": "Avengers: Endgame", "value": 2799439100 },
+      { "name": "Avatar: The Way of Water", "value": 2320250281 },
+      { "name": "Titanic", "value": 2264743305 },
+      { "name": "Star Wars: The Force Awakens", "value": 2071310218 }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Nature",
+    "question": "Order these animals by top running speed in km/h (fastest first)",
+    "items": [
+      { "name": "Cheetah", "value": 120 },
+      { "name": "Pronghorn Antelope", "value": 89 },
+      { "name": "Springbok", "value": 88 },
+      { "name": "Wildebeest", "value": 80 },
+      { "name": "Lion", "value": 79 }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Economics",
+    "question": "Order these countries by nominal GDP in trillions USD (highest first)",
+    "items": [
+      { "name": "United States", "value": 28780 },
+      { "name": "China", "value": 18530 },
+      { "name": "Germany", "value": 4590 },
+      { "name": "Japan", "value": 4230 },
+      { "name": "India", "value": 3940 }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Architecture",
+    "question": "Order these buildings by height in meters (tallest first)",
+    "items": [
+      { "name": "Burj Khalifa", "value": 828 },
+      { "name": "Merdeka 118", "value": 679 },
+      { "name": "Shanghai Tower", "value": 632 },
+      { "name": "Abraj Al-Bait Clock Tower", "value": 601 },
+      { "name": "Ping An Finance Centre", "value": 599 }
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Geography",
+    "question": "Order these rivers by length in km (longest first)",
+    "items": [
+      { "name": "Nile", "value": 6650 },
+      { "name": "Amazon", "value": 6400 },
+      { "name": "Yangtze", "value": 6300 },
+      { "name": "Mississippi-Missouri", "value": 6275 },
+      { "name": "Yenisei", "value": 5539 }
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Technology",
+    "question": "Order these companies by market cap in billions USD as of late 2024 (highest first)",
+    "items": [
+      { "name": "Apple", "value": 3440 },
+      { "name": "Microsoft", "value": 3130 },
+      { "name": "NVIDIA", "value": 3000 },
+      { "name": "Amazon", "value": 2350 },
+      { "name": "Alphabet (Google)", "value": 2170 }
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Sports",
+    "question": "Order these tennis players by career Grand Slam titles (most first)",
+    "items": [
+      { "name": "Novak Djokovic", "value": 24 },
+      { "name": "Rafael Nadal", "value": 22 },
+      { "name": "Roger Federer", "value": 20 },
+      { "name": "Pete Sampras", "value": 14 },
+      { "name": "Bjorn Borg", "value": 11 }
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Music",
+    "question": "Order these albums by certified copies sold worldwide (most first)",
+    "items": [
+      { "name": "Thriller — Michael Jackson", "value": 70000000 },
+      { "name": "Back in Black — AC/DC", "value": 50000000 },
+      { "name": "The Dark Side of the Moon — Pink Floyd", "value": 45000000 },
+      { "name": "The Bodyguard (Soundtrack) — Whitney Houston", "value": 45000000 },
+      { "name": "Bat Out of Hell — Meat Loaf", "value": 43000000 }
+    ]
+  },
+  {
+    "id": 11,
+    "category": "Science",
+    "question": "Order these elements by melting point in °C (highest first)",
+    "items": [
+      { "name": "Tungsten", "value": 3422 },
+      { "name": "Rhenium", "value": 3186 },
+      { "name": "Osmium", "value": 3033 },
+      { "name": "Tantalum", "value": 3017 },
+      { "name": "Molybdenum", "value": 2623 }
+    ]
+  },
+  {
+    "id": 12,
+    "category": "Geography",
+    "question": "Order these countries by land area in km² (largest first)",
+    "items": [
+      { "name": "Russia", "value": 17098242 },
+      { "name": "Canada", "value": 9984670 },
+      { "name": "United States", "value": 9833520 },
+      { "name": "China", "value": 9596960 },
+      { "name": "Brazil", "value": 8515767 }
+    ]
+  },
+  {
+    "id": 13,
+    "category": "Food",
+    "question": "Order these foods by calories per 100g (most first)",
+    "items": [
+      { "name": "Macadamia Nuts", "value": 718 },
+      { "name": "Dark Chocolate (70%)", "value": 598 },
+      { "name": "Cheddar Cheese", "value": 403 },
+      { "name": "White Rice (cooked)", "value": 130 },
+      { "name": "Banana", "value": 89 }
+    ]
+  },
+  {
+    "id": 14,
+    "category": "History",
+    "question": "Order these historical events by year (most recent first)",
+    "items": [
+      { "name": "Fall of the Berlin Wall", "value": 1989 },
+      { "name": "Moon Landing (Apollo 11)", "value": 1969 },
+      { "name": "End of World War II", "value": 1945 },
+      { "name": "Sinking of the Titanic", "value": 1912 },
+      { "name": "French Revolution begins", "value": 1789 }
+    ]
+  },
+  {
+    "id": 15,
+    "category": "Nature",
+    "question": "Order these lakes by surface area in km² (largest first)",
+    "items": [
+      { "name": "Caspian Sea", "value": 371000 },
+      { "name": "Lake Superior", "value": 82100 },
+      { "name": "Lake Victoria", "value": 68870 },
+      { "name": "Lake Huron", "value": 59600 },
+      { "name": "Lake Michigan", "value": 57800 }
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Sports",
+    "question": "Order these countries by all-time Summer Olympic gold medals (most first)",
+    "items": [
+      { "name": "United States", "value": 1061 },
+      { "name": "Soviet Union", "value": 395 },
+      { "name": "Great Britain", "value": 296 },
+      { "name": "Germany", "value": 283 },
+      { "name": "China", "value": 280 }
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Geography",
+    "question": "Order these mountains by height in meters (tallest first)",
+    "items": [
+      { "name": "Mount Everest", "value": 8849 },
+      { "name": "K2", "value": 8611 },
+      { "name": "Kangchenjunga", "value": 8586 },
+      { "name": "Lhotse", "value": 8516 },
+      { "name": "Makalu", "value": 8485 }
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Literature",
+    "question": "Order these book series by estimated total copies sold (most first)",
+    "items": [
+      { "name": "Harry Potter", "value": 600000000 },
+      { "name": "Goosebumps", "value": 400000000 },
+      { "name": "Perry Mason", "value": 300000000 },
+      { "name": "Berenstain Bears", "value": 260000000 },
+      { "name": "Choose Your Own Adventure", "value": 250000000 }
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Space",
+    "question": "Order these planets by distance from the Sun in millions of km (farthest first)",
+    "items": [
+      { "name": "Neptune", "value": 4495 },
+      { "name": "Uranus", "value": 2871 },
+      { "name": "Saturn", "value": 1434 },
+      { "name": "Jupiter", "value": 778 },
+      { "name": "Mars", "value": 228 }
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Economics",
+    "question": "Order these currencies by value of 1 unit in USD as of 2024 (highest first)",
+    "items": [
+      { "name": "Kuwaiti Dinar", "value": 3.26 },
+      { "name": "Bahraini Dinar", "value": 2.65 },
+      { "name": "Omani Rial", "value": 2.60 },
+      { "name": "British Pound", "value": 1.27 },
+      { "name": "Euro", "value": 1.08 }
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Technology",
+    "question": "Order these platforms by monthly active users in 2024 (most first)",
+    "items": [
+      { "name": "Facebook", "value": 3070000000 },
+      { "name": "YouTube", "value": 2500000000 },
+      { "name": "WhatsApp", "value": 2000000000 },
+      { "name": "Instagram", "value": 2000000000 },
+      { "name": "TikTok", "value": 1580000000 }
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Nature",
+    "question": "Order these animals by average lifespan in years (longest first)",
+    "items": [
+      { "name": "Bowhead Whale", "value": 200 },
+      { "name": "Galapagos Giant Tortoise", "value": 175 },
+      { "name": "African Elephant", "value": 70 },
+      { "name": "Macaw", "value": 60 },
+      { "name": "Horse", "value": 30 }
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Movies",
+    "question": "Order these animated films by worldwide box office gross (highest first)",
+    "items": [
+      { "name": "Inside Out 2", "value": 1699104986 },
+      { "name": "The Lion King (2019)", "value": 1663075401 },
+      { "name": "Frozen II", "value": 1453683476 },
+      { "name": "Frozen", "value": 1281508100 },
+      { "name": "Incredibles 2", "value": 1242805359 }
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Science",
+    "question": "Order these ocean trenches by maximum depth in meters (deepest first)",
+    "items": [
+      { "name": "Mariana Trench", "value": 10994 },
+      { "name": "Tonga Trench", "value": 10823 },
+      { "name": "Kuril-Kamchatka Trench", "value": 10542 },
+      { "name": "Philippine Trench", "value": 10540 },
+      { "name": "Kermadec Trench", "value": 10047 }
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Music",
+    "question": "Order these artists by Spotify monthly listeners in late 2024 (most first)",
+    "items": [
+      { "name": "The Weeknd", "value": 105000000 },
+      { "name": "Taylor Swift", "value": 95000000 },
+      { "name": "Bruno Mars", "value": 90000000 },
+      { "name": "Billie Eilish", "value": 80000000 },
+      { "name": "Rihanna", "value": 75000000 }
+    ]
+  },
+  {
+    "id": 26,
+    "category": "Geography",
+    "question": "Order these metro areas by population (highest first)",
+    "items": [
+      { "name": "Tokyo", "value": 37400000 },
+      { "name": "Delhi", "value": 32900000 },
+      { "name": "Shanghai", "value": 29200000 },
+      { "name": "Dhaka", "value": 23900000 },
+      { "name": "Cairo", "value": 22600000 }
+    ]
+  },
+  {
+    "id": 27,
+    "category": "Sports",
+    "question": "Order these soccer leagues by average match attendance in 2023-24 (highest first)",
+    "items": [
+      { "name": "Bundesliga (Germany)", "value": 43000 },
+      { "name": "Premier League (England)", "value": 40000 },
+      { "name": "La Liga (Spain)", "value": 30000 },
+      { "name": "Serie A (Italy)", "value": 27000 },
+      { "name": "Ligue 1 (France)", "value": 24000 }
+    ]
+  },
+  {
+    "id": 28,
+    "category": "Food",
+    "question": "Order these countries by annual coffee consumption per capita in kg (most first)",
+    "items": [
+      { "name": "Finland", "value": 12.0 },
+      { "name": "Norway", "value": 9.9 },
+      { "name": "Iceland", "value": 9.0 },
+      { "name": "Denmark", "value": 8.7 },
+      { "name": "Netherlands", "value": 8.4 }
+    ]
+  },
+  {
+    "id": 29,
+    "category": "History",
+    "question": "Order these inventions by year of invention (most recent first)",
+    "items": [
+      { "name": "World Wide Web", "value": 1989 },
+      { "name": "Personal Computer", "value": 1975 },
+      { "name": "Television", "value": 1927 },
+      { "name": "Telephone", "value": 1876 },
+      { "name": "Telegraph", "value": 1837 }
+    ]
+  },
+  {
+    "id": 30,
+    "category": "Science",
+    "question": "Order these human organs by average weight in grams (heaviest first)",
+    "items": [
+      { "name": "Liver", "value": 1500 },
+      { "name": "Brain", "value": 1400 },
+      { "name": "Lungs (both)", "value": 1300 },
+      { "name": "Heart", "value": 310 },
+      { "name": "Kidneys (both)", "value": 290 }
+    ]
+  }
+]

@@ -11,9 +11,25 @@ export function buildShareText(gameId: GameId, score: number, maxScore: number):
     return `Blindspot #${dayNum} — ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
   }
 
-  if (gameId === 'odd-angle') {
-    const icons = Array.from({ length: score }, () => '\uD83D\uDD0D').join('');
-    return `Odd Angle #${dayNum} — ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
+  if (gameId === 'trend') {
+    const icons = Array.from({ length: maxScore }, (_, i) =>
+      i < score ? '\uD83D\uDCC8' : '\uD83D\uDCC9'
+    ).join('');
+    return `Trend #${dayNum} — ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
+  }
+
+  if (gameId === 'rank') {
+    const icons = Array.from({ length: maxScore }, (_, i) =>
+      i < score ? '\u2B06\uFE0F' : '\u2B07\uFE0F'
+    ).join('');
+    return `Rank #${dayNum} — ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
+  }
+
+  if (gameId === 'crossfire') {
+    const icons = Array.from({ length: maxScore }, (_, i) =>
+      i < score ? '\uD83C\uDFAF' : '\u274C'
+    ).join('');
+    return `Crossfire #${dayNum} — ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
   }
 
   return '';

@@ -1,0 +1,48 @@
+name: Generate Fresh Puzzles
+
+on:
+  schedule:
+    # Run every Sunday at 2 AM UTC — generates a batch of new puzzles weekly
+    - cron: '0 2 * * 0'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate new puzzles
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate-puzzles.mjs
+
+      - name: Validate puzzles
+        run: node scripts/validate-puzzles.mjs
+
+      - name: Build to verify no errors
+        run: npm run build
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet src/games/*/puzzles.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "GameIQ Bot"
+          git config user.email "noreply@daitiq.com"
+          git add src/games/*/puzzles.json
+          git commit -m "chore: refresh puzzle banks $(date +%Y-%m-%d)"
+          git push

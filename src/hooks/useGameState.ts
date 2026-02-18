@@ -24,7 +24,7 @@ function loadState(): PlayerState {
       return {
         ...parsed,
         games: {
-          blindspot: parsed.games?.blindspot ?? defaultStats(),
+          pricecheck: parsed.games?.pricecheck ?? defaultStats(),
           trend: parsed.games?.trend ?? defaultStats(),
           rank: parsed.games?.rank ?? defaultStats(),
           crossfire: parsed.games?.crossfire ?? defaultStats(),
@@ -34,7 +34,7 @@ function loadState(): PlayerState {
   } catch { /* ignore */ }
   return {
     games: {
-      blindspot: defaultStats(),
+      pricecheck: defaultStats(),
       trend: defaultStats(),
       rank: defaultStats(),
       crossfire: defaultStats(),

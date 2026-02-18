@@ -3,20 +3,20 @@ import { useGameState } from '../hooks/useGameState';
 import { GameMeta, GameStats } from '../types';
 
 const GAMES: GameMeta[] = [
-  { id: 'blindspot', name: 'Blindspot', description: 'Find the wrong word in each statement', icon: '\uD83D\uDCA1', path: '/blindspot' },
+  { id: 'pricecheck', name: 'Pricecheck', description: 'Guess if the real value is higher or lower', icon: '\uD83D\uDCB0', path: '/pricecheck' },
   { id: 'trend', name: 'Trend', description: 'Predict where the data goes next', icon: '\uD83D\uDCC8', path: '/trend' },
   { id: 'rank', name: 'Rank', description: 'Order items by a hidden metric', icon: '\uD83C\uDFC6', path: '/rank' },
   { id: 'crossfire', name: 'Crossfire', description: 'One word connects two clues', icon: '\uD83C\uDFAF', path: '/crossfire' },
 ];
 
 export function Home() {
-  const blindspotState = useGameState('blindspot');
+  const pricecheckState = useGameState('pricecheck');
   const trendState = useGameState('trend');
   const rankState = useGameState('rank');
   const crossfireState = useGameState('crossfire');
 
   const statsMap: Record<string, GameStats> = {
-    blindspot: blindspotState.stats,
+    pricecheck: pricecheckState.stats,
     trend: trendState.stats,
     rank: rankState.stats,
     crossfire: crossfireState.stats,

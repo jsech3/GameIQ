@@ -355,7 +355,7 @@ export function Crossfire() {
         >
           {checkAnswer(inputValue, round) ? (
             <span className="flex items-center justify-center gap-2">
-              <span>\u2713</span> Correct! {round.answer} connects both.
+              <span>{'\u2713'}</span> Correct! {round.answer} connects both.
             </span>
           ) : (
             <span>

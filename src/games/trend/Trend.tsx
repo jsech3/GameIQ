@@ -448,7 +448,7 @@ export function Trend() {
         >
           {selectedDirection === round.answer ? (
             <span className="flex items-center justify-center gap-2">
-              <span>\u2713</span> Correct! The trend went {round.answer}.
+              <span>{'\u2713'}</span> Correct! The trend went {round.answer}.
             </span>
           ) : (
             <span>

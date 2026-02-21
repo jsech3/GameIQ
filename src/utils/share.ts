@@ -32,6 +32,13 @@ export function buildShareText(gameId: GameId, score: number, maxScore: number):
     return `Crossfire #${dayNum} \u2014 ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
   }
 
+  if (gameId === 'versus') {
+    const icons = Array.from({ length: maxScore }, (_, i) =>
+      i < score ? '\u2694\uFE0F' : '\u274C'
+    ).join('');
+    return `Versus #${dayNum} \u2014 ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
+  }
+
   return '';
 }
 

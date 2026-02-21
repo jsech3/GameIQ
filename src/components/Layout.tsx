@@ -6,6 +6,7 @@ const GAMES: GameMeta[] = [
   { id: 'trend', name: 'Trend', description: 'Predict the graph', icon: '\uD83D\uDCC8', path: '/trend' },
   { id: 'rank', name: 'Rank', description: 'Order items correctly', icon: '\uD83C\uDFC6', path: '/rank' },
   { id: 'crossfire', name: 'Crossfire', description: 'Find the word', icon: '\uD83C\uDFAF', path: '/crossfire' },
+  { id: 'versus', name: 'Versus', description: 'Pick the winner', icon: '\u2694\uFE0F', path: '/versus' },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {

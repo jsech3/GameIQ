@@ -28,6 +28,7 @@ function loadState(): PlayerState {
           trend: parsed.games?.trend ?? defaultStats(),
           rank: parsed.games?.rank ?? defaultStats(),
           crossfire: parsed.games?.crossfire ?? defaultStats(),
+          versus: parsed.games?.versus ?? defaultStats(),
         },
       };
     }
@@ -38,6 +39,7 @@ function loadState(): PlayerState {
       trend: defaultStats(),
       rank: defaultStats(),
       crossfire: defaultStats(),
+      versus: defaultStats(),
     },
     memberSince: new Date().toISOString(),
   };

@@ -5,6 +5,7 @@ import { Pricecheck } from './games/pricecheck/Pricecheck';
 import { Trend } from './games/trend/Trend';
 import { Rank } from './games/rank/Rank';
 import { Crossfire } from './games/crossfire/Crossfire';
+import { Versus } from './games/versus/Versus';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/trend" element={<Trend />} />
         <Route path="/rank" element={<Rank />} />
         <Route path="/crossfire" element={<Crossfire />} />
+        <Route path="/versus" element={<Versus />} />
       </Routes>
     </Layout>
   );

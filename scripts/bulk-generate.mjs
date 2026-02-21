@@ -1023,11 +1023,261 @@ function generateCrossfire(rng) {
 
 // ── MAIN ─────────────────────────────────────────────────────────
 
+// ── VERSUS ────────────────────────────────────────────────────────
+
+const VERSUS_COMPARISONS = [
+  // Technology
+  { category: "Technology", metric: "Which has more monthly active users?", optionA: { name: "Netflix", value: 260, unit: "million" }, optionB: { name: "Spotify", value: 626, unit: "million" } },
+  { category: "Technology", metric: "Which has more monthly active users?", optionA: { name: "Instagram", value: 2000, unit: "million" }, optionB: { name: "TikTok", value: 1200, unit: "million" } },
+  { category: "Technology", metric: "Which has more monthly active users?", optionA: { name: "YouTube", value: 2500, unit: "million" }, optionB: { name: "Facebook", value: 3000, unit: "million" } },
+  { category: "Technology", metric: "Which was founded first?", optionA: { name: "Google", value: 1998, unit: "" }, optionB: { name: "Amazon", value: 1994, unit: "" } },
+  { category: "Technology", metric: "Which was founded first?", optionA: { name: "Apple", value: 1976, unit: "" }, optionB: { name: "Microsoft", value: 1975, unit: "" } },
+  { category: "Technology", metric: "Which has more employees?", optionA: { name: "Amazon", value: 1540000, unit: "" }, optionB: { name: "Walmart", value: 2100000, unit: "" } },
+  { category: "Technology", metric: "Which has more employees?", optionA: { name: "Google", value: 182000, unit: "" }, optionB: { name: "Meta", value: 67000, unit: "" } },
+  { category: "Technology", metric: "Which has a higher market cap (2025)?", optionA: { name: "Apple", value: 3400, unit: "billion $" }, optionB: { name: "Microsoft", value: 3100, unit: "billion $" } },
+  { category: "Technology", metric: "Which has a higher market cap (2025)?", optionA: { name: "Nvidia", value: 2800, unit: "billion $" }, optionB: { name: "Amazon", value: 2000, unit: "billion $" } },
+  { category: "Technology", metric: "Which phone has a larger battery (mAh)?", optionA: { name: "iPhone 16 Pro Max", value: 4685, unit: "mAh" }, optionB: { name: "Samsung Galaxy S25 Ultra", value: 5000, unit: "mAh" } },
+  { category: "Technology", metric: "Which has more total downloads?", optionA: { name: "WhatsApp", value: 5000, unit: "million" }, optionB: { name: "TikTok", value: 4000, unit: "million" } },
+  { category: "Technology", metric: "Which costs more to make?", optionA: { name: "iPhone 16 Pro", value: 423, unit: "$" }, optionB: { name: "Samsung Galaxy S25", value: 380, unit: "$" } },
+  { category: "Technology", metric: "Which has more daily active users?", optionA: { name: "Snapchat", value: 406, unit: "million" }, optionB: { name: "X (Twitter)", value: 250, unit: "million" } },
+  { category: "Technology", metric: "Which streaming service has more subscribers?", optionA: { name: "Disney+", value: 150, unit: "million" }, optionB: { name: "Netflix", value: 260, unit: "million" } },
+  { category: "Technology", metric: "Which was released first?", optionA: { name: "PlayStation 5", value: 2020, unit: "" }, optionB: { name: "Xbox Series X", value: 2020, unit: "" } },
+  { category: "Technology", metric: "Which has more storage (base model)?", optionA: { name: "Nintendo Switch 2", value: 256, unit: "GB" }, optionB: { name: "Steam Deck OLED", value: 512, unit: "GB" } },
+  // Geography
+  { category: "Geography", metric: "Which country has a larger population?", optionA: { name: "Indonesia", value: 277, unit: "million" }, optionB: { name: "Brazil", value: 216, unit: "million" } },
+  { category: "Geography", metric: "Which country has a larger population?", optionA: { name: "Nigeria", value: 230, unit: "million" }, optionB: { name: "Russia", value: 144, unit: "million" } },
+  { category: "Geography", metric: "Which country has a larger population?", optionA: { name: "Japan", value: 124, unit: "million" }, optionB: { name: "Mexico", value: 129, unit: "million" } },
+  { category: "Geography", metric: "Which country has a larger population?", optionA: { name: "Germany", value: 84, unit: "million" }, optionB: { name: "France", value: 68, unit: "million" } },
+  { category: "Geography", metric: "Which country has a larger area?", optionA: { name: "Canada", value: 3855, unit: "thousand sq mi" }, optionB: { name: "United States", value: 3797, unit: "thousand sq mi" } },
+  { category: "Geography", metric: "Which country has a larger area?", optionA: { name: "Australia", value: 2968, unit: "thousand sq mi" }, optionB: { name: "India", value: 1269, unit: "thousand sq mi" } },
+  { category: "Geography", metric: "Which city has a higher elevation?", optionA: { name: "Denver, CO", value: 5280, unit: "ft" }, optionB: { name: "Salt Lake City, UT", value: 4226, unit: "ft" } },
+  { category: "Geography", metric: "Which city has a higher elevation?", optionA: { name: "Mexico City", value: 7382, unit: "ft" }, optionB: { name: "Bogotá, Colombia", value: 8660, unit: "ft" } },
+  { category: "Geography", metric: "Which river is longer?", optionA: { name: "Nile", value: 4132, unit: "miles" }, optionB: { name: "Amazon", value: 4000, unit: "miles" } },
+  { category: "Geography", metric: "Which river is longer?", optionA: { name: "Mississippi", value: 2340, unit: "miles" }, optionB: { name: "Danube", value: 1770, unit: "miles" } },
+  { category: "Geography", metric: "Which lake is deeper?", optionA: { name: "Lake Baikal", value: 5387, unit: "ft" }, optionB: { name: "Lake Tanganyika", value: 4823, unit: "ft" } },
+  { category: "Geography", metric: "Which mountain is taller?", optionA: { name: "K2", value: 28251, unit: "ft" }, optionB: { name: "Kangchenjunga", value: 28169, unit: "ft" } },
+  { category: "Geography", metric: "Which country has more islands?", optionA: { name: "Sweden", value: 267570, unit: "" }, optionB: { name: "Philippines", value: 7641, unit: "" } },
+  { category: "Geography", metric: "Which desert is larger?", optionA: { name: "Sahara", value: 3600000, unit: "sq mi" }, optionB: { name: "Arabian", value: 900000, unit: "sq mi" } },
+  { category: "Geography", metric: "Which city is further north?", optionA: { name: "London", value: 51, unit: "°N" }, optionB: { name: "Paris", value: 48, unit: "°N" } },
+  { category: "Geography", metric: "Which US state has more people?", optionA: { name: "Texas", value: 30500, unit: "thousand" }, optionB: { name: "Florida", value: 22600, unit: "thousand" } },
+  { category: "Geography", metric: "Which US state has more people?", optionA: { name: "New York", value: 19500, unit: "thousand" }, optionB: { name: "Pennsylvania", value: 13000, unit: "thousand" } },
+  { category: "Geography", metric: "Which country has a higher GDP per capita?", optionA: { name: "Norway", value: 82000, unit: "$" }, optionB: { name: "Switzerland", value: 92000, unit: "$" } },
+  // Sports
+  { category: "Sports", metric: "Which athlete has more career points?", optionA: { name: "LeBron James", value: 40474, unit: "" }, optionB: { name: "Kareem Abdul-Jabbar", value: 38387, unit: "" } },
+  { category: "Sports", metric: "Which team has more Super Bowl wins?", optionA: { name: "New England Patriots", value: 6, unit: "" }, optionB: { name: "Pittsburgh Steelers", value: 6, unit: "" } },
+  { category: "Sports", metric: "Which team has more NBA championships?", optionA: { name: "Boston Celtics", value: 18, unit: "" }, optionB: { name: "Los Angeles Lakers", value: 17, unit: "" } },
+  { category: "Sports", metric: "Which stadium holds more people?", optionA: { name: "Michigan Stadium", value: 107601, unit: "" }, optionB: { name: "Beaver Stadium (Penn State)", value: 106572, unit: "" } },
+  { category: "Sports", metric: "Which athlete has more Grand Slam titles?", optionA: { name: "Novak Djokovic", value: 24, unit: "" }, optionB: { name: "Rafael Nadal", value: 22, unit: "" } },
+  { category: "Sports", metric: "Which country has more FIFA World Cup wins?", optionA: { name: "Brazil", value: 5, unit: "" }, optionB: { name: "Germany", value: 4, unit: "" } },
+  { category: "Sports", metric: "Which athlete has more Olympic gold medals?", optionA: { name: "Michael Phelps", value: 23, unit: "" }, optionB: { name: "Usain Bolt", value: 8, unit: "" } },
+  { category: "Sports", metric: "Which sport has more registered players worldwide?", optionA: { name: "Soccer", value: 265, unit: "million" }, optionB: { name: "Cricket", value: 125, unit: "million" } },
+  { category: "Sports", metric: "Which has a higher top speed?", optionA: { name: "Tennis serve (record)", value: 163, unit: "mph" }, optionB: { name: "Baseball pitch (record)", value: 105, unit: "mph" } },
+  { category: "Sports", metric: "Which athlete earned more career earnings?", optionA: { name: "Tiger Woods", value: 121, unit: "million $" }, optionB: { name: "Roger Federer", value: 130, unit: "million $" } },
+  { category: "Sports", metric: "Which NFL player has more career touchdowns?", optionA: { name: "Jerry Rice", value: 208, unit: "" }, optionB: { name: "Emmitt Smith", value: 175, unit: "" } },
+  { category: "Sports", metric: "Which MLB player has more career home runs?", optionA: { name: "Barry Bonds", value: 762, unit: "" }, optionB: { name: "Hank Aaron", value: 755, unit: "" } },
+  { category: "Sports", metric: "Which hockey player has more career goals?", optionA: { name: "Wayne Gretzky", value: 894, unit: "" }, optionB: { name: "Gordie Howe", value: 801, unit: "" } },
+  { category: "Sports", metric: "Which marathon is older?", optionA: { name: "Boston Marathon", value: 1897, unit: "" }, optionB: { name: "London Marathon", value: 1981, unit: "" } },
+  { category: "Sports", metric: "Which sport ball is heavier?", optionA: { name: "Baseball", value: 5.25, unit: "oz" }, optionB: { name: "Tennis ball", value: 2, unit: "oz" } },
+  // Science
+  { category: "Science", metric: "Which planet is larger (diameter)?", optionA: { name: "Jupiter", value: 86881, unit: "miles" }, optionB: { name: "Saturn", value: 72367, unit: "miles" } },
+  { category: "Science", metric: "Which planet is larger (diameter)?", optionA: { name: "Neptune", value: 30599, unit: "miles" }, optionB: { name: "Uranus", value: 31518, unit: "miles" } },
+  { category: "Science", metric: "Which element has a higher atomic number?", optionA: { name: "Gold (Au)", value: 79, unit: "" }, optionB: { name: "Silver (Ag)", value: 47, unit: "" } },
+  { category: "Science", metric: "Which element has a higher melting point?", optionA: { name: "Iron", value: 2800, unit: "°F" }, optionB: { name: "Copper", value: 1984, unit: "°F" } },
+  { category: "Science", metric: "Which animal is faster?", optionA: { name: "Cheetah", value: 70, unit: "mph" }, optionB: { name: "Pronghorn antelope", value: 55, unit: "mph" } },
+  { category: "Science", metric: "Which animal is faster?", optionA: { name: "Peregrine falcon (dive)", value: 240, unit: "mph" }, optionB: { name: "Golden eagle (dive)", value: 200, unit: "mph" } },
+  { category: "Science", metric: "Which animal lives longer?", optionA: { name: "Bowhead whale", value: 200, unit: "years" }, optionB: { name: "Galápagos tortoise", value: 175, unit: "years" } },
+  { category: "Science", metric: "Which animal lives longer?", optionA: { name: "African elephant", value: 70, unit: "years" }, optionB: { name: "Macaw parrot", value: 60, unit: "years" } },
+  { category: "Science", metric: "Which has more moons?", optionA: { name: "Saturn", value: 146, unit: "" }, optionB: { name: "Jupiter", value: 95, unit: "" } },
+  { category: "Science", metric: "Which planet has a longer year?", optionA: { name: "Mars", value: 687, unit: "Earth days" }, optionB: { name: "Venus", value: 225, unit: "Earth days" } },
+  { category: "Science", metric: "Which planet is closer to the Sun?", optionA: { name: "Venus", value: 67, unit: "million miles" }, optionB: { name: "Mars", value: 142, unit: "million miles" } },
+  { category: "Science", metric: "Which is heavier?", optionA: { name: "A cubic foot of gold", value: 1206, unit: "lbs" }, optionB: { name: "A cubic foot of lead", value: 709, unit: "lbs" } },
+  { category: "Science", metric: "Which has more chromosomes?", optionA: { name: "Human", value: 46, unit: "" }, optionB: { name: "Dog", value: 78, unit: "" } },
+  { category: "Science", metric: "Which ocean is deeper (max depth)?", optionA: { name: "Pacific Ocean", value: 36161, unit: "ft" }, optionB: { name: "Atlantic Ocean", value: 27841, unit: "ft" } },
+  { category: "Science", metric: "Which is colder (average temp)?", optionA: { name: "North Pole", value: -40, unit: "°F" }, optionB: { name: "South Pole", value: -76, unit: "°F" } },
+  { category: "Science", metric: "Which star is bigger?", optionA: { name: "Betelgeuse", value: 700, unit: "× Sun" }, optionB: { name: "Rigel", value: 79, unit: "× Sun" } },
+  // Food & Drink
+  { category: "Food", metric: "Which has more calories per serving?", optionA: { name: "Avocado (whole)", value: 322, unit: "cal" }, optionB: { name: "Banana", value: 105, unit: "cal" } },
+  { category: "Food", metric: "Which has more calories per serving?", optionA: { name: "Big Mac", value: 563, unit: "cal" }, optionB: { name: "Whopper", value: 657, unit: "cal" } },
+  { category: "Food", metric: "Which has more calories?", optionA: { name: "Slice of pizza", value: 285, unit: "cal" }, optionB: { name: "Slice of cheesecake", value: 401, unit: "cal" } },
+  { category: "Food", metric: "Which has more sugar per can?", optionA: { name: "Coca-Cola", value: 39, unit: "grams" }, optionB: { name: "Mountain Dew", value: 46, unit: "grams" } },
+  { category: "Food", metric: "Which has more caffeine per cup?", optionA: { name: "Espresso (1 oz)", value: 63, unit: "mg" }, optionB: { name: "Drip coffee (8 oz)", value: 95, unit: "mg" } },
+  { category: "Food", metric: "Which country consumes more coffee per capita?", optionA: { name: "Finland", value: 12, unit: "kg/year" }, optionB: { name: "United States", value: 4.2, unit: "kg/year" } },
+  { category: "Food", metric: "Which country produces more wine?", optionA: { name: "Italy", value: 49, unit: "million hectoliters" }, optionB: { name: "France", value: 46, unit: "million hectoliters" } },
+  { category: "Food", metric: "Which costs more per pound?", optionA: { name: "Saffron", value: 5000, unit: "$/lb" }, optionB: { name: "Vanilla beans", value: 300, unit: "$/lb" } },
+  { category: "Food", metric: "Which fruit is more produced globally?", optionA: { name: "Bananas", value: 120, unit: "million tons" }, optionB: { name: "Apples", value: 86, unit: "million tons" } },
+  { category: "Food", metric: "Which has more protein per serving?", optionA: { name: "Chicken breast (6 oz)", value: 54, unit: "grams" }, optionB: { name: "Salmon (6 oz)", value: 34, unit: "grams" } },
+  { category: "Food", metric: "Which fast food chain has more locations worldwide?", optionA: { name: "McDonald's", value: 40000, unit: "" }, optionB: { name: "Subway", value: 37000, unit: "" } },
+  { category: "Food", metric: "Which has more sodium per serving?", optionA: { name: "Ramen noodles (packet)", value: 1820, unit: "mg" }, optionB: { name: "Can of chicken soup", value: 890, unit: "mg" } },
+  // Entertainment
+  { category: "Entertainment", metric: "Which movie grossed more worldwide?", optionA: { name: "Avatar (2009)", value: 2923, unit: "million $" }, optionB: { name: "Avengers: Endgame", value: 2799, unit: "million $" } },
+  { category: "Entertainment", metric: "Which movie grossed more worldwide?", optionA: { name: "Titanic (1997)", value: 2264, unit: "million $" }, optionB: { name: "Star Wars: Force Awakens", value: 2071, unit: "million $" } },
+  { category: "Entertainment", metric: "Which movie grossed more worldwide?", optionA: { name: "The Lion King (2019)", value: 1663, unit: "million $" }, optionB: { name: "Jurassic World", value: 1671, unit: "million $" } },
+  { category: "Entertainment", metric: "Which artist has sold more albums all-time?", optionA: { name: "The Beatles", value: 600, unit: "million" }, optionB: { name: "Elvis Presley", value: 500, unit: "million" } },
+  { category: "Entertainment", metric: "Which artist has more Spotify monthly listeners?", optionA: { name: "The Weeknd", value: 100, unit: "million" }, optionB: { name: "Taylor Swift", value: 90, unit: "million" } },
+  { category: "Entertainment", metric: "Which TV show had more seasons?", optionA: { name: "The Simpsons", value: 36, unit: "" }, optionB: { name: "South Park", value: 27, unit: "" } },
+  { category: "Entertainment", metric: "Which TV show had more seasons?", optionA: { name: "Grey's Anatomy", value: 21, unit: "" }, optionB: { name: "Law & Order: SVU", value: 26, unit: "" } },
+  { category: "Entertainment", metric: "Which actor has more Oscar nominations?", optionA: { name: "Meryl Streep", value: 21, unit: "" }, optionB: { name: "Jack Nicholson", value: 12, unit: "" } },
+  { category: "Entertainment", metric: "Which has more episodes?", optionA: { name: "One Piece (anime)", value: 1100, unit: "" }, optionB: { name: "Pokémon (anime)", value: 1275, unit: "" } },
+  { category: "Entertainment", metric: "Which video game franchise sold more copies?", optionA: { name: "Mario", value: 850, unit: "million" }, optionB: { name: "Pokémon", value: 480, unit: "million" } },
+  { category: "Entertainment", metric: "Which video game sold more copies?", optionA: { name: "Minecraft", value: 300, unit: "million" }, optionB: { name: "GTA V", value: 200, unit: "million" } },
+  { category: "Entertainment", metric: "Which book series sold more copies?", optionA: { name: "Harry Potter", value: 600, unit: "million" }, optionB: { name: "Lord of the Rings", value: 150, unit: "million" } },
+  { category: "Entertainment", metric: "Which theme park gets more annual visitors?", optionA: { name: "Magic Kingdom (Disney World)", value: 17, unit: "million" }, optionB: { name: "Disneyland (California)", value: 16, unit: "million" } },
+  // History
+  { category: "History", metric: "Which was built first?", optionA: { name: "Great Wall of China", value: -700, unit: "" }, optionB: { name: "Colosseum in Rome", value: 72, unit: "" } },
+  { category: "History", metric: "Which was built first?", optionA: { name: "Great Pyramid of Giza", value: -2560, unit: "" }, optionB: { name: "Stonehenge", value: -3000, unit: "" } },
+  { category: "History", metric: "Which leader ruled longer?", optionA: { name: "Queen Victoria", value: 63, unit: "years" }, optionB: { name: "Queen Elizabeth II", value: 70, unit: "years" } },
+  { category: "History", metric: "Which leader ruled longer?", optionA: { name: "Louis XIV of France", value: 72, unit: "years" }, optionB: { name: "Emperor Hirohito of Japan", value: 62, unit: "years" } },
+  { category: "History", metric: "Which war lasted longer?", optionA: { name: "Vietnam War", value: 20, unit: "years" }, optionB: { name: "Korean War", value: 3, unit: "years" } },
+  { category: "History", metric: "Which war had more casualties?", optionA: { name: "World War I", value: 20, unit: "million" }, optionB: { name: "World War II", value: 70, unit: "million" } },
+  { category: "History", metric: "Which happened first?", optionA: { name: "French Revolution", value: 1789, unit: "" }, optionB: { name: "American Revolution", value: 1775, unit: "" } },
+  { category: "History", metric: "Which city was founded first?", optionA: { name: "Rome", value: -753, unit: "" }, optionB: { name: "Athens", value: -3000, unit: "" } },
+  { category: "History", metric: "Which empire lasted longer?", optionA: { name: "Roman Empire", value: 1000, unit: "years" }, optionB: { name: "Ottoman Empire", value: 623, unit: "years" } },
+  { category: "History", metric: "Which US President served more terms?", optionA: { name: "Franklin D. Roosevelt", value: 4, unit: "terms" }, optionB: { name: "George Washington", value: 2, unit: "terms" } },
+  { category: "History", metric: "Which ancient wonder was taller?", optionA: { name: "Great Pyramid of Giza", value: 481, unit: "ft" }, optionB: { name: "Lighthouse of Alexandria", value: 450, unit: "ft" } },
+  // Business
+  { category: "Business", metric: "Which company has higher annual revenue?", optionA: { name: "Apple", value: 383, unit: "billion $" }, optionB: { name: "Samsung", value: 200, unit: "billion $" } },
+  { category: "Business", metric: "Which company has higher annual revenue?", optionA: { name: "Walmart", value: 648, unit: "billion $" }, optionB: { name: "Amazon", value: 575, unit: "billion $" } },
+  { category: "Business", metric: "Which company has higher annual revenue?", optionA: { name: "Toyota", value: 274, unit: "billion $" }, optionB: { name: "Volkswagen", value: 293, unit: "billion $" } },
+  { category: "Business", metric: "Which brand is worth more?", optionA: { name: "Coca-Cola", value: 106, unit: "billion $" }, optionB: { name: "Pepsi", value: 19, unit: "billion $" } },
+  { category: "Business", metric: "Which brand is worth more?", optionA: { name: "Nike", value: 53, unit: "billion $" }, optionB: { name: "Adidas", value: 16, unit: "billion $" } },
+  { category: "Business", metric: "Which company is older?", optionA: { name: "Nintendo", value: 1889, unit: "" }, optionB: { name: "IBM", value: 1911, unit: "" } },
+  { category: "Business", metric: "Which company is older?", optionA: { name: "Coca-Cola", value: 1886, unit: "" }, optionB: { name: "Pepsi", value: 1893, unit: "" } },
+  { category: "Business", metric: "Which airline carries more passengers?", optionA: { name: "American Airlines", value: 200, unit: "million" }, optionB: { name: "Delta", value: 190, unit: "million" } },
+  { category: "Business", metric: "Which has more hotel rooms worldwide?", optionA: { name: "Marriott", value: 1500000, unit: "" }, optionB: { name: "Hilton", value: 1100000, unit: "" } },
+  { category: "Business", metric: "Which costs more per share (Jan 2025)?", optionA: { name: "Berkshire Hathaway (A)", value: 700000, unit: "$" }, optionB: { name: "Amazon", value: 220, unit: "$" } },
+  // Nature
+  { category: "Nature", metric: "Which waterfall is taller?", optionA: { name: "Angel Falls (Venezuela)", value: 3212, unit: "ft" }, optionB: { name: "Niagara Falls", value: 167, unit: "ft" } },
+  { category: "Nature", metric: "Which tree species grows taller?", optionA: { name: "Coast redwood", value: 380, unit: "ft" }, optionB: { name: "Douglas fir", value: 330, unit: "ft" } },
+  { category: "Nature", metric: "Which animal weighs more?", optionA: { name: "Hippo", value: 3500, unit: "lbs" }, optionB: { name: "Polar bear", value: 1200, unit: "lbs" } },
+  { category: "Nature", metric: "Which animal weighs more?", optionA: { name: "Gorilla", value: 400, unit: "lbs" }, optionB: { name: "Grizzly bear", value: 600, unit: "lbs" } },
+  { category: "Nature", metric: "Which volcano is taller?", optionA: { name: "Mauna Kea (from sea floor)", value: 33500, unit: "ft" }, optionB: { name: "Mount Everest (from sea level)", value: 29032, unit: "ft" } },
+  { category: "Nature", metric: "Which animal has a longer gestation period?", optionA: { name: "Elephant", value: 22, unit: "months" }, optionB: { name: "Giraffe", value: 15, unit: "months" } },
+  { category: "Nature", metric: "Which animal has a longer gestation period?", optionA: { name: "Human", value: 9, unit: "months" }, optionB: { name: "Dog", value: 2, unit: "months" } },
+  { category: "Nature", metric: "Which has a bigger wingspan?", optionA: { name: "Wandering albatross", value: 12, unit: "ft" }, optionB: { name: "Bald eagle", value: 7.5, unit: "ft" } },
+  { category: "Nature", metric: "Which can dive deeper?", optionA: { name: "Sperm whale", value: 7380, unit: "ft" }, optionB: { name: "Emperor penguin", value: 1850, unit: "ft" } },
+  { category: "Nature", metric: "Which has more species?", optionA: { name: "Beetles", value: 400000, unit: "" }, optionB: { name: "Butterflies", value: 17500, unit: "" } },
+  // Space
+  { category: "Space", metric: "Which is further from the Sun?", optionA: { name: "Neptune", value: 2795, unit: "million miles" }, optionB: { name: "Uranus", value: 1784, unit: "million miles" } },
+  { category: "Space", metric: "Which planet has a higher surface temperature?", optionA: { name: "Venus", value: 867, unit: "°F" }, optionB: { name: "Mercury", value: 800, unit: "°F" } },
+  { category: "Space", metric: "Which planet spins faster (shorter day)?", optionA: { name: "Jupiter", value: 10, unit: "hours" }, optionB: { name: "Saturn", value: 10.7, unit: "hours" } },
+  { category: "Space", metric: "Which space mission lasted longer?", optionA: { name: "Voyager 1", value: 47, unit: "years" }, optionB: { name: "Cassini (Saturn)", value: 20, unit: "years" } },
+  { category: "Space", metric: "Which is bigger?", optionA: { name: "Sun (diameter)", value: 865370, unit: "miles" }, optionB: { name: "Jupiter (diameter)", value: 86881, unit: "miles" } },
+  { category: "Space", metric: "Which astronaut spent more time in space?", optionA: { name: "Peggy Whitson", value: 665, unit: "days" }, optionB: { name: "Scott Kelly", value: 520, unit: "days" } },
+  { category: "Space", metric: "Which was launched first?", optionA: { name: "Hubble Space Telescope", value: 1990, unit: "" }, optionB: { name: "James Webb Space Telescope", value: 2021, unit: "" } },
+  { category: "Space", metric: "Which galaxy is closer to the Milky Way?", optionA: { name: "Andromeda", value: 2.537, unit: "million light-years" }, optionB: { name: "Triangulum", value: 2.73, unit: "million light-years" } },
+  // Pop Culture
+  { category: "Pop Culture", metric: "Which has more Instagram followers?", optionA: { name: "Cristiano Ronaldo", value: 636, unit: "million" }, optionB: { name: "Kylie Jenner", value: 400, unit: "million" } },
+  { category: "Pop Culture", metric: "Which has more Instagram followers?", optionA: { name: "Selena Gomez", value: 429, unit: "million" }, optionB: { name: "Dwayne Johnson", value: 395, unit: "million" } },
+  { category: "Pop Culture", metric: "Which YouTube channel has more subscribers?", optionA: { name: "MrBeast", value: 340, unit: "million" }, optionB: { name: "T-Series", value: 270, unit: "million" } },
+  { category: "Pop Culture", metric: "Which song has more Spotify streams?", optionA: { name: "Blinding Lights (The Weeknd)", value: 4300, unit: "million" }, optionB: { name: "Shape of You (Ed Sheeran)", value: 3900, unit: "million" } },
+  { category: "Pop Culture", metric: "Which franchise is worth more?", optionA: { name: "Star Wars", value: 70, unit: "billion $" }, optionB: { name: "Harry Potter", value: 35, unit: "billion $" } },
+  { category: "Pop Culture", metric: "Which franchise is worth more?", optionA: { name: "Pokémon", value: 150, unit: "billion $" }, optionB: { name: "Marvel", value: 53, unit: "billion $" } },
+  // Miscellaneous
+  { category: "Miscellaneous", metric: "Which country drinks more beer per capita?", optionA: { name: "Czech Republic", value: 188, unit: "liters/year" }, optionB: { name: "Germany", value: 100, unit: "liters/year" } },
+  { category: "Miscellaneous", metric: "Which has a longer average lifespan?", optionA: { name: "Japanese person", value: 84, unit: "years" }, optionB: { name: "American person", value: 77, unit: "years" } },
+  { category: "Miscellaneous", metric: "Which costs more to build?", optionA: { name: "International Space Station", value: 150, unit: "billion $" }, optionB: { name: "Large Hadron Collider", value: 13, unit: "billion $" } },
+  { category: "Miscellaneous", metric: "Which language has more native speakers?", optionA: { name: "Mandarin Chinese", value: 920, unit: "million" }, optionB: { name: "Spanish", value: 475, unit: "million" } },
+  { category: "Miscellaneous", metric: "Which language has more native speakers?", optionA: { name: "English", value: 373, unit: "million" }, optionB: { name: "Hindi", value: 345, unit: "million" } },
+  { category: "Miscellaneous", metric: "Which has more pages?", optionA: { name: "War and Peace", value: 1225, unit: "" }, optionB: { name: "Les Misérables", value: 1462, unit: "" } },
+  { category: "Miscellaneous", metric: "Which building is taller?", optionA: { name: "Burj Khalifa", value: 2717, unit: "ft" }, optionB: { name: "One World Trade Center", value: 1776, unit: "ft" } },
+  { category: "Miscellaneous", metric: "Which building is taller?", optionA: { name: "Empire State Building", value: 1454, unit: "ft" }, optionB: { name: "Eiffel Tower", value: 1083, unit: "ft" } },
+  { category: "Miscellaneous", metric: "Which city has more people?", optionA: { name: "Tokyo", value: 37, unit: "million" }, optionB: { name: "New York City", value: 8.3, unit: "million" } },
+  { category: "Miscellaneous", metric: "Which city has more people?", optionA: { name: "Mumbai", value: 21, unit: "million" }, optionB: { name: "São Paulo", value: 22, unit: "million" } },
+  { category: "Miscellaneous", metric: "Which bridge is longer?", optionA: { name: "Lake Pontchartrain Causeway", value: 24, unit: "miles" }, optionB: { name: "Golden Gate Bridge", value: 1.7, unit: "miles" } },
+  { category: "Miscellaneous", metric: "Which costs more annually?", optionA: { name: "Harvard tuition", value: 59076, unit: "$/year" }, optionB: { name: "MIT tuition", value: 61990, unit: "$/year" } },
+  { category: "Miscellaneous", metric: "Which country has more UNESCO World Heritage sites?", optionA: { name: "Italy", value: 59, unit: "" }, optionB: { name: "China", value: 57, unit: "" } },
+  { category: "Miscellaneous", metric: "Which US city has more annual tourists?", optionA: { name: "New York City", value: 62, unit: "million" }, optionB: { name: "Las Vegas", value: 40, unit: "million" } },
+  { category: "Miscellaneous", metric: "Which has a faster top speed?", optionA: { name: "Bugatti Chiron", value: 304, unit: "mph" }, optionB: { name: "Formula 1 car", value: 231, unit: "mph" } },
+  { category: "Miscellaneous", metric: "Which has a faster top speed?", optionA: { name: "Bullet train (Shinkansen)", value: 200, unit: "mph" }, optionB: { name: "Maglev train (record)", value: 374, unit: "mph" } },
+  { category: "Miscellaneous", metric: "Which organ is heavier?", optionA: { name: "Human brain", value: 3, unit: "lbs" }, optionB: { name: "Human liver", value: 3.5, unit: "lbs" } },
+  { category: "Miscellaneous", metric: "Which US state was admitted first?", optionA: { name: "Virginia", value: 1788, unit: "" }, optionB: { name: "Delaware", value: 1787, unit: "" } },
+  // More Technology
+  { category: "Technology", metric: "Which search engine has more market share?", optionA: { name: "Google", value: 91, unit: "%" }, optionB: { name: "Bing", value: 3.5, unit: "%" } },
+  { category: "Technology", metric: "Which console sold more units all-time?", optionA: { name: "PlayStation 2", value: 155, unit: "million" }, optionB: { name: "Nintendo DS", value: 154, unit: "million" } },
+  { category: "Technology", metric: "Which console sold more units all-time?", optionA: { name: "Nintendo Switch", value: 143, unit: "million" }, optionB: { name: "PlayStation 4", value: 117, unit: "million" } },
+  // More Geography
+  { category: "Geography", metric: "Which country has a longer coastline?", optionA: { name: "Canada", value: 125567, unit: "miles" }, optionB: { name: "Indonesia", value: 33998, unit: "miles" } },
+  { category: "Geography", metric: "Which country has more time zones?", optionA: { name: "France", value: 12, unit: "" }, optionB: { name: "Russia", value: 11, unit: "" } },
+  { category: "Geography", metric: "Which country has a lower population density?", optionA: { name: "Mongolia", value: 2, unit: "per sq mi" }, optionB: { name: "Australia", value: 9, unit: "per sq mi" } },
+  // More Sports
+  { category: "Sports", metric: "Which sport pays more (average salary)?", optionA: { name: "NBA player", value: 9700000, unit: "$" }, optionB: { name: "NFL player", value: 3500000, unit: "$" } },
+  { category: "Sports", metric: "Which event has more viewers?", optionA: { name: "FIFA World Cup Final", value: 1500, unit: "million" }, optionB: { name: "Super Bowl", value: 123, unit: "million" } },
+  // More Science
+  { category: "Science", metric: "Which has more bones?", optionA: { name: "Human hand", value: 27, unit: "" }, optionB: { name: "Human foot", value: 26, unit: "" } },
+  { category: "Science", metric: "Which is louder?", optionA: { name: "Blue whale call", value: 188, unit: "dB" }, optionB: { name: "Jet engine at takeoff", value: 150, unit: "dB" } },
+  { category: "Science", metric: "Which moves faster?", optionA: { name: "Speed of light", value: 186000, unit: "mi/s" }, optionB: { name: "Speed of sound", value: 0.213, unit: "mi/s" } },
+  // More Entertainment
+  { category: "Entertainment", metric: "Which album sold more copies?", optionA: { name: "Thriller (Michael Jackson)", value: 70, unit: "million" }, optionB: { name: "Back in Black (AC/DC)", value: 50, unit: "million" } },
+  { category: "Entertainment", metric: "Which concert tour grossed more?", optionA: { name: "Eras Tour (Taylor Swift)", value: 2200, unit: "million $" }, optionB: { name: "Music of the Spheres (Coldplay)", value: 1000, unit: "million $" } },
+  // More History
+  { category: "History", metric: "Which civilization is older?", optionA: { name: "Ancient Egypt", value: -3100, unit: "" }, optionB: { name: "Mesopotamia", value: -3500, unit: "" } },
+  { category: "History", metric: "Which was invented first?", optionA: { name: "Printing press", value: 1440, unit: "" }, optionB: { name: "Telescope", value: 1608, unit: "" } },
+  { category: "History", metric: "Which was invented first?", optionA: { name: "Telephone", value: 1876, unit: "" }, optionB: { name: "Light bulb", value: 1879, unit: "" } },
+  // More Business
+  { category: "Business", metric: "Which country has a higher GDP?", optionA: { name: "United States", value: 28, unit: "trillion $" }, optionB: { name: "China", value: 18, unit: "trillion $" } },
+  { category: "Business", metric: "Which industry is larger globally?", optionA: { name: "Tourism", value: 9, unit: "trillion $" }, optionB: { name: "Agriculture", value: 3, unit: "trillion $" } },
+  // More Nature
+  { category: "Nature", metric: "Which has a stronger bite force?", optionA: { name: "Saltwater crocodile", value: 3700, unit: "PSI" }, optionB: { name: "Great white shark", value: 4000, unit: "PSI" } },
+  { category: "Nature", metric: "Which ocean is larger?", optionA: { name: "Pacific Ocean", value: 63800000, unit: "sq mi" }, optionB: { name: "Atlantic Ocean", value: 41100000, unit: "sq mi" } },
+  { category: "Nature", metric: "Which insect lives longer?", optionA: { name: "Queen ant", value: 30, unit: "years" }, optionB: { name: "Queen bee", value: 5, unit: "years" } },
+  // More Space
+  { category: "Space", metric: "Which has a faster escape velocity?", optionA: { name: "Earth", value: 25000, unit: "mph" }, optionB: { name: "Mars", value: 11200, unit: "mph" } },
+  { category: "Space", metric: "Which planet has more rings?", optionA: { name: "Saturn", value: 7, unit: "main rings" }, optionB: { name: "Uranus", value: 13, unit: "main rings" } },
+];
+
+// Detect if lower value = correct answer based on metric wording
+const LOWER_WINS_PATTERNS = [
+  /first\?$/i, /older\?$/i, /closer/i, /colder/i, /lower/i,
+  /fewer/i, /shorter/i, /smaller/i, /lighter/i, /cheaper/i,
+  /spins faster/i,
+];
+function isHigherWins(metric) {
+  return !LOWER_WINS_PATTERNS.some(p => p.test(metric));
+}
+
+function generateVersus(rng) {
+  const puzzles = [];
+
+  for (let id = 1; id <= TARGET; id++) {
+    const rounds = [];
+    const usedIndices = new Set();
+    const shuffledComparisons = shuffle(VERSUS_COMPARISONS, rng);
+
+    for (let r = 0; r < 5; r++) {
+      // Find a comparison we haven't used in this puzzle
+      let comp = shuffledComparisons[r % shuffledComparisons.length];
+      let attempts = 0;
+      let idx = r;
+      while (usedIndices.has(idx) && attempts < 50) {
+        idx = Math.floor(rng() * shuffledComparisons.length);
+        comp = shuffledComparisons[idx];
+        attempts++;
+      }
+      usedIndices.add(idx);
+
+      // Randomly swap A and B presentation order
+      const swap = rng() > 0.5;
+      rounds.push({
+        category: comp.category,
+        metric: comp.metric,
+        optionA: swap ? comp.optionB : comp.optionA,
+        optionB: swap ? comp.optionA : comp.optionB,
+        higherWins: isHigherWins(comp.metric),
+      });
+    }
+
+    puzzles.push({ id, rounds });
+  }
+
+  return puzzles;
+}
+
 const generators = {
   pricecheck: generatePricecheck,
   trend: generateTrend,
   rank: generateRank,
   crossfire: generateCrossfire,
+  versus: generateVersus,
 };
 
 const targetGame = process.argv[2];

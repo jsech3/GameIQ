@@ -7,6 +7,7 @@ const GAMES: GameMeta[] = [
   { id: 'trend', name: 'Trend', description: 'Predict where the data goes next', icon: '\uD83D\uDCC8', path: '/trend' },
   { id: 'rank', name: 'Rank', description: 'Order items by a hidden metric', icon: '\uD83C\uDFC6', path: '/rank' },
   { id: 'crossfire', name: 'Crossfire', description: 'One word connects two clues', icon: '\uD83C\uDFAF', path: '/crossfire' },
+  { id: 'versus', name: 'Versus', description: 'Pick the winner in head-to-head matchups', icon: '\u2694\uFE0F', path: '/versus' },
 ];
 
 export function Home() {
@@ -14,12 +15,14 @@ export function Home() {
   const trendState = useGameState('trend');
   const rankState = useGameState('rank');
   const crossfireState = useGameState('crossfire');
+  const versusState = useGameState('versus');
 
   const statsMap: Record<string, GameStats> = {
     pricecheck: pricecheckState.stats,
     trend: trendState.stats,
     rank: rankState.stats,
     crossfire: crossfireState.stats,
+    versus: versusState.stats,
   };
 
   return (

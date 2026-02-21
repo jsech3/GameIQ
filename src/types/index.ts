@@ -1,4 +1,4 @@
-export type GameId = 'pricecheck' | 'trend' | 'rank' | 'crossfire';
+export type GameId = 'pricecheck' | 'trend' | 'rank' | 'crossfire' | 'versus';
 
 export interface GameResult {
   dayNumber: number;

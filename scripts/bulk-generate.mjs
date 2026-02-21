@@ -1041,7 +1041,7 @@ const VERSUS_COMPARISONS = [
   { category: "Technology", metric: "Which costs more to make?", optionA: { name: "iPhone 16 Pro", value: 423, unit: "$" }, optionB: { name: "Samsung Galaxy S25", value: 380, unit: "$" } },
   { category: "Technology", metric: "Which has more daily active users?", optionA: { name: "Snapchat", value: 406, unit: "million" }, optionB: { name: "X (Twitter)", value: 250, unit: "million" } },
   { category: "Technology", metric: "Which streaming service has more subscribers?", optionA: { name: "Disney+", value: 150, unit: "million" }, optionB: { name: "Netflix", value: 260, unit: "million" } },
-  { category: "Technology", metric: "Which was released first?", optionA: { name: "PlayStation 5", value: 2020, unit: "" }, optionB: { name: "Xbox Series X", value: 2020, unit: "" } },
+  { category: "Technology", metric: "Which was released first?", optionA: { name: "Nintendo Switch", value: 2017, unit: "" }, optionB: { name: "PlayStation 5", value: 2020, unit: "" } },
   { category: "Technology", metric: "Which has more storage (base model)?", optionA: { name: "Nintendo Switch 2", value: 256, unit: "GB" }, optionB: { name: "Steam Deck OLED", value: 512, unit: "GB" } },
   // Geography
   { category: "Geography", metric: "Which country has a larger population?", optionA: { name: "Indonesia", value: 277, unit: "million" }, optionB: { name: "Brazil", value: 216, unit: "million" } },
@@ -1064,7 +1064,7 @@ const VERSUS_COMPARISONS = [
   { category: "Geography", metric: "Which country has a higher GDP per capita?", optionA: { name: "Norway", value: 82000, unit: "$" }, optionB: { name: "Switzerland", value: 92000, unit: "$" } },
   // Sports
   { category: "Sports", metric: "Which athlete has more career points?", optionA: { name: "LeBron James", value: 40474, unit: "" }, optionB: { name: "Kareem Abdul-Jabbar", value: 38387, unit: "" } },
-  { category: "Sports", metric: "Which team has more Super Bowl wins?", optionA: { name: "New England Patriots", value: 6, unit: "" }, optionB: { name: "Pittsburgh Steelers", value: 6, unit: "" } },
+  { category: "Sports", metric: "Which team has more Super Bowl wins?", optionA: { name: "New England Patriots", value: 6, unit: "" }, optionB: { name: "Dallas Cowboys", value: 5, unit: "" } },
   { category: "Sports", metric: "Which team has more NBA championships?", optionA: { name: "Boston Celtics", value: 18, unit: "" }, optionB: { name: "Los Angeles Lakers", value: 17, unit: "" } },
   { category: "Sports", metric: "Which stadium holds more people?", optionA: { name: "Michigan Stadium", value: 107601, unit: "" }, optionB: { name: "Beaver Stadium (Penn State)", value: 106572, unit: "" } },
   { category: "Sports", metric: "Which athlete has more Grand Slam titles?", optionA: { name: "Novak Djokovic", value: 24, unit: "" }, optionB: { name: "Rafael Nadal", value: 22, unit: "" } },

@@ -2196,8 +2196,8 @@
         "category": "Sports",
         "metric": "Which team has more Super Bowl wins?",
         "optionA": {
-          "name": "Pittsburgh Steelers",
-          "value": 6,
+          "name": "Dallas Cowboys",
+          "value": 5,
           "unit": ""
         },
         "optionB": {
@@ -2421,13 +2421,13 @@
         "category": "Technology",
         "metric": "Which was released first?",
         "optionA": {
-          "name": "Xbox Series X",
+          "name": "PlayStation 5",
           "value": 2020,
           "unit": ""
         },
         "optionB": {
-          "name": "PlayStation 5",
-          "value": 2020,
+          "name": "Nintendo Switch",
+          "value": 2017,
           "unit": ""
         },
         "higherWins": false
@@ -11251,12 +11251,12 @@
         "category": "Technology",
         "metric": "Which was released first?",
         "optionA": {
-          "name": "PlayStation 5",
-          "value": 2020,
+          "name": "Nintendo Switch",
+          "value": 2017,
           "unit": ""
         },
         "optionB": {
-          "name": "Xbox Series X",
+          "name": "PlayStation 5",
           "value": 2020,
           "unit": ""
         },
@@ -11331,8 +11331,8 @@
         "category": "Sports",
         "metric": "Which team has more Super Bowl wins?",
         "optionA": {
-          "name": "Pittsburgh Steelers",
-          "value": 6,
+          "name": "Dallas Cowboys",
+          "value": 5,
           "unit": ""
         },
         "optionB": {
@@ -12341,12 +12341,12 @@
         "category": "Technology",
         "metric": "Which was released first?",
         "optionA": {
-          "name": "PlayStation 5",
-          "value": 2020,
+          "name": "Nintendo Switch",
+          "value": 2017,
           "unit": ""
         },
         "optionB": {
-          "name": "Xbox Series X",
+          "name": "PlayStation 5",
           "value": 2020,
           "unit": ""
         },
@@ -13171,13 +13171,13 @@
         "category": "Technology",
         "metric": "Which was released first?",
         "optionA": {
-          "name": "Xbox Series X",
+          "name": "PlayStation 5",
           "value": 2020,
           "unit": ""
         },
         "optionB": {
-          "name": "PlayStation 5",
-          "value": 2020,
+          "name": "Nintendo Switch",
+          "value": 2017,
           "unit": ""
         },
         "higherWins": false
@@ -13446,13 +13446,13 @@
         "category": "Technology",
         "metric": "Which was released first?",
         "optionA": {
-          "name": "Xbox Series X",
+          "name": "PlayStation 5",
           "value": 2020,
           "unit": ""
         },
         "optionB": {
-          "name": "PlayStation 5",
-          "value": 2020,
+          "name": "Nintendo Switch",
+          "value": 2017,
           "unit": ""
         },
         "higherWins": false
@@ -14036,12 +14036,12 @@
         "category": "Technology",
         "metric": "Which was released first?",
         "optionA": {
-          "name": "PlayStation 5",
-          "value": 2020,
+          "name": "Nintendo Switch",
+          "value": 2017,
           "unit": ""
         },
         "optionB": {
-          "name": "Xbox Series X",
+          "name": "PlayStation 5",
           "value": 2020,
           "unit": ""
         },
@@ -16071,8 +16071,8 @@
           "unit": ""
         },
         "optionB": {
-          "name": "Pittsburgh Steelers",
-          "value": 6,
+          "name": "Dallas Cowboys",
+          "value": 5,
           "unit": ""
         },
         "higherWins": true
@@ -16856,8 +16856,8 @@
           "unit": ""
         },
         "optionB": {
-          "name": "Pittsburgh Steelers",
-          "value": 6,
+          "name": "Dallas Cowboys",
+          "value": 5,
           "unit": ""
         },
         "higherWins": true
@@ -24386,8 +24386,8 @@
         "category": "Sports",
         "metric": "Which team has more Super Bowl wins?",
         "optionA": {
-          "name": "Pittsburgh Steelers",
-          "value": 6,
+          "name": "Dallas Cowboys",
+          "value": 5,
           "unit": ""
         },
         "optionB": {
@@ -25796,13 +25796,13 @@
         "category": "Technology",
         "metric": "Which was released first?",
         "optionA": {
-          "name": "Xbox Series X",
+          "name": "PlayStation 5",
           "value": 2020,
           "unit": ""
         },
         "optionB": {
-          "name": "PlayStation 5",
-          "value": 2020,
+          "name": "Nintendo Switch",
+          "value": 2017,
           "unit": ""
         },
         "higherWins": false

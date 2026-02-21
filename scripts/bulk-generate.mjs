@@ -1227,8 +1227,8 @@ const VERSUS_COMPARISONS = [
 
 // Detect if lower value = correct answer based on metric wording
 const LOWER_WINS_PATTERNS = [
-  /first\?$/i, /older\?$/i, /closer/i, /colder/i, /lower/i,
-  /fewer/i, /shorter/i, /smaller/i, /lighter/i, /cheaper/i,
+  /first\?$/i, /older\?$/i, /\bcloser\b/i, /\bcolder\b/i, /\blower\b/i,
+  /\bfewer\b/i, /\bshorter\b/i, /\bsmaller\b/i, /\blighter\b/i, /\bcheaper\b/i,
   /spins faster/i,
 ];
 function isHigherWins(metric) {

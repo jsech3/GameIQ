@@ -1645,7 +1645,7 @@
           "value": 395,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Business",
@@ -2830,7 +2830,7 @@
           "value": 636,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Entertainment",
@@ -8975,7 +8975,7 @@
           "value": 636,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Miscellaneous",
@@ -12715,7 +12715,7 @@
           "value": 636,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       }
     ]
   },
@@ -13515,7 +13515,7 @@
           "value": 636,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       }
     ]
   },
@@ -13900,7 +13900,7 @@
           "value": 429,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "History",
@@ -14125,7 +14125,7 @@
           "value": 400,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Entertainment",
@@ -14300,7 +14300,7 @@
           "value": 636,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Science",
@@ -14395,7 +14395,7 @@
           "value": 429,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       }
     ]
   },
@@ -16605,7 +16605,7 @@
           "value": 429,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Science",
@@ -16990,7 +16990,7 @@
           "value": 636,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Nature",
@@ -20975,7 +20975,7 @@
           "value": 400,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       },
       {
         "category": "Miscellaneous",
@@ -23275,7 +23275,7 @@
           "value": 636,
           "unit": "million"
         },
-        "higherWins": false
+        "higherWins": true
       }
     ]
   },

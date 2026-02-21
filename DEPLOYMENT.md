@@ -153,7 +153,7 @@ Regardless of hosting provider, the domain setup is:
 After deployment, check:
 
 1. **Site loads:** `https://gameiq.daitiq.com`
-2. **All 4 games work:** `/blindspot`, `/trend`, `/rank`, `/crossfire`
+2. **All 5 games work:** `/pricecheck`, `/trend`, `/rank`, `/crossfire`, `/versus`
 3. **PWA installable:** Install prompt appears on mobile
 4. **OG image shows:** Share link on Twitter/Slack/iMessage and check preview
 5. **Share button works:** Play a game, tap Share, paste clipboard

@@ -1,21 +1,22 @@
 # GameIQ — 30/60/90 Day Plan
 
-## Current State (Day 0)
+## Current State (February 2026)
 
 **What's built:**
-- 4 games: Blindspot, Trend, Rank, Crossfire
-- 30 puzzles per game (30 days of unique daily content)
+- 5 games: Pricecheck, Trend, Rank, Crossfire, Versus
+- 365 puzzles per game (full year of daily content)
 - PWA with offline support and installability
 - Animated UI with micro-interactions
 - Share functionality for all games
 - OG meta tags for social previews
+- Deployed at gameiq.daitiq.com (Vercel, auto-deploys from GitHub)
+- Offline bulk puzzle generator + optional Claude API weekly refresh
 
 **What's NOT built:**
 - No analytics
 - No user accounts
 - No backend
 - No monetization
-- Not yet deployed
 
 ---
 
@@ -102,8 +103,8 @@ If you're seeing growth and retention:
 - [ ] Friends/following system
 
 **More Games**
-- [ ] Add 1-2 new games based on what players request
-- [ ] Ideas: Timeline (order events), Proximity (which city is closer), Scale (bigger/smaller), Quote (who said it)
+- [ ] Add more games based on what players request
+- [ ] Ideas: Timeline (order events), Proximity (which city is closer), Quote (who said it)
 - [ ] Each new game = more reasons to visit daily
 
 **Monetization (Non-Intrusive)**
@@ -182,7 +183,7 @@ If engagement is flat after 60 days:
 |--------|-------------------|
 | Daily Active Users (DAU) | Is anyone showing up? |
 | DAU / MAU ratio | Are people coming back daily? (>20% is good for games) |
-| Games completed per visit | Are all 4 games engaging? |
+| Games completed per visit | Are all 5 games engaging? |
 | Share rate | Are people marketing for you? |
 | PWA install rate | Do people want this on their home screen? |
 | D1/D7/D30 retention | How many come back after 1 day, 7 days, 30 days? |

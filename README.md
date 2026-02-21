@@ -8,23 +8,28 @@ Daily brain games to keep you sharp. A PWA built with React, TypeScript, and Tai
 
 ## Games
 
-| Game | Description | Rounds |
-|------|-------------|--------|
-| **Pricecheck** | Guess if the real value is higher or lower | 5/day |
-| **Trend** | Predict where data goes next (up/down/flat) | 5/day |
-| **Rank** | Order 5 items by a hidden metric | 1/day |
-| **Crossfire** | One word connects two different clues | 5/day |
+| Game | Description | Rounds | Scoring |
+|------|-------------|--------|---------|
+| **Pricecheck** | Guess if the real value is higher or lower | 5/day | 1 pt per correct guess, max 5 |
+| **Trend** | Predict where data goes next (up/down/flat) | 5/day | 1 pt per correct prediction, max 5 |
+| **Rank** | Order 5 items by a hidden metric | 1/day | 1 pt per item in correct position, max 5 |
+| **Crossfire** | One word connects two different clues | 5/day | 1 pt per correct answer, max 5 |
+| **Versus** | Pick which of two things wins on a hidden metric | 5/day | 1 pt per correct pick, max 5 |
 
 ### Pricecheck
-Shown a real-world item with a suggested value. Guess **Higher** or **Lower**. Points are based on how close the shown value is to the actual value (1-5 pts per round). Max score: 25. Win threshold: 15+.
+Shown a real-world item with a suggested value. Guess **Higher** or **Lower**. 1 point per correct answer.
 
-| Margin | Points |
-|--------|--------|
-| <= 10% | 5 |
-| <= 25% | 4 |
-| <= 40% | 3 |
-| <= 60% | 2 |
-| > 60%  | 1 |
+### Trend
+See partial data on an unlabeled graph. Predict if the hidden data goes **Up**, **Down**, or stays **Flat**. The real data is then revealed.
+
+### Rank
+Five items are shown — reorder them by a hidden metric (population, revenue, etc.) using up/down buttons. Points awarded for each item in the correct position.
+
+### Crossfire
+Two clues from different domains share one answer word. Type your guess. Case-insensitive, multiple accepted spellings.
+
+### Versus
+Two things are compared on a hidden metric (e.g. "Which has more monthly active users?"). Pick the winner. Both values are revealed with a count-up animation. Supports "higher wins" metrics (more users, taller, heavier) and "lower wins" metrics (founded first, closer, colder).
 
 ---
 
@@ -77,7 +82,8 @@ GameIQ/
 │   │   ├── pricecheck/            # Pricecheck game
 │   │   ├── trend/                 # Trend game
 │   │   ├── rank/                  # Rank game
-│   │   └── crossfire/             # Crossfire game
+│   │   ├── crossfire/             # Crossfire game
+│   │   └── versus/                # Versus game
 │   ├── hooks/                     # Custom React hooks
 │   ├── pages/                     # Page components
 │   ├── types/                     # TypeScript types
@@ -96,13 +102,14 @@ GameIQ/
 - Day 0 = February 1, 2026
 - Same puzzle for all users on the same day
 - Progress stored in browser localStorage
+- Streaks track consecutive days played per game
 
 ---
 
 ## Puzzle Generation
 
 ### Current content (no setup required)
-All 4 games ship with 365 pre-generated puzzles. The site works out of the box with no API keys or external services.
+All 5 games ship with 365 pre-generated puzzles. The site works out of the box with no API keys or external services.
 
 ### Automated weekly refresh (optional)
 A GitHub Actions workflow runs every Sunday at 2 AM UTC to generate 30 fresh puzzles per game using the Claude API. To enable it:
@@ -124,6 +131,7 @@ The pipeline:
 # Offline bulk generation (no API key needed, uses curated data pools)
 node scripts/bulk-generate.mjs              # all games
 node scripts/bulk-generate.mjs pricecheck   # one game
+node scripts/bulk-generate.mjs versus       # one game
 
 # API-powered generation (requires ANTHROPIC_API_KEY env var)
 ANTHROPIC_API_KEY=sk-... node scripts/generate-puzzles.mjs
@@ -199,6 +207,26 @@ Each game has a `puzzles.json` file. Add new puzzles following the existing sche
   ]
 }
 ```
+
+### Versus
+```json
+{
+  "id": 1,
+  "rounds": [
+    {
+      "category": "Technology",
+      "metric": "Which has more monthly active users?",
+      "optionA": { "name": "Netflix", "value": 260, "unit": "million" },
+      "optionB": { "name": "Spotify", "value": 626, "unit": "million" },
+      "higherWins": true
+    }
+  ]
+}
+```
+
+The `higherWins` field controls which option is correct:
+- `true` (default): the option with the **higher** value wins (e.g. "more users", "taller", "heavier")
+- `false`: the option with the **lower** value wins (e.g. "founded first", "closer to the Sun", "colder")
 
 ---
 

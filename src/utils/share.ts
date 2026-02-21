@@ -5,11 +5,9 @@ export function buildShareText(gameId: GameId, score: number, maxScore: number):
   const dayNum = getDayNumber();
 
   if (gameId === 'pricecheck') {
-    const roundCount = 5;
-    const icons = Array.from({ length: roundCount }, (_, i) => {
-      const threshold = (i + 1) * (maxScore / roundCount);
-      return score >= threshold ? '\uD83D\uDCB0' : '\u274C';
-    }).join('');
+    const icons = Array.from({ length: maxScore }, (_, i) =>
+      i < score ? '\uD83D\uDCB0' : '\u274C'
+    ).join('');
     return `Pricecheck #${dayNum} \u2014 ${score}/${maxScore} ${icons}\nhttps://gameiq.daitiq.com`;
   }
 

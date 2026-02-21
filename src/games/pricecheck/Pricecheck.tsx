@@ -10,14 +10,6 @@ function formatValue(value: number, unit: string): string {
   return `${value.toLocaleString()} ${unit}`;
 }
 
-function getMarginScore(shownValue: number, actualValue: number): number {
-  const margin = Math.abs(actualValue - shownValue) / actualValue;
-  if (margin <= 0.10) return 5;
-  if (margin <= 0.25) return 4;
-  if (margin <= 0.40) return 3;
-  if (margin <= 0.60) return 2;
-  return 1;
-}
 
 function AnimatedValue({ target, unit }: { target: number; unit: string }) {
   const [display, setDisplay] = useState(0);
@@ -65,7 +57,7 @@ export function Pricecheck() {
 
     const correctDirection = round.actualValue > round.shownValue ? 'higher' : 'lower';
     const isCorrect = guess === correctDirection;
-    const points = isCorrect ? getMarginScore(round.shownValue, round.actualValue) : 0;
+    const points = isCorrect ? 1 : 0;
 
     const newResults = [...roundResults, { correct: isCorrect, points }];
     setRoundResults(newResults);
@@ -80,8 +72,8 @@ export function Pricecheck() {
         recordResult({
           dayNumber: 0,
           score: finalScore,
-          maxScore: 25,
-          completed: finalScore >= 15,
+          maxScore: 5,
+          completed: finalScore >= 3,
           details: { roundResults: newResults },
         });
       } else {
@@ -116,16 +108,11 @@ export function Pricecheck() {
                 }`}
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
-                <div className="flex items-center justify-between mb-1">
-                  <div className="flex items-center gap-2">
-                    <span className={`text-xs font-bold ${res?.correct ? 'text-green-400' : 'text-red-400'}`}>
-                      {res?.correct ? '\u2713' : '\u2717'}
-                    </span>
-                    <span className="text-xs text-surface-200">{r.category}</span>
-                  </div>
+                <div className="flex items-center gap-2 mb-1">
                   <span className={`text-xs font-bold ${res?.correct ? 'text-green-400' : 'text-red-400'}`}>
-                    +{res?.points ?? 0}
+                    {res?.correct ? '\u2713' : '\u2717'}
                   </span>
+                  <span className="text-xs text-surface-200">{r.category}</span>
                 </div>
                 <p className="text-white text-sm">{r.item}</p>
                 <p className="text-surface-200 text-xs mt-1">
@@ -140,14 +127,14 @@ export function Pricecheck() {
         <ResultModal
           gameId="pricecheck"
           score={score}
-          maxScore={25}
+          maxScore={5}
           stats={stats}
           message={
-            score === 25
+            score === 5
               ? 'Perfect! You nailed every price.'
-              : score >= 20
+              : score >= 4
                 ? 'Excellent instincts!'
-                : score >= 15
+                : score >= 3
                   ? 'Solid guessing! You know your stuff.'
                   : 'Tricky prices today. Try again tomorrow!'
           }
@@ -226,7 +213,7 @@ export function Pricecheck() {
             {roundResults[roundResults.length - 1]?.correct ? (
               <div className="mt-2">
                 <p className="text-green-400 text-sm font-medium flex items-center justify-center gap-1">
-                  <span className="animate-bounce-in">&#10003;</span> Correct! +{roundResults[roundResults.length - 1].points}
+                  <span className="animate-bounce-in">&#10003;</span> Correct!
                 </p>
               </div>
             ) : (
@@ -270,7 +257,7 @@ export function Pricecheck() {
           ))}
         </div>
         {roundResults.length > 0 && (
-          <span className="text-surface-200 text-sm font-medium">{score} pts</span>
+          <span className="text-surface-200 text-sm font-medium">{score}/{totalRounds}</span>
         )}
       </div>
     </div>
